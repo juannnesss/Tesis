@@ -22,11 +22,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacin
 \subsection{Biphoton}
 
 \begin{equation}
-\ket{\Psi}=\int{dq_s dq_i d\Omega_s d\Omega_i 
+\ket{\Psi}=\int dq_s dq_i d\Omega_s d\Omega_i 
 x [\Phi(q_s,\Omega_s;q_i,\Omega_i) \hat{a}^{\dagger} (\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i) \\
-+ \Phi(q_i,\Omega_i;q_s,\Omega_s) \hat{a}^{\dagger}(\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i)]   \ket{0}} 
-\caption{}
++ \Phi(q_i,\Omega_i;q_s,\Omega_s) \hat{a}^{\dagger}(\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i)]   \ket{0}  
 \end{equation}
+
 taken like it appears on \cite{spatiocorrelations}
 
  Where $\Phi(q_s,\Omega_s;q_i,\Omega_i)$ are the mode fuctions or Biphotons, a fuctions that contain all the information about the correlations. $ \hat{a}^{\dagger}(\Omega_n,q_n)$ the creation of a photon with tranverse momentum $q_n$ and frequency $\Omega_n$
@@ -69,7 +69,7 @@ The Biphoton then takes a quadratic form:
 \begin{equation}\label{eq:quadratic}
 \tilde{\Phi}(q_s,q_i)=N exp\left[ -\frac{1}{2}x^T A x + i b^T x \right]
 \end{equation}
-where N is a normalization constant, $x$ is a 4-dimensional vector defined as $x = (q^x_s, q^y_s ,q^x_i,q^y_i )$, $A$ is a 4 × 4 real-valued, symmetric, positive definite matrix and b is a 4- dimensional vector. A and b are defined from the phase-matching conditions of the SPDC process. $x^T$ and $b^T$ denote the transpose of $x$ and $b$. $A$ and b are functions that depend of all the relevant parameters in the experiment such as the length of the crystal L, pump waist $w_p$, creation angles inside the crystal $\varphi_n$ and the width of the spectral filter $\sigma_n$
+where N is a normalization constant, $x$ is a 4-dimensional vector defined as $x = (q^x_s, q^y_s ,q^x_i,q^y_i )$, $A$ is a 4 x 4 real-valued, symmetric, positive definite matrix and b is a 4- dimensional vector. A and b are defined from the phase-matching conditions of the SPDC process. $x^T$ and $b^T$ denote the transpose of $x$ and $b$. $A$ and $b$ are functions that depend of all the relevant parameters in the experiment such as the length of the crystal L, pump waist $w_p$, creation angles inside the crystal $\varphi_n$ and the width of the spectral filter $\sigma_n$.
 
 A way to quantify the degree of spatial correlation we shall define 'correlation parameter':
 \begin{equation}
@@ -80,10 +80,12 @@ calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\
 
 \subsection{Fresnel Propagator}
 Fresnel Propagator: $h(r,z)=(- \frac{i}{\lambda z})e^{(i \frac{2 \pi z}{\lambda})} \Psi (r,z)$ 
-with $\Psi(r,z) = e^{(i \frac{\pi}{\lambda z })r^2}$. Thin-lens transfer function $L_f (r)=Psi(r,-f) $\\
+with $\Psi(r,z) = e^{(i \frac{\pi}{\lambda z })r^2}$. Thin-lens transfer function $L_f (r)=\Psi(r,-f)$
+ \\
 \begin{equation}\label{eq:green}
-G=\int d^2 r_1 \int d^2 r_0 h(r_f - r_1,f) L_f(r_1) h(r_1 - r_0,f)\\
-\caption{Green Function ignoring temporal dependence}
+G= \int d^2 r_1 \int d^2 r_0 h(r_f - r_1,f) L_f(r_1) h(r_1 - r_0,f)
+\end{equation}
+
 The propagation is done by determining the Green function of the optical path
 by which the beam will travel. The biphoton function
 in terms of transverse momenta $\Phi_1 (q_s , q_i )$ after traveling
@@ -92,8 +94,9 @@ in terms of the corresponding Green functions and the
 initial biphoton function $\Phi(q_s , q_i )$ as:
 
 \begin{equation}
-
-\Phi_1 (q_s , q_i )= G_s(q_s,r_1) G_i(q_i,r_2) \Phi (q_s,q_i) \\
+\Phi_1 (q_s , q_i )= G_s(q_s,r_1) G_i(q_i,r_2) \Phi (q_s,q_i) 
+\end{equation}
+\begin{equation}
 \Phi_1 (r_1 , r_2 )= \int d^2 q_s d^2 q_i \Phi_1 (q_s , q_i ) 
 \end{equation}
 
@@ -125,13 +128,13 @@ S(r_2) \propto |  \int d^2 r_1 T(r_1) \Phi (\frac{2 \pi}{\lambda f}r_1, \frac{2 
 \end{equation}
 
 For non-ideal forms of $\Phi (q_s,q_i)$ we have the relation between $\Phi (q) \rightarrow \Phi (r)$ for a 2F system, Hence: $\Phi(r)=\frac{1}{\sqrt{det(\Sigma)(2 \pi)^4}} e^{- \frac{1}{2} r^T \Sigma^{-1} r} e^{ibr}$ \\
-\Sigma =
+$\Sigma=$
 \begin{bmatrix}
-    \sigma^2_{sx}       & Cov(x_s,y_s) & Cov(x_s,x_i) & Cov(x_s,y_i) \\
-    Cov(y_s,x_s)     & \sigma^2_{sy} & Cov(y_s,x_i) & Cov(y_s,y_i) \\
-    Cov(y_i,x_s) & Cov(x_i,y_s) &     \sigma^2_{iy}     &Cov(x_i,y_i) \\
-    Cov(y_i,x_s)       & Cov(y_i,y_s) & Cov(y_i,x_i) & \sigma^2_{iy}
-    \end{bmatrix} \\
+\sigma^2_{sx}       & Cov(x_s,y_s) & Cov(x_s,x_i) & Cov(x_s,y_i) \\
+Cov(y_s,x_s)     & \sigma^2_{sy} & Cov(y_s,x_i) & Cov(y_s,y_i) \\
+Cov(y_i,x_s) & Cov(x_i,y_s) &     \sigma^2_{iy}     &Cov(x_i,y_i) \\
+Cov(y_i,x_s)       & Cov(y_i,y_s) & Cov(y_i,x_i) & \sigma^2_{iy}
+\end{bmatrix} \\
 
 --------------------------------------------------
 
