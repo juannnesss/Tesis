@@ -134,7 +134,7 @@ $\Sigma=$
 Cov(y_s,x_s)     & \sigma^2_{sy} & Cov(y_s,x_i) & Cov(y_s,y_i) \\
 Cov(y_i,x_s) & Cov(x_i,y_s) &     \sigma^2_{iy}     &Cov(x_i,y_i) \\
 Cov(y_i,x_s)       & Cov(y_i,y_s) & Cov(y_i,x_i) & \sigma^2_{iy}
-\end{bmatrix}
+\end{bmatrix} \\
 
 --------------------------------------------------
 
