@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.29)  15 MAR 2018 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.29)  20 MAR 2018 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3057,18 +3057,22 @@ File: pictures/Toma7.png Graphic file (type png)
 <use pictures/Toma7.png>
 Package pdftex.def Info: pictures/Toma7.png  used on input line 362.
 (pdftex.def)             Requested size: 276.559pt x 70.7436pt.
-<pictures/TomaL_UbicacionL.png, id=550, 1553.805pt x 397.485pt>
+<pictures/TomaL_UbicacionL.png, id=550, 422.57875pt x 380.42125pt>
 File: pictures/TomaL_UbicacionL.png Graphic file (type png)
 <use pictures/TomaL_UbicacionL.png>
 Package pdftex.def Info: pictures/TomaL_UbicacionL.png  used on input line 362.
 
-(pdftex.def)             Requested size: 276.559pt x 70.7436pt.
+(pdftex.def)             Requested size: 276.559pt x 248.97746pt.
 pdfTeX warning (ext4): destination with the same identifier (name{n1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.362 \end{frame}
-                  [19
+                 
+Overfull \vbox (136.11876pt too high) detected at line 362
+ []
+
+[19
 
  <./pictures/Toma7.png> <./pictures/TomaL_UbicacionL.png>]
 <pictures/Ghost_P2_Toma_Larga.png, id=580, 1553.805pt x 397.485pt>
@@ -3172,7 +3176,7 @@ ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (23 pages, 2393492 bytes).
+Output written on main.pdf (23 pages, 2375468 bytes).
 PDF statistics:
  744 PDF objects out of 1000 (max. 8388607)
  639 compressed objects within 7 object streams

@@ -1,58 +1,32 @@
-\select@language {english}
+\babel@toc {english}{}
 \contentsline {chapter}{Declaration of Authorship}{i}{section*.1}
 \contentsline {chapter}{Abstract}{iii}{section*.2}
 \contentsline {chapter}{Acknowledgements}{iv}{section*.3}
 \contentsline {chapter}{\numberline {1}Introduction and Background}{1}{chapter.14}
-\contentsline {section}{\numberline {1.1}Main Section 1}{1}{section.15}
-\contentsline {subsection}{\numberline {1.1.1}Subsection 1}{1}{subsection.16}
-\contentsline {subsection}{\numberline {1.1.2}Subsection 2}{1}{subsection.17}
-\contentsline {section}{\numberline {1.2}Main Section 2}{1}{section.18}
-\contentsline {chapter}{\numberline {2}Theoretical Discussion}{2}{chapter.19}
-\contentsline {section}{\numberline {2.1}Imaging}{2}{section.20}
-\contentsline {section}{\numberline {2.2}Quantum Phenomena}{2}{section.21}
-\contentsline {subsection}{\numberline {2.2.1}Biphoton}{2}{subsection.22}
-\contentsline {subsection}{\numberline {2.2.2}Mode Function}{2}{subsection.24}
-\contentsline {subsection}{\numberline {2.2.3}Phase matching conditions}{2}{subsection.26}
-\contentsline {subsection}{\numberline {2.2.4}Gaussian approximations}{3}{subsection.29}
-\contentsline {subsection}{\numberline {2.2.5}Fresnel Propagator}{3}{subsection.34}
-\contentsline {chapter}{\numberline {3}Experimental Setup}{5}{chapter.42}
-\contentsline {section}{\numberline {3.1}Main Section 1}{5}{section.43}
-\contentsline {subsection}{\numberline {3.1.1}Subsection 1}{5}{subsection.44}
-\contentsline {subsection}{\numberline {3.1.2}Subsection 2}{5}{subsection.45}
-\contentsline {section}{\numberline {3.2}Main Section 2}{5}{section.46}
-\contentsline {chapter}{\numberline {4}Results}{6}{chapter.47}
-\contentsline {section}{\numberline {4.1}Main Section 1}{6}{section.48}
-\contentsline {subsection}{\numberline {4.1.1}Subsection 1}{6}{subsection.49}
-\contentsline {subsection}{\numberline {4.1.2}Subsection 2}{6}{subsection.50}
-\contentsline {section}{\numberline {4.2}Main Section 2}{6}{section.51}
-\contentsline {chapter}{\numberline {5}Discussions and Conclusion}{7}{chapter.52}
-\contentsline {section}{\numberline {5.1}Main Section 1}{7}{section.53}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{7}{subsection.54}
-\contentsline {subsection}{\numberline {5.1.2}Subsection 2}{7}{subsection.55}
-\contentsline {section}{\numberline {5.2}Main Section 2}{7}{section.56}
-\contentsline {chapter}{\numberline {6}Chapter Title Here}{8}{chapter.57}
-\contentsline {section}{\numberline {6.1}Welcome and Thank You}{8}{section.58}
-\contentsline {section}{\numberline {6.2}Learning \LaTeX {}}{8}{section.59}
-\contentsline {subsection}{\numberline {6.2.1}A (not so short) Introduction to \LaTeX {}}{8}{subsection.60}
-\contentsline {subsection}{\numberline {6.2.2}A Short Math Guide for \LaTeX {}}{9}{subsection.61}
-\contentsline {subsection}{\numberline {6.2.3}Common \LaTeX {} Math Symbols}{9}{subsection.62}
-\contentsline {subsection}{\numberline {6.2.4}\LaTeX {} on a Mac}{9}{subsection.63}
-\contentsline {section}{\numberline {6.3}Getting Started with this Template}{9}{section.64}
-\contentsline {subsection}{\numberline {6.3.1}About this Template}{9}{subsection.65}
-\contentsline {section}{\numberline {6.4}What this Template Includes}{10}{section.66}
-\contentsline {subsection}{\numberline {6.4.1}Folders}{10}{subsection.67}
-\contentsline {subsection}{\numberline {6.4.2}Files}{10}{subsection.68}
-\contentsline {section}{\numberline {6.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{11}{section.69}
-\contentsline {section}{\numberline {6.6}The \texttt {main.tex} File Explained}{12}{section.70}
-\contentsline {section}{\numberline {6.7}Thesis Features and Conventions}{13}{section.71}
-\contentsline {subsection}{\numberline {6.7.1}Printing Format}{13}{subsection.72}
-\contentsline {subsection}{\numberline {6.7.2}Using US Letter Paper}{13}{subsection.73}
-\contentsline {subsubsection}{A Note on bibtex}{13}{section*.74}
-\contentsline {subsection}{\numberline {6.7.3}Tables}{14}{subsection.75}
-\contentsline {subsection}{\numberline {6.7.4}Figures}{14}{subsection.77}
-\contentsline {subsection}{\numberline {6.7.5}Typesetting mathematics}{15}{subsection.79}
-\contentsline {section}{\numberline {6.8}Sectioning and Subsectioning}{16}{section.81}
-\contentsline {section}{\numberline {6.9}In Closing}{16}{section.82}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{17}{appendix.83}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{17}{section.84}
-\contentsline {chapter}{Bibliography}{18}{appendix*.85}
+\contentsline {section}{\numberline {1.1}Nature of Source Light}{1}{section.15}
+\contentsline {subsection}{\numberline {1.1.1}Entangled Light}{1}{subsection.16}
+\contentsline {subsection}{\numberline {1.1.2}Thermal Light}{1}{subsection.17}
+\contentsline {section}{\numberline {1.2}Two-photon Imaging with lens}{1}{section.18}
+\contentsline {section}{\numberline {1.3}Lens less Two-photon Imaging}{1}{section.19}
+\contentsline {chapter}{\numberline {2}Theoretical Discussion}{3}{chapter.20}
+\contentsline {section}{\numberline {2.1}Quantum Imaging}{3}{section.21}
+\contentsline {section}{\numberline {2.2}Light Source}{3}{section.22}
+\contentsline {subsection}{\numberline {2.2.1}Biphoton}{3}{subsection.23}
+\contentsline {subsection}{\numberline {2.2.2}Mode Function}{3}{subsection.25}
+\contentsline {subsection}{\numberline {2.2.3}Phase matching conditions}{3}{subsection.27}
+\contentsline {subsection}{\numberline {2.2.4}Gaussian approximations}{4}{subsection.30}
+\contentsline {subsection}{\numberline {2.2.5}Fresnel Propagator}{4}{subsection.35}
+\contentsline {section}{\numberline {2.3}Spatial Correlations}{5}{section.43}
+\contentsline {chapter}{\numberline {3}Experimental Setup}{6}{chapter.44}
+\contentsline {section}{\numberline {3.1}SPDC Setup}{6}{section.45}
+\contentsline {section}{\numberline {3.2}Spatial Correlations Measurement Setup}{6}{section.46}
+\contentsline {section}{\numberline {3.3}Two-Photon Imaging Setup}{6}{section.47}
+\contentsline {chapter}{\numberline {4}Results}{7}{chapter.48}
+\contentsline {section}{\numberline {4.1}Experimental Correlations }{7}{section.49}
+\contentsline {subsection}{\numberline {4.1.1}$w_p = ?$}{7}{subsection.50}
+\contentsline {section}{\numberline {4.2}Two-Photon Images}{7}{section.51}
+\contentsline {subsection}{\numberline {4.2.1}mask1}{7}{subsection.52}
+\contentsline {subsection}{\numberline {4.2.2}mask2}{7}{subsection.53}
+\contentsline {subsection}{\numberline {4.2.3}mask3}{7}{subsection.54}
+\contentsline {chapter}{\numberline {5}Discussions and Conclusion}{8}{chapter.55}
+\contentsline {chapter}{Bibliography}{9}{appendix*.56}
