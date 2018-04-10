@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{spatiocorrelations}
 Clara~I Osorio, Alejandra Valencia, and Juan~P Torres.
@@ -23,5 +23,62 @@ Morton~H. Rubin.
 Y.~Shih.
 \newblock {\em An Introduction to Quantum Optics: Photon and Biphoton Physics}.
 \newblock Series in Optics and Optoelectronics. Taylor \& Francis, 2011.
+
+\bibitem{pittman}
+T~B.~Pittman, Yanhua Shih, D~V.~Strekalov, and Alexander Sergienko.
+\newblock Optical imaging by means of two-photon quantum entanglement.
+\newblock {\em Physical review. A}, 52:R3429--R3432, 12 1995.
+
+\bibitem{crystalLaser}
+Crystal laser.
+\newblock \url{http://www.crystalaser.com}.
+\newblock Accessed: 2018-03-09.
+
+\bibitem{thorlabs}
+Thorlabs, inc.
+\newblock \url{https://www.thorlabs.com/index.cfm}.
+\newblock Accessed: 2018-03-09.
+
+\bibitem{simulated}
+M.~{D'Angelo} and Y.~{Shih}.
+\newblock {Can quantum imaging be classically simulated?}
+\newblock {\em eprint arXiv:quant-ph/0302146}, February 2003.
+
+\bibitem{thermal}
+A.~Gatti, E.~Brambilla, M.~Bache, and L.~A. Lugiato.
+\newblock Ghost imaging with thermal light: Comparing entanglement and
+  classicalcorrelation.
+\newblock {\em Phys. Rev. Lett.}, 93:093602, Aug 2004.
+
+\bibitem{thermalAlejandra}
+Alejandra Valencia, Giuliano Scarcelli, Milena D'Angelo, and Yanhua Shih.
+\newblock Two-photon imaging with thermal light.
+\newblock {\em Phys. Rev. Lett.}, 94:063601, Feb 2005.
+
+\bibitem{intensity}
+W.~Martienssen and E.~Spiller.
+\newblock Coherence and fluctuations in light beams.
+\newblock {\em American Journal of Physics}, 32(12):919--926, 1964.
+
+\bibitem{physicsGhost}
+Jeffrey~H. Shapiro and Robert~W. Boyd.
+\newblock The physics of ghost imaging.
+\newblock {\em Quantum Information Processing}, 11(4):949--993, Aug 2012.
+
+\bibitem{opticalComunications}
+J.~H. Shapiro.
+\newblock The quantum theory of optical communications.
+\newblock {\em IEEE Journal of Selected Topics in Quantum Electronics},
+  15(6):1547--1569, Nov 2009.
+
+\bibitem{hecht}
+E.~Hecht.
+\newblock {\em Optics}.
+\newblock Pearson education. Addison-Wesley, 2016.
+
+\bibitem{spcm}
+PerkinElmer.
+\newblock {\em Single Photon Counting Modules – SPCM}, 2010.
+\newblock Rev. 1.
 
 \end{thebibliography}

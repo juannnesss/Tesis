@@ -1,6 +1,16 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Cartoon schematic of the experimental setup used by Pittman, Taken from \cite {pittman}\relax }}{1}{figure.caption.18}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image of the Diode Laser and it's control module, Taken from \cite {crystalLaser}\relax }}{5}{figure.caption.50}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Mirror and the cavity mount\relax }}{6}{figure.caption.52}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The spatial intensity profile before and after the spatial filtering process , Taken from \cite {thorlabs}\relax }}{6}{figure.caption.54}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Basic elements of a Spatial Filter. In our experiment we use a Aspheric Lens of $f=30 mm$(LA1805-A), a pinhole of $50 \mu m$ and a collimating lens of $f=60 mm$(LA1134-A). Taken from \cite {thorlabs}\relax }}{7}{figure.caption.55}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces This helps to form circular apertures of variable radius\relax }}{7}{figure.caption.56}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Lens' effect on a Gaussian beam\relax }}{8}{figure.caption.58}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Actual BBO crystal used in experiment\relax }}{8}{figure.caption.61}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Single Photon Counting Module\relax }}{9}{figure.caption.68}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Foldind Mirror, it is in the position for measuring the correlations\relax }}{10}{figure.caption.74}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.29)  20 MAR 2018 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.29)  10 APR 2018 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2290,6 +2290,28 @@ LaTeX Info: Redefining \] on input line 2818.
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count288
+\float@exts=\toks25
+\float@box=\box55
+\@float@everytoks=\toks26
+\@floatcapt=\box56
+)
+Package scrhack Info: loading float hack on input line 50.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2017/09/07 v3.24 KOMA-Script package (hacking package float)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2017/09/07 v3.24 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip63
+\scr@dte@tocline@numbox=\box57
+)
+Package scrhack Info: redefining \newfloat on input line 161.
+Package scrhack Info: redefining \listof on input line 161.
+Package scrhack Info: undefining \float@addtolists on input line 161.
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
@@ -2299,13 +2321,13 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
-\csq@reset=\count288
-\csq@gtype=\count289
-\csq@glevel=\count290
-\csq@qlevel=\count291
-\csq@maxlvl=\count292
-\csq@tshold=\count293
-\csq@ltx@everypar=\toks25
+\csq@reset=\count289
+\csq@gtype=\count290
+\csq@glevel=\count291
+\csq@qlevel=\count292
+\csq@maxlvl=\count293
+\csq@tshold=\count294
+\csq@ltx@everypar=\toks27
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
@@ -2370,15 +2392,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen189
-\Hy@linkcounter=\count294
-\Hy@pagecounter=\count295
+\Hy@linkcounter=\count295
+\Hy@pagecounter=\count296
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count296
+\Hy@SavedSpaceFactor=\count297
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -2390,7 +2412,7 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count297
+\c@Hy@tempcnt=\count298
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -2398,7 +2420,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen190
-\Fld@menulength=\count298
+\Fld@menulength=\count299
 \Field@Width=\dimen191
 \Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -2410,9 +2432,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count299
-\c@Item=\count300
-\c@Hfootnote=\count301
+\Hy@abspage=\count300
+\c@Item=\count301
+\c@Hfootnote=\count302
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
@@ -2423,15 +2445,15 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count302
-\c@bookmark@seq@number=\count303
+\Fld@listcount=\count303
+\c@bookmark@seq@number=\count304
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip63
+\Hy@SectionHShift=\skip64
 )
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 92.
 Package hyperref Info: Option `hypertexnames' set `false' on input line 92.
@@ -2555,17 +2577,17 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
+\scratchcounter=\count305
 \scratchdimen=\dimen193
-\scratchbox=\box55
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count307
+\scratchbox=\box58
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count308
 \MPscratchDim=\dimen194
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2584,6 +2606,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -2631,7 +2654,7 @@ Package scrbase Info: activating english \acknowledgementname on input line 92.
 Package scrbase Info: activating english \authorshipname on input line 92.
 Package scrbase Info: activating english \constantsname on input line 92.
 Package scrbase Info: activating english \symbolsname on input line 92.
-\AtBeginShipoutBox=\box56
+\AtBeginShipoutBox=\box59
 Package hyperref Info: Link coloring ON on input line 92.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2639,7 +2662,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count310
+\c@section@level=\count311
 )
 LaTeX Info: Redefining \ref on input line 92.
 LaTeX Info: Redefining \pageref on input line 92.
@@ -2649,7 +2672,7 @@ LaTeX Info: Redefining \nameref on input line 92.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\c__siunitx_mathsf_int=\count311
+\c__siunitx_mathsf_int=\count312
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 92.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
@@ -2679,12 +2702,12 @@ LaTeX Font Info:    Try loading font information for OT1+zplm on input line 92.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-\c__siunitx_mathtt_int=\count312
+\c__siunitx_mathtt_int=\count313
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 110.
-<Logo.png, id=131, 220.825pt x 261.97874pt>
+<Logo.png, id=199, 220.825pt x 261.97874pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
 Package pdftex.def Info: Logo.png  used on input line 133.
@@ -2734,31 +2757,27 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 201.
- (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
+ (./main.toc
 1: section
 [5
 
-] (./main.lof)
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [6] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 
 1: section
-[6
+[7
 
 ] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
 
-1: section
-[7
-
-]
 1: section
 [8
 
@@ -2771,11 +2790,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 [10
 
 ]
+1: section
+[11
+
+]
 --------------------
  Dedicatory
 --------------------
 1: section
-[11
+[12
 
 ]
 1: section
@@ -2788,20 +2811,25 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
+<Figures/pittman.png, id=368, 755.32187pt x 436.63126pt>
+File: Figures/pittman.png Graphic file (type png)
+<use Figures/pittman.png>
+Package pdftex.def Info: Figures/pittman.png  used on input line 24.
+(pdftex.def)             Requested size: 202.01454pt x 116.77937pt.
 )
 1: section
 [1
 
 
 
-] [2]
+ <./Figures/pittman.png>]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (./Chapters/Chapter2.tex
 Chapter 2.
 
-Overfull \hbox (79.44685pt too wide) detected at line 28
+Overfull \hbox (79.44685pt too wide) detected at line 27
 [] [] \OT1/zplm/m/n/10.95 = [] \OML/zplm/m/it/10.95 dq[]dq[]d\OT1/zplm/m/n/10.9
 5 
 []\OML/zplm/m/it/10.95 d\OT1/zplm/m/n/10.95 
@@ -2821,7 +2849,7 @@ OML/zplm/m/it/10.95 q[]\OT1/ppl/m/n/10.95 , \OT1/zplm/m/n/10.95
  []
 
 
-Overfull \hbox (64.68024pt too wide) detected at line 42
+Overfull \hbox (64.68024pt too wide) detected at line 41
 []\OT1/zplm/m/n/10.95 ^^H(\OML/zplm/m/it/10.95 q[]\OT1/ppl/m/n/10.95 , \OT1/zpl
 m/m/n/10.95 
 []\OT1/ppl/m/n/10.95 ; \OML/zplm/m/it/10.95 q[]\OT1/ppl/m/n/10.95 , \OT1/zplm/m
@@ -2838,7 +2866,7 @@ m/m/n/10.95 )\OMS/zplm/m/n/10.95 C[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 q
  []
 
 
-Overfull \hbox (48.92473pt too wide) in paragraph at lines 57--58
+Overfull \hbox (48.92473pt too wide) in paragraph at lines 56--57
 \T1/ppl/m/n/10.95 Taking into ac-count the Gaus-sian na-ture of the pump, that'
 s $\OML/zplm/m/it/10.95 E[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 q[]\OT1/pp
 l/m/n/10.95 , \OML/zplm/m/it/10.95 q[]\OT1/zplm/m/n/10.95 ) \OMS/zplm/m/n/10.95
@@ -2846,17 +2874,17 @@ l/m/n/10.95 , \OML/zplm/m/it/10.95 q[]\OT1/zplm/m/n/10.95 ) \OMS/zplm/m/n/10.95
  []
 
 1: section
-[3
+[2
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-[4]
-Overfull \hbox (8.04543pt too wide) in paragraph at lines 118--122
+[3]
+Overfull \hbox (8.04543pt too wide) in paragraph at lines 117--121
 []\T1/ppl/m/n/10.95 Gathering all the pre-vi-ous re-sults we can ob-tain $\OT1/
 zplm/m/n/10.95 ^^H[](\OML/zplm/m/it/10.95 r[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/i
 t/10.95 r[]\OT1/zplm/m/n/10.95 ) = \OML/zplm/m/it/10.95 C[]T\OT1/zplm/m/n/10.95
@@ -2868,36 +2896,105 @@ T1/ppl/m/n/10.95 , []\OML/zplm/m/it/10.95 r[]\OT1/zplm/m/n/10.95 )$\T1/ppl/m/n/
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.132 \begin{bmatrix}
+l.131 \begin{bmatrix}
                      
-? s
-OK, entering \scrollmode...
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.137 \end{bmatrix}
+l.136 \end{bmatrix}
                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [5]
+? 
+) [4]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 Chapter 3.
-)
+<Figures/diodeLaser.jpg, id=420, 706.64pt x 540.0175pt>
+File: Figures/diodeLaser.jpg Graphic file (type jpg)
+<use Figures/diodeLaser.jpg>
+Package pdftex.def Info: Figures/diodeLaser.jpg  used on input line 17.
+(pdftex.def)             Requested size: 202.01454pt x 154.37627pt.
+<Figures/diodeLaserControl.jpg, id=421, 283.2984pt x 188.3838pt>
+File: Figures/diodeLaserControl.jpg Graphic file (type jpg)
+<use Figures/diodeLaserControl.jpg>
+Package pdftex.def Info: Figures/diodeLaserControl.jpg  used on input line 18.
+(pdftex.def)             Requested size: 202.01454pt x 134.33119pt.
+<Figures/mirror.jpg, id=424, 450.68375pt x 602.25pt>
+File: Figures/mirror.jpg Graphic file (type jpg)
+<use Figures/mirror.jpg>
+Package pdftex.def Info: Figures/mirror.jpg  used on input line 27.
+(pdftex.def)             Requested size: 242.4199pt x 323.95117pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/inputBeam.png, id=425, 450.68375pt x 151.56625pt>
+File: Figures/inputBeam.png Graphic file (type png)
+<use Figures/inputBeam.png>
+Package pdftex.def Info: Figures/inputBeam.png  used on input line 36.
+(pdftex.def)             Requested size: 222.21722pt x 74.73296pt.
+<Figures/outputBeam.png, id=426, 274.02374pt x 151.56625pt>
+File: Figures/outputBeam.png Graphic file (type png)
+<use Figures/outputBeam.png>
+Package pdftex.def Info: Figures/outputBeam.png  used on input line 37.
+(pdftex.def)             Requested size: 222.21722pt x 122.91368pt.
+<Figures/spatialFilter.png, id=432, 521.95pt x 200.75pt>
+File: Figures/spatialFilter.png Graphic file (type png)
+<use Figures/spatialFilter.png>
+Package pdftex.def Info: Figures/spatialFilter.png  used on input line 48.
+(pdftex.def)             Requested size: 262.61642pt x 101.00575pt.
 1: section
-[6
+[5
 
 
 
-]
+ <./Figures/diodeLaser.jpg> <./Figures/diodeLaserControl.jpg>] [6 <./Figures/mi
+rror.jpg> <./Figures/inputBeam.png> <./Figures/outputBeam.png>]
+<Figures/iris.jpg, id=451, 758.835pt x 674.52pt>
+File: Figures/iris.jpg Graphic file (type jpg)
+<use Figures/iris.jpg>
+Package pdftex.def Info: Figures/iris.jpg  used on input line 60.
+(pdftex.def)             Requested size: 161.60916pt x 143.65009pt.
+<Figures/waist.png, id=452, 226.446pt x 125.268pt>
+File: Figures/waist.png Graphic file (type png)
+<use Figures/waist.png>
+Package pdftex.def Info: Figures/waist.png  used on input line 71.
+(pdftex.def)             Requested size: 202.01454pt x 111.75575pt.
+ [7 <./Figures/spatialFilter.png> <./Figures/iris.jpg>]
+<Figures/bbo.jpg, id=463, 3054.41125pt x 3035.34pt>
+File: Figures/bbo.jpg Graphic file (type jpg)
+<use Figures/bbo.jpg>
+Package pdftex.def Info: Figures/bbo.jpg  used on input line 97.
+(pdftex.def)             Requested size: 202.01454pt x 200.73137pt.
+ [8 <./Figures/waist.png> <./Figures/bbo.jpg>]
+Overfull \hbox (37.14093pt too wide) in paragraph at lines 115--117
+\T1/ppl/m/n/10.95 In or-der to be able to fil-ter cer-tain po-lar-i-sa-tion di-
+rec-tion we used a pair of Polarisers(WP25M-
+ []
+
+<Figures/spcm.png, id=470, 728.22063pt x 565.61313pt>
+File: Figures/spcm.png Graphic file (type png)
+<use Figures/spcm.png>
+Package pdftex.def Info: Figures/spcm.png  used on input line 133.
+(pdftex.def)             Requested size: 202.01454pt x 156.9034pt.
+
+Overfull \hbox (10.98106pt too wide) in paragraph at lines 138--141
+\T1/ppl/m/n/10.95 Both \T1/ppl/m/it/10.95 sig-nal \T1/ppl/m/n/10.95 and \T1/ppl
+/m/it/10.95 idler \T1/ppl/m/n/10.95 pulses from the re-spec-tive SPCM goes to t
+he same FPGA(ZestSC1).
+ []
+
+[9 <./Figures/spcm.png>]
+<Figures/foldingMirror.jpg, id=478, 447.6725pt x 602.25pt>
+File: Figures/foldingMirror.jpg Graphic file (type jpg)
+<use Figures/foldingMirror.jpg>
+Package pdftex.def Info: Figures/foldingMirror.jpg  used on input line 161.
+(pdftex.def)             Requested size: 242.4199pt x 326.1291pt.
+ [10 <./Figures/foldingMirror.jpg>]) [11]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex
+
+(./Chapters/Chapter4.tex
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2913,7 +3010,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 )
 1: section
-[7
+[12
 
 
 
@@ -2924,15 +3021,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Chapter 5.
 )
 1: section
-[8
+[13
 
 
 
-] (./main.bbl)
+] (./main.bbl
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 34.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-
 1: section
-[9
+[14
 
 
 ]
@@ -2942,30 +3042,36 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F596309135B9C695C1F0B37FAE7BE0E7;4440.
+(rerunfilecheck)             Checksum: 4C41D786DA1C85C421E39F3BB89D6D81;7099.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 28983 strings out of 492980
- 582309 string characters out of 6132509
- 630217 words of memory out of 5000000
- 32141 multiletter control sequences out of 15000+600000
- 594663 words of font info for 146 fonts, out of 8000000 for 9000
+ 29438 strings out of 492980
+ 591057 string characters out of 6132509
+ 656970 words of memory out of 5000000
+ 32518 multiletter control sequences out of 15000+600000
+ 604237 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,20n,73p,10373b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (21 pages, 152590 bytes).
+ 52i,20n,78p,10373b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw
+/palatino/uplri8a.pfb>
+Output written on main.pdf (27 pages, 5516138 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 500 compressed objects within 5 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 
