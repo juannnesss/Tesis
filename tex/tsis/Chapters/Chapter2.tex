@@ -35,11 +35,16 @@ taken like it appears on \cite{spatiocorrelations}
 %-----------------------------------
 
 \subsection{Mode Function}
+
+
 \begin{equation}
 \Phi(q_s,\Omega_s;q_i,\Omega_i) \propto E_p(q_p,\Delta_0) B_p(\Omega_p) \mathcal{C}_{spatial}(q_s) \mathcal{C}_{spatial}(q_i) 
  x \mathcal{F}_{frequency}(\Omega_s) \mathcal{F}_{frequency}(\Omega_i) sinc \left( \frac{\Delta_k \mathcal{L}}{2} \right)
 \end{equation}
 where $B_p(\omega^0_p+\Omega_p)$ and $E_p(q_p)$ are the frequency and transverse momentum distribution of the pump. $\mathcal{C}_{spatial}(q_n)$ spatial filtering. $\mathcal{F}_{frequency}(\Omega_n)$ frequency filter function.
+
+
+\subsection{SPDC}
 
 \subsection{Phase matching conditions}
 \begin{equation}
@@ -128,12 +133,7 @@ S(r_2) \propto |  \int d^2 r_1 T(r_1) \Phi (\frac{2 \pi}{\lambda f}r_1, \frac{2 
 
 For non-ideal forms of $\Phi (q_s,q_i)$ we have the relation between $\Phi (q) \rightarrow \Phi (r)$ for a 2F system, Hence: $\Phi(r)=\frac{1}{\sqrt{det(\Sigma)(2 \pi)^4}} e^{- \frac{1}{2} r^T \Sigma^{-1} r} e^{ibr}$ \\
 $\Sigma=$
-\begin{bmatrix}
-\sigma^2_{sx}       & Cov(x_s,y_s) & Cov(x_s,x_i) & Cov(x_s,y_i) \\
-Cov(y_s,x_s)     & \sigma^2_{sy} & Cov(y_s,x_i) & Cov(y_s,y_i) \\
-Cov(y_i,x_s) & Cov(x_i,y_s) &     \sigma^2_{iy}     &Cov(x_i,y_i) \\
-Cov(y_i,x_s)       & Cov(y_i,y_s) & Cov(y_i,x_i) & \sigma^2_{iy}
-\end{bmatrix}
+
 
 --------------------------------------------------
 \section{Fourier Optics}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.29)  10 APR 2018 01:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.29)  11 APR 2018 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2470,7 +2470,11 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux
 (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux)
-(./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux))
+(./Chapters/Chapter4.aux
+
+LaTeX Warning: Label `fig:localizationSq' multiply defined.
+
+) (./Chapters/Chapter5.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -2707,7 +2711,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 110.
-<Logo.png, id=199, 220.825pt x 261.97874pt>
+<Logo.png, id=212, 220.825pt x 261.97874pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
 Package pdftex.def Info: Logo.png  used on input line 133.
@@ -2812,7 +2816,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
-<Figures/pittman.png, id=368, 755.32187pt x 436.63126pt>
+<Figures/pittman.png, id=397, 755.32187pt x 436.63126pt>
 File: Figures/pittman.png Graphic file (type png)
 <use Figures/pittman.png>
 Package pdftex.def Info: Figures/pittman.png  used on input line 24.
@@ -2849,7 +2853,7 @@ OML/zplm/m/it/10.95 q[]\OT1/ppl/m/n/10.95 , \OT1/zplm/m/n/10.95
  []
 
 
-Overfull \hbox (64.68024pt too wide) detected at line 41
+Overfull \hbox (64.68024pt too wide) detected at line 43
 []\OT1/zplm/m/n/10.95 ^^H(\OML/zplm/m/it/10.95 q[]\OT1/ppl/m/n/10.95 , \OT1/zpl
 m/m/n/10.95 
 []\OT1/ppl/m/n/10.95 ; \OML/zplm/m/it/10.95 q[]\OT1/ppl/m/n/10.95 , \OT1/zplm/m
@@ -2866,7 +2870,7 @@ m/m/n/10.95 )\OMS/zplm/m/n/10.95 C[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 q
  []
 
 
-Overfull \hbox (48.92473pt too wide) in paragraph at lines 56--57
+Overfull \hbox (48.92473pt too wide) in paragraph at lines 61--62
 \T1/ppl/m/n/10.95 Taking into ac-count the Gaus-sian na-ture of the pump, that'
 s $\OML/zplm/m/it/10.95 E[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 q[]\OT1/pp
 l/m/n/10.95 , \OML/zplm/m/it/10.95 q[]\OT1/zplm/m/n/10.95 ) \OMS/zplm/m/n/10.95
@@ -2879,12 +2883,12 @@ l/m/n/10.95 , \OML/zplm/m/it/10.95 q[]\OT1/zplm/m/n/10.95 ) \OMS/zplm/m/n/10.95
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 [3]
-Overfull \hbox (8.04543pt too wide) in paragraph at lines 117--121
+Overfull \hbox (8.04543pt too wide) in paragraph at lines 122--126
 []\T1/ppl/m/n/10.95 Gathering all the pre-vi-ous re-sults we can ob-tain $\OT1/
 zplm/m/n/10.95 ^^H[](\OML/zplm/m/it/10.95 r[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/i
 t/10.95 r[]\OT1/zplm/m/n/10.95 ) = \OML/zplm/m/it/10.95 C[]T\OT1/zplm/m/n/10.95
@@ -2893,135 +2897,179 @@ T1/ppl/m/n/10.95 , []\OML/zplm/m/it/10.95 r[]\OT1/zplm/m/n/10.95 )$\T1/ppl/m/n/
 10.95 ,
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 \begin{bmatrix}
-                     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.136 \end{bmatrix}
-                   
-? 
 ) [4]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 Chapter 3.
-<Figures/diodeLaser.jpg, id=420, 706.64pt x 540.0175pt>
+<Figures/diodeLaser.jpg, id=450, 706.64pt x 540.0175pt>
 File: Figures/diodeLaser.jpg Graphic file (type jpg)
 <use Figures/diodeLaser.jpg>
 Package pdftex.def Info: Figures/diodeLaser.jpg  used on input line 17.
 (pdftex.def)             Requested size: 202.01454pt x 154.37627pt.
-<Figures/diodeLaserControl.jpg, id=421, 283.2984pt x 188.3838pt>
+<Figures/diodeLaserControl.jpg, id=451, 283.2984pt x 188.3838pt>
 File: Figures/diodeLaserControl.jpg Graphic file (type jpg)
 <use Figures/diodeLaserControl.jpg>
 Package pdftex.def Info: Figures/diodeLaserControl.jpg  used on input line 18.
 (pdftex.def)             Requested size: 202.01454pt x 134.33119pt.
-<Figures/mirror.jpg, id=424, 450.68375pt x 602.25pt>
+<Figures/mirror.jpg, id=454, 450.68375pt x 602.25pt>
 File: Figures/mirror.jpg Graphic file (type jpg)
 <use Figures/mirror.jpg>
-Package pdftex.def Info: Figures/mirror.jpg  used on input line 27.
-(pdftex.def)             Requested size: 242.4199pt x 323.95117pt.
+Package pdftex.def Info: Figures/mirror.jpg  used on input line 28.
+(pdftex.def)             Requested size: 181.81184pt x 242.9542pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/inputBeam.png, id=425, 450.68375pt x 151.56625pt>
+<Figures/inputBeam.png, id=455, 450.68375pt x 151.56625pt>
 File: Figures/inputBeam.png Graphic file (type png)
 <use Figures/inputBeam.png>
-Package pdftex.def Info: Figures/inputBeam.png  used on input line 36.
+Package pdftex.def Info: Figures/inputBeam.png  used on input line 37.
 (pdftex.def)             Requested size: 222.21722pt x 74.73296pt.
-<Figures/outputBeam.png, id=426, 274.02374pt x 151.56625pt>
+<Figures/outputBeam.png, id=456, 274.02374pt x 151.56625pt>
 File: Figures/outputBeam.png Graphic file (type png)
 <use Figures/outputBeam.png>
-Package pdftex.def Info: Figures/outputBeam.png  used on input line 37.
+Package pdftex.def Info: Figures/outputBeam.png  used on input line 38.
 (pdftex.def)             Requested size: 222.21722pt x 122.91368pt.
-<Figures/spatialFilter.png, id=432, 521.95pt x 200.75pt>
+<Figures/spatialFilter.png, id=462, 521.95pt x 200.75pt>
 File: Figures/spatialFilter.png Graphic file (type png)
 <use Figures/spatialFilter.png>
-Package pdftex.def Info: Figures/spatialFilter.png  used on input line 48.
+Package pdftex.def Info: Figures/spatialFilter.png  used on input line 49.
 (pdftex.def)             Requested size: 262.61642pt x 101.00575pt.
 1: section
 [5
 
 
 
- <./Figures/diodeLaser.jpg> <./Figures/diodeLaserControl.jpg>] [6 <./Figures/mi
-rror.jpg> <./Figures/inputBeam.png> <./Figures/outputBeam.png>]
-<Figures/iris.jpg, id=451, 758.835pt x 674.52pt>
+ <./Figures/diodeLaser.jpg> <./Figures/diodeLaserControl.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./Figures/mirror.jpg> <./Figures/inputBeam.png> <./Figures/outputBeam.png>]
+<Figures/iris.jpg, id=480, 758.835pt x 674.52pt>
 File: Figures/iris.jpg Graphic file (type jpg)
 <use Figures/iris.jpg>
-Package pdftex.def Info: Figures/iris.jpg  used on input line 60.
+Package pdftex.def Info: Figures/iris.jpg  used on input line 61.
 (pdftex.def)             Requested size: 161.60916pt x 143.65009pt.
-<Figures/waist.png, id=452, 226.446pt x 125.268pt>
+<Figures/waist.png, id=481, 226.446pt x 125.268pt>
 File: Figures/waist.png Graphic file (type png)
 <use Figures/waist.png>
-Package pdftex.def Info: Figures/waist.png  used on input line 71.
+Package pdftex.def Info: Figures/waist.png  used on input line 72.
 (pdftex.def)             Requested size: 202.01454pt x 111.75575pt.
- [7 <./Figures/spatialFilter.png> <./Figures/iris.jpg>]
-<Figures/bbo.jpg, id=463, 3054.41125pt x 3035.34pt>
+[7 <./Figures/spatialFilter.png> <./Figures/iris.jpg> <./Figures/waist.png>]
+<Figures/bbo.jpg, id=492, 3054.41125pt x 3035.34pt>
 File: Figures/bbo.jpg Graphic file (type jpg)
 <use Figures/bbo.jpg>
-Package pdftex.def Info: Figures/bbo.jpg  used on input line 97.
+Package pdftex.def Info: Figures/bbo.jpg  used on input line 98.
 (pdftex.def)             Requested size: 202.01454pt x 200.73137pt.
- [8 <./Figures/waist.png> <./Figures/bbo.jpg>]
-Overfull \hbox (37.14093pt too wide) in paragraph at lines 115--117
+
+Overfull \hbox (37.14093pt too wide) in paragraph at lines 116--118
 \T1/ppl/m/n/10.95 In or-der to be able to fil-ter cer-tain po-lar-i-sa-tion di-
 rec-tion we used a pair of Polarisers(WP25M-
  []
 
-<Figures/spcm.png, id=470, 728.22063pt x 565.61313pt>
+[8 <./Figures/bbo.jpg>]
+<Figures/spcm.png, id=499, 728.22063pt x 565.61313pt>
 File: Figures/spcm.png Graphic file (type png)
 <use Figures/spcm.png>
-Package pdftex.def Info: Figures/spcm.png  used on input line 133.
+Package pdftex.def Info: Figures/spcm.png  used on input line 134.
 (pdftex.def)             Requested size: 202.01454pt x 156.9034pt.
 
-Overfull \hbox (10.98106pt too wide) in paragraph at lines 138--141
+Overfull \hbox (10.98106pt too wide) in paragraph at lines 139--142
 \T1/ppl/m/n/10.95 Both \T1/ppl/m/it/10.95 sig-nal \T1/ppl/m/n/10.95 and \T1/ppl
 /m/it/10.95 idler \T1/ppl/m/n/10.95 pulses from the re-spec-tive SPCM goes to t
 he same FPGA(ZestSC1).
  []
 
 [9 <./Figures/spcm.png>]
-<Figures/foldingMirror.jpg, id=478, 447.6725pt x 602.25pt>
+<Figures/foldingMirror.jpg, id=507, 447.6725pt x 602.25pt>
 File: Figures/foldingMirror.jpg Graphic file (type jpg)
 <use Figures/foldingMirror.jpg>
-Package pdftex.def Info: Figures/foldingMirror.jpg  used on input line 161.
-(pdftex.def)             Requested size: 242.4199pt x 326.1291pt.
- [10 <./Figures/foldingMirror.jpg>]) [11]
+Package pdftex.def Info: Figures/foldingMirror.jpg  used on input line 162.
+(pdftex.def)             Requested size: 181.81184pt x 244.58994pt.
+) [10 <./Figures/foldingMirror.jpg>]
 \openout2 = `Chapters/Chapter4.aux'.
 
 
 (./Chapters/Chapter4.tex
 Chapter 4.
+<Figures/correlatedPhotonSpot1.png, id=512, 614.295pt x 505.89pt>
+File: Figures/correlatedPhotonSpot1.png Graphic file (type png)
+<use Figures/correlatedPhotonSpot1.png>
+Package pdftex.def Info: Figures/correlatedPhotonSpot1.png  used on input line 
+15.
+(pdftex.def)             Requested size: 181.81184pt x 149.73029pt.
+<Figures/correlatedPhotonSpot2.png, id=513, 614.295pt x 505.89pt>
+File: Figures/correlatedPhotonSpot2.png Graphic file (type png)
+<use Figures/correlatedPhotonSpot2.png>
+Package pdftex.def Info: Figures/correlatedPhotonSpot2.png  used on input line 
+16.
+(pdftex.def)             Requested size: 181.81184pt x 149.73029pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 17.
+(hyperref)                removing `math shift' on input line 28.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 17.
+(hyperref)                removing `subscript' on input line 28.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 17.
+(hyperref)                removing `math shift' on input line 28.
+
+<Figures/localizationSq.png, id=514, 614.295pt x 505.89pt>
+File: Figures/localizationSq.png Graphic file (type png)
+<use Figures/localizationSq.png>
+Package pdftex.def Info: Figures/localizationSq.png  used on input line 34.
+(pdftex.def)             Requested size: 242.4199pt x 199.64294pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/localizationL1.png, id=515, 614.295pt x 505.89pt>
+File: Figures/localizationL1.png Graphic file (type png)
+<use Figures/localizationL1.png>
+Package pdftex.def Info: Figures/localizationL1.png  used on input line 43.
+(pdftex.def)             Requested size: 181.81184pt x 149.73029pt.
+<Figures/localizationL2.png, id=516, 614.295pt x 505.89pt>
+File: Figures/localizationL2.png Graphic file (type png)
+<use Figures/localizationL2.png>
+Package pdftex.def Info: Figures/localizationL2.png  used on input line 44.
+(pdftex.def)             Requested size: 181.81184pt x 149.73029pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/localizationLLong.png, id=517, 614.295pt x 505.89pt>
+File: Figures/localizationLLong.png Graphic file (type png)
+<use Figures/localizationLLong.png>
+Package pdftex.def Info: Figures/localizationLLong.png  used on input line 51.
+(pdftex.def)             Requested size: 242.4199pt x 199.64294pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/two-photonImageSq.png, id=518, 614.295pt x 505.89pt>
+File: Figures/two-photonImageSq.png Graphic file (type png)
+<use Figures/two-photonImageSq.png>
+Package pdftex.def Info: Figures/two-photonImageSq.png  used on input line 63.
+(pdftex.def)             Requested size: 242.4199pt x 199.64294pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 1: section
-[12
+[11
 
 
 
-]
+ <./Figures/correlatedPhotonSpot1.png> <./Figures/correlatedPhotonSpot2.png>] [
+12 <./Figures/localizationSq.png> <./Figures/localizationL1.png> <./Figures/loc
+alizationL2.png> <./Figures/localizationLLong.png>] [13 <./Figures/two-photonIm
+ageSq.png>]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
 Chapter 5.
 )
 1: section
-[13
+[14
 
 
 
@@ -3032,7 +3080,7 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
 1: section
-[14
+[15
 
 
 ]
@@ -3042,17 +3090,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4C41D786DA1C85C421E39F3BB89D6D81;7099.
+(rerunfilecheck)             Checksum: A2DFBC138521FD47A3CE45DBA4E5BE82;7334.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29438 strings out of 492980
- 591057 string characters out of 6132509
- 656970 words of memory out of 5000000
- 32518 multiletter control sequences out of 15000+600000
+ 29489 strings out of 492980
+ 592394 string characters out of 6132509
+ 657570 words of memory out of 5000000
+ 32553 multiletter control sequences out of 15000+600000
  604237 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,20n,78p,10373b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3068,10 +3116,10 @@ mf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2017/texmf
 onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 5516138 bytes).
+Output written on main.pdf (28 pages, 5673037 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
- 500 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
- 450 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 509 words of extra memory for PDF output out of 10000 (max. 10000000)
 

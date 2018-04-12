@@ -39,10 +39,10 @@ Thorlabs, inc.
 \newblock \url{https://www.thorlabs.com/index.cfm}.
 \newblock Accessed: 2018-03-09.
 
-\bibitem{simulated}
-M.~{D'Angelo} and Y.~{Shih}.
-\newblock {Can quantum imaging be classically simulated?}
-\newblock {\em eprint arXiv:quant-ph/0302146}, February 2003.
+\bibitem{physicsGhost}
+Jeffrey~H. Shapiro and Robert~W. Boyd.
+\newblock The physics of ghost imaging.
+\newblock {\em Quantum Information Processing}, 11(4):949--993, Aug 2012.
 
 \bibitem{thermal}
 A.~Gatti, E.~Brambilla, M.~Bache, and L.~A. Lugiato.
@@ -60,10 +60,10 @@ W.~Martienssen and E.~Spiller.
 \newblock Coherence and fluctuations in light beams.
 \newblock {\em American Journal of Physics}, 32(12):919--926, 1964.
 
-\bibitem{physicsGhost}
-Jeffrey~H. Shapiro and Robert~W. Boyd.
-\newblock The physics of ghost imaging.
-\newblock {\em Quantum Information Processing}, 11(4):949--993, Aug 2012.
+\bibitem{simulated}
+M.~{D'Angelo} and Y.~{Shih}.
+\newblock {Can quantum imaging be classically simulated?}
+\newblock {\em eprint arXiv:quant-ph/0302146}, February 2003.
 
 \bibitem{opticalComunications}
 J.~H. Shapiro.
