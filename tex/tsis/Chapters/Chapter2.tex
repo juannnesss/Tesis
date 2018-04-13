@@ -5,7 +5,10 @@
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 
-\section{Quantum Imaging}
+
+ \section{Imaging}
+
+\section{Two-photon Imaging}
 
 
 %----------------------------------------------------------------------------------------
@@ -45,6 +48,7 @@ where $B_p(\omega^0_p+\Omega_p)$ and $E_p(q_p)$ are the frequency and transverse
 
 
 \subsection{SPDC}
+\cite{spatiocorrelations}
 
 \subsection{Phase matching conditions}
 \begin{equation}
@@ -57,6 +61,8 @@ where $B_p(\omega^0_p+\Omega_p)$ and $E_p(q_p)$ are the frequency and transverse
 where $k_n=[(\omega^0_n n_n / c )^2 - |q_n|^2]^{\frac{1}{2}}$ is the longitudinal wavevector inside the crystal. $\varphi_s$ and $\varphi_i$ are the propagation directions of the generated photons inside the crystal with respect to the pump direction $z$ and $\alpha$ is the azimuthal angle.
 
 \subsection{Gaussian approximations}
+
+\cite{spatiocorrelations}
 
 Taking into account the Gaussian nature of the pump, that's $E_p(q^x_p , q^y_p ) \approx exp \left[ -\frac{w_p^2}{4}(q^{x^2}_p + q^{y^2}_p )\right]$.
 
@@ -83,6 +89,8 @@ calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\
 
 
 \subsection{Fresnel Propagator}
+
+
 Fresnel Propagator: $h(r,z)=(- \frac{i}{\lambda z})e^{(i \frac{2 \pi z}{\lambda})} \Psi (r,z)$ 
 with $\Psi(r,z) = e^{(i \frac{\pi}{\lambda z })r^2}$. Thin-lens transfer function $L_f (r)=\Psi(r,-f)$
  \\
@@ -90,7 +98,7 @@ with $\Psi(r,z) = e^{(i \frac{\pi}{\lambda z })r^2}$. Thin-lens transfer functio
 G= \int d^2 r_1 \int d^2 r_0 h(r_f - r_1,f) L_f(r_1) h(r_1 - r_0,f)
 \end{equation}
 
-The propagation is done by determining the Green function of the optical path
+The propagation is done by determining the Green function\cite{green} of the optical path
 by which the beam will travel. The biphoton function
 in terms of transverse momenta $\Phi_1 (q_s , q_i )$ after traveling
 through two arbitrary optical paths can be expressed
@@ -138,6 +146,7 @@ $\Sigma=$
 --------------------------------------------------
 \section{Fourier Optics}
 \section{Spatial Correlations}
+\cite{omar} whenever i talk of spatial correlations and the especific case
 
 \section{Measurement}
 Paper about stadistics of the messuarement\cite{opticalComunications} 

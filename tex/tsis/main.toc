@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Mode Function}{2}{subsection.26}
 \contentsline {subsection}{\numberline {2.2.3}SPDC}{2}{subsection.28}
 \contentsline {subsection}{\numberline {2.2.4}Phase matching conditions}{2}{subsection.29}
-\contentsline {subsection}{\numberline {2.2.5}Gaussian approximations}{2}{subsection.32}
+\contentsline {subsection}{\numberline {2.2.5}Gaussian approximations}{3}{subsection.32}
 \contentsline {subsection}{\numberline {2.2.6}Fresnel Propagator}{3}{subsection.37}
 \contentsline {section}{\numberline {2.3}Fourier Optics}{4}{section.45}
 \contentsline {section}{\numberline {2.4}Spatial Correlations}{4}{section.46}
