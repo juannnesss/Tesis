@@ -44,6 +44,11 @@ Jeffrey~H. Shapiro and Robert~W. Boyd.
 \newblock The physics of ghost imaging.
 \newblock {\em Quantum Information Processing}, 11(4):949--993, Aug 2012.
 
+\bibitem{hecht}
+E.~Hecht.
+\newblock {\em Optics}.
+\newblock Pearson education. Addison-Wesley, 2016.
+
 \bibitem{thermal}
 A.~Gatti, E.~Brambilla, M.~Bache, and L.~A. Lugiato.
 \newblock Ghost imaging with thermal light: Comparing entanglement and
@@ -70,11 +75,6 @@ J.~H. Shapiro.
 \newblock The quantum theory of optical communications.
 \newblock {\em IEEE Journal of Selected Topics in Quantum Electronics},
   15(6):1547--1569, Nov 2009.
-
-\bibitem{hecht}
-E.~Hecht.
-\newblock {\em Optics}.
-\newblock Pearson education. Addison-Wesley, 2016.
 
 \bibitem{spcm}
 PerkinElmer.

@@ -1,21 +1,22 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Cartoon schematic of the experimental setup used by Pittman, Taken from \cite {pittman}\relax }}{1}{figure.caption.18}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Optical imaging: a lens produces an image on an object at $f+d$. This distance is defined by the Gaussian thin-lens equation $\frac {1}{l}+\frac {1}{f+d}=\frac {1}{f}$\relax }}{2}{figure.caption.17}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Schematic of the first "two-photon imaging" experimental setup, used by Pittman\cite {pittman}\relax }}{3}{figure.caption.21}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Image of the Diode Laser and it's control module, Taken from \cite {crystalLaser}\relax }}{5}{figure.caption.51}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Mirror and the cavity mount\relax }}{6}{figure.caption.53}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The spatial intensity profile before and after the spatial filtering process , Taken from \cite {thorlabs}\relax }}{6}{figure.caption.55}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Basic elements of a Spatial Filter. In our experiment we use a Aspheric Lens of $f=30 mm$(LA1805-A), a pinhole of $50 \mu m$ and a collimating lens of $f=60 mm$(LA1134-A). Taken from \cite {thorlabs}\relax }}{7}{figure.caption.56}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces This helps to form circular apertures of variable radius\relax }}{7}{figure.caption.57}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Lens' effect on a Gaussian beam\relax }}{7}{figure.caption.59}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Actual BBO crystal used in experiment\relax }}{8}{figure.caption.62}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Single Photon Counting Module\relax }}{9}{figure.caption.69}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Foldind Mirror, it is in the position for measuring the correlations\relax }}{10}{figure.caption.75}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image of the Diode Laser and it's control module, Taken from \cite {crystalLaser}\relax }}{8}{figure.caption.56}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Mirror and the cavity mount\relax }}{9}{figure.caption.58}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The spatial intensity profile before and after the spatial filtering process , Taken from \cite {thorlabs}\relax }}{9}{figure.caption.60}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Basic elements of a Spatial Filter. In our experiment we use a Aspheric Lens of $f=30 mm$(LA1805-A), a pinhole of $50 \mu m$ and a collimating lens of $f=60 mm$(LA1134-A). Taken from \cite {thorlabs}\relax }}{10}{figure.caption.61}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces This helps to form circular apertures of variable radius\relax }}{10}{figure.caption.62}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Lens' effect on a Gaussian beam\relax }}{10}{figure.caption.64}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Actual BBO crystal used in experiment\relax }}{11}{figure.caption.67}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Single Photon Counting Module\relax }}{12}{figure.caption.74}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Foldind Mirror, it is in the position for measuring the correlations\relax }}{13}{figure.caption.80}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces We are moving the translational translational stage, to locate the spot where the correlated photon are, for this try me moved the $y$ direction\relax }}{11}{figure.caption.79}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Localization of the mask with an square\relax }}{12}{figure.caption.83}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Moving the L Mask in order to put it in the most central spot\relax }}{12}{figure.caption.84}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Long exposure of the definitive localization of the mask, in this try we leave the detector in each place for 30 seconds, we also make the steps of the detector smaller, $0.1mm$\relax }}{12}{figure.caption.85}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Localization of the mask with an square\relax }}{13}{figure.caption.88}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces We are moving the translational translational stage, to locate the spot where the correlated photon are, for this try me moved the $y$ direction\relax }}{14}{figure.caption.84}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Localization of the mask with an square\relax }}{15}{figure.caption.88}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Moving the L Mask in order to put it in the most central spot\relax }}{15}{figure.caption.89}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Long exposure of the definitive localization of the mask, in this try we leave the detector in each place for 30 seconds, we also make the steps of the detector smaller, $0.1mm$\relax }}{15}{figure.caption.90}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Localization of the mask with an square\relax }}{16}{figure.caption.93}
 \addvspace {10\p@ }
