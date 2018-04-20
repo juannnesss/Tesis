@@ -1,31 +1,91 @@
 % Chapter Template
 
-\chapter{Theoretical Discussion} % Main chapter title
+\chapter{Theory} % Main chapter title
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 
 
- \section{Imaging}
+\section{Correlations between two photons}
 
-\section{Two-photon Imaging}
+\subsection{SPDC}
 
+\cite{spatiocorrelations}
+
+\subsubsection{Phase matching conditions}
+\begin{equation}
+\Delta_0 = q^y_s cos \varphi_s + q^y_i cos \varphi_i + k_s sin \varphi_s - k_i sin \varphi_i ;
+\end{equation}
+\begin{equation}
+\Delta_k = k_p - k_s cos \varphi_s - k_i cos \varphi_i - q^y_s sin \varphi_s + q^y_i sin \varphi_i 
++ (q^x_s + q^x_i ) tan \rho_0 cos \alpha + \Delta_0 tan \rho_0 sin \alpha 
+\end{equation}
+where $k_n=[(\omega^0_n n_n / c )^2 - |q_n|^2]^{\frac{1}{2}}$ is the longitudinal wavevector inside the crystal. $\varphi_s$ and $\varphi_i$ are the propagation directions of the generated photons inside the crystal with respect to the pump direction $z$ and $\alpha$ is the azimuthal angle.
+
+\subsection{Spatial Correlations}
+
+
+\subsection{Tunable Spatial Correlation SPDC source light}
+
+\section{Imaging}
+
+\subsection{Standar Imaging}
+
+The observed image is a reproduction of the illuminated object, mathematically
+corresponding to a convolution between the object distribution fuction $ |T(\vec{\rho_o})|^2$ (aperture function) and a $\delta$-function, which is present for the perfect
+point-to-point correspondence\cite{introquantumoptics}:
+\begin{equation}
+I(\vec{\rho_i})=\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 \delta(\vec{\rho_o}+\frac{\vec{\rho_i}}{m})
+\end{equation}
+where $I(\vec{\rho_i})$ is the intensity at the image plane, $\vec{\rho_o}$ and $\vec{\rho_i}$ are 2-D vectors of the
+transverse coordinates in the object and image planes, respectively, and
+$m=s_i/s_o$ is the image magnification factor.
+
+In reality, we are limited by the finite size of the optical system, we may never obtain a perfect image.
+we have to take into account the constructive-destructive interference present
+in this phenomena, because of the wave nature of light. The point-to-point correspondence turns into a point-to-"spot" relationship.
+For further informations about this "real life" situation check the \ref{appendix:intensity}.
+
+
+
+\subsection{Two-photon Imaging}
+
+
+The optical imaging used the photons at the image plane, to form the image. In other 
+words it takes measure one photon per spot at the image plane. For the type-one and type-two
+two-photon imaging, in certain aspects the behaviour is similar as that of the classical.
+They both exhibit a similar point-to-point imaging-forming function, except the 
+two-photon image is only reproducible in the joint-detection between two independent photodetectors,
+and the point-to-point imaging-forming function is in the form of second-order correlation,
+\begin{equation}
+R_{12}(\vec{\rho_i})=\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 G^{(2)}(\vec{\rho_o},\vec{\rho_i})
+\end{equation}
+where $R_{12}(\vec{\rho_i})$ is the joint-detection counting rate between photodetectors $D_1$ and $D_2$.
+$G^{(2)}(\vec{\rho_o},\vec{\rho_i})$ is a nontrivial point-to-point second-order correlation
+function, corresponding to the probability of observing a joint photo-detection event
+at the coordinates $\vec{\rho_o}$ and $\vec{\rho_i}$. The physics behing $G^{(2)}(\vec{\rho_o},\vec{\rho_i})$
+is what changes between type-one and type-two two-photon imaging.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
+\subsubsection{Two-photon Imaging using entangled photon}
 
-\section{Light Source}
+\textit{Light Source}
 
 main source of information \cite{physicsGhost}
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
-\subsection{Biphoton}
+\textit{Biphoton}
+
+
+
+
 
 \begin{equation}
 \ket{\Psi}=\int dq_s dq_i d\Omega_s d\Omega_i 
-x [\Phi(q_s,\Omega_s;q_i,\Omega_i) \hat{a}^{\dagger} (\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i) \\
+\text{x} [\Phi(q_s,\Omega_s;q_i,\Omega_i) \hat{a}^{\dagger} (\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i) \\
 + \Phi(q_i,\Omega_i;q_s,\Omega_s) \hat{a}^{\dagger}(\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i)]   \ket{0}  
 \end{equation}
 
@@ -37,7 +97,7 @@ taken like it appears on \cite{spatiocorrelations}
 %	SUBSECTION 2
 %-----------------------------------
 
-\subsection{Mode Function}
+\textit{Mode Function}
 
 
 \begin{equation}
@@ -47,20 +107,8 @@ taken like it appears on \cite{spatiocorrelations}
 where $B_p(\omega^0_p+\Omega_p)$ and $E_p(q_p)$ are the frequency and transverse momentum distribution of the pump. $\mathcal{C}_{spatial}(q_n)$ spatial filtering. $\mathcal{F}_{frequency}(\Omega_n)$ frequency filter function.
 
 
-\subsection{SPDC}
-\cite{spatiocorrelations}
 
-\subsection{Phase matching conditions}
-\begin{equation}
-\Delta_0 = q^y_s cos \varphi_s + q^y_i cos \varphi_i + k_s sin \varphi_s - k_i sin \varphi_i ;
-\end{equation}
-\begin{equation}
-\Delta_k = k_p - k_s cos \varphi_s - k_i cos \varphi_i - q^y_s sin \varphi_s + q^y_i sin \varphi_i 
-+ (q^x_s + q^x_i ) tan \rho_0 cos \alpha + \Delta_0 tan \rho_0 sin \alpha 
-\end{equation}
-where $k_n=[(\omega^0_n n_n / c )^2 - |q_n|^2]^{\frac{1}{2}}$ is the longitudinal wavevector inside the crystal. $\varphi_s$ and $\varphi_i$ are the propagation directions of the generated photons inside the crystal with respect to the pump direction $z$ and $\alpha$ is the azimuthal angle.
-
-\subsection{Gaussian approximations}
+\textit{Gaussian approximations}
 
 \cite{spatiocorrelations}
 
@@ -88,7 +136,7 @@ K^\lambda = \frac{C^\lambda_{si}}{\sqrt{C^\lambda_{ss}C^\lambda_{ii}}}
 calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\lambda$ with elements $C^\lambda_{kj} = \langle q^\lambda_k q^\lambda_j \rangle - \langle q^\lambda_k \rangle \langle q^\lambda_j \rangle $.
 
 
-\subsection{Fresnel Propagator}
+\textit{Fresnel Propagator}
 
 
 Fresnel Propagator: $h(r,z)=(- \frac{i}{\lambda z})e^{(i \frac{2 \pi z}{\lambda})} \Psi (r,z)$ 
@@ -144,9 +192,4 @@ $\Sigma=$
 
 
 --------------------------------------------------
-\section{Fourier Optics}
-\section{Spatial Correlations}
-\cite{omar} whenever i talk of spatial correlations and the especific case
-
-\section{Measurement}
-Paper about stadistics of the messuarement\cite{opticalComunications} 
+\subsubsection{Two-photon Imaging Using Chaotic Sources}
