@@ -57,19 +57,20 @@ system are we using, what kind on lenses are involved and the distance between o
 %	SUBSECTION 1
 %-----------------------------------
 \section{Two-Photon Imaging}
+Two-photon imaging consist after all, in reconstructing an image of an object. But in this case we use two dectector located in diferents paths of the light. By using the dectections of them separately we get a constant signal, with no information about the object, Figure \ref{fig:twoPhotonSetup}. But if instead we use the signal of them both, counting conincidences, we can reconstruct the double slit in Figure \ref{fig:twoPhotonSetup}. \\
 
-describing the two-photon imaging procces, not caring about the nature of the source light
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/twoPhotonSetup.png}
 \caption{Simple schematic for the Two-photon Imaging} 
 \label{fig:twoPhotonSetup}
 \end{figure}
-
+In order to reconstruct the image of the double slit, we have to introduce some kind of spatial dependence, the object, in this case the double slit, is distributed along a transverse direction of the light propagation. But what we have learnt is that scanning along the x-direction (asuming that light propagates along the z-direction), in the path that have no interaction with the object $D_2$, and colecting all the light that interacts with the object $D_1$, gathering no spatial information. We reconstruct the double slit in the coincidences counts, every time we have a photon detected going througt the double slit, and a photon at a certaint position $x_i$, we graph coincidences vs ${ x_i }$ and we get the image of the double slit, Figure \ref{fig:twoPhotonSetup}. 
 
 \subsection{Two-Photon Imaging using entangled photon pairs}
 
-
+In the previous section we introduced the notion of two-photon imaging , but we didn't care much about the nature of the source light. For this case we will use entangled photon as the source light, we will separate the pair of entangled photons by means of a polarization beamspliter. The first type-one two-photon imaging experiment was demonstrated by Pittman in 1995\cite{pittman}. The schematic setup of the experiment is shown in the Figure \ref{fig:pittman}. \\ 
 
 \begin{figure}[h]
 \centering
@@ -77,11 +78,8 @@ describing the two-photon imaging procces, not caring about the nature of the so
 \caption{Schematic of the first "two-photon imaging" experimental setup, used by Pittman\cite{pittman}} 
 \label{fig:pittman}
 \end{figure}
-The first type-one two-photon imaging experiment was demonstrated by Pittman
-in 1995\cite{pittman}. The schematic setup of the experiment is shown in the 
-Figure \ref{fig:pittman}. A continuous wave (CW) laser is used to pump a nonlinear 
-crystal to produce pairs of entangled photons. 
-This pairs of orthogonally polarized signal and idler photons are the product
+A continuous wave (CW) laser is used to pump a nonlinear 
+crystal to produce pairs of entangled photons. This pairs of orthogonally polarized signal and idler photons are the product
 of the nonlinear optical process of spontaneous parametric down-conversion (SPDC).
 The pair emerges from the crystal collinearly\footnote{The pairs emerge from the crystal nearly 
 collinearly, with $\omega_s \simeq \omega_i \simeq \omega_p / 2$. where the subscript
@@ -98,7 +96,7 @@ wavelength $702.2 nm$.
 Behind the aperture is the detector package $D_1$. \\
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.3\textwidth]{Figures/signal.png}
+\includegraphics[width=0.24\textwidth]{Figures/signal.png}
 \caption{The reflected photon, called signal} 
 \label{fig:signal}
 \end{figure}
@@ -118,6 +116,12 @@ An important fact of this experiment is the use of a lens(collection lens) in th
 \subsection{Two-photon Imaging Using Thermal Sources}
 
 In \cite{thermal} they compared ghost Imaging using entanglement versus Classical correlated light. read and information in \cite{thermalAlejandra}. here i talk about coherence and intensity fluctuations \cite{intensity}
+
+It is possible to establish an analogy
+between classical optics and entangled two-photon optics:
+the two-photon probability amplitude plays in entangled
+two-photon processes the same role that the complex amplitude
+of the electric field plays in classical optics  \cite{thermalAlejandra}.
 
 \subsection{Simulations}
 
