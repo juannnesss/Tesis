@@ -4,26 +4,127 @@
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-
+In Here we will discus some important facts to get a complete understanding 
+in the physical phenomena that is happening. Specially we will develop the 
+notions that are crucial in the understanding of the Two-photon imaging using entangled light, been this said 
+we will start talking about correlations.
 
 \section{Correlations between two photons}
 
+The term "correlation" is crucial at this point, and it refers to the relation of two or more situations have. For example 
+we can establish a correlations between the US dolar currency exchange rate and the prices of technology in one country. These two things have direct relation, if one blows up, the other one will too.
+These two situations, or variables, can have a strong correlations or a week one. \\
+
+Indeed in quantum physics we can have a pair of photons that are so strongly correlated, in their possible variables (spatial and temporal),
+that we say they are entangled. This statment can leads us 
+to a dense discussion about the nature of this entanglement, 
+a discussion that were started between Einstein and Bohr in the first years of quantum physics \cite{einstein}.\\
+
+To avoid this discussion we will just talk about correlations, 
+and when referring about a pair of correlated photons, we will mean that 
+this pair of photons are correlated in one or varius of their variables. 
+They can be correlated in momentum, meaning that when one photon have a given $\vec{q}_i$ momentum 
+and the other photon have a $\vec{q}_j$ momentum that is determined by the first, this relations is the momentum correlations a we can work out an expression for this relationship.
 \subsection{SPDC}
 
-\cite{spatiocorrelations}
+As the title of this work implies, we need a source light that produces pair of photons, 
+and we would like to exploit the advantages of strong correlations between them.
+The photons generated via spontaneous parametric down conversion (SPDC) are
+widely used in quantum optics experiments. The popularity of this source of paired
+photons is strongly related to the relative simplicity of its experimental
+realisation, and to the variety of quantum features that down converted photons can exhibit. 
+The generated photons via SPDC can be correlated in different degrees of freedom, for example 
+in polarisation, in frequency and in the equivalent degrees of freedom: 
+'orbital angular momentum, space and transverse momentum \cite{spatiocorrelations}.\\
+
+SPDC is an optical process in which focus a beam pump, that is 
+propagating in the $z$-direction, to a nonlinear crystal of length $L$. Using first order perturbation 
+and the paraxial approximation, the two-photon state is given by:
+\begin{equation}
+\label{eq:stateFunComplex}
+\ket{\Psi}=\int dq_B dq_A d\Omega_B d\Omega_A 
+\text{x} [\Phi(q_B,\Omega_B;q_A,\Omega_A) \hat{a}^{\dagger} (\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A) \\
++ \Phi(q_A,\Omega_A;q_B,\Omega_B) \hat{a}^{\dagger}(\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A)]   \ket{0}  
+\end{equation}
+Where this state function depends on the transverse wave vectors $q_n=(q_n^x,q_n^y)$ and frequency detuning, $\Omega_n=\omega_n-\omega_0^n$, 
+around the central frequencies, $\omega_0^n$, for the photon at the path $A$ or $B$ ($n=A,B$).
+The $\Phi(q_B,\Omega_B;q_A,\Omega_A)$ and $\Phi(q_A,\Omega_A;q_B,\Omega_B)$
+are the mode functions or biphotons that contains all the informations about the correlations
+between the pair of down-converted photons. The operator $\hat{a}^{\dagger}$ indicates the creations of an $n$-polarized photon with transverse momentum $q_n$, 
+and frequency detuning $\Omega_n$ \cite{physicsGhost}. \\
+
+In the optical table we put a polariser at certain directions at the detections modules,
+filtering some of the photons before reaching the detector, this filtering also have a mathematical effect in our model, 
+it is posible now to write \ref{eq:stateFunComplex} different, dropping one term:
+\begin{equation}
+\label{eq:stateFun}
+\ket{\Psi}=\int dq_B dq_A d\Omega_B d\Omega_A 
+\text{x} [\Phi(q_B,\Omega_B;q_A,\Omega_A) \hat{a}^{\dagger} (\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A) 
+] \ket{0}  
+\end{equation}
+
+The mode function  $\Phi(q_B,\Omega_B;q_A,\Omega_A)$ is related with the joint probability of detecting both an $B$-polarized
+photon, with tranverse momentum $q_B$ and frequency detuning $\Omega_B$, at the detector $B$ 
+and an $A$-polarized
+photon, with tranverse momentum $q_A$ and frequency detuning $\Omega_A$, at the detector $A$. 
 
 \subsubsection{Phase matching conditions}
+In particular, $\Phi(q_B,\Omega_B;q_A,\Omega_A)$ reads \cite{spatiocorrelations}:
 \begin{equation}
-\Delta_0 = q^y_s cos \varphi_s + q^y_i cos \varphi_i + k_s sin \varphi_s - k_i sin \varphi_i ;
+\label{eq:mode}
+\Phi(q_B,\Omega_B;q_A,\Omega_A) = \mathcal{N} \alpha(\Delta_0,\Delta_1) \beta(\Omega_B,\Omega_A) \text{ x }
+sinc \left( \frac{\Delta_k L}{2} \right) e^{i \frac{\Delta_k L}{2}}
+\end{equation}
+Where $\mathcal{N}$ is a normalisation constant, $\alpha(\Delta_0,\Delta_1)$
+and $\beta(\Omega_B,\Omega_A)$yields the informations of the pump's transverse 
+and spectral distribution, respectively, L is the length of the nonlinear crystal.
+For the process that is happening inside the crystal, there are some conditions that have to be fulfilled. These conditions are related with the energy and momentum conservations inside the parametric down conversion process.
+The terms $\Delta_0$, $\Delta_1$ and $\Delta_k$ are functions that result from the phase matching conditions and read:
+\begin{equation}
+\Delta_0=q_B^x + q_A^x
 \end{equation}
 \begin{equation}
-\Delta_k = k_p - k_s cos \varphi_s - k_i cos \varphi_i - q^y_s sin \varphi_s + q^y_i sin \varphi_i 
-+ (q^x_s + q^x_i ) tan \rho_0 cos \alpha + \Delta_0 tan \rho_0 sin \alpha 
+\Delta_1= q_A^y cos\phi_A + q_B^y cos\phi_B - N_B \Omega_B sin\phi_B + N_A \Omega_A sin\phi_A - \rho_B q_B^x sin\phi_B 
 \end{equation}
-where $k_n=[(\omega^0_n n_n / c )^2 - |q_n|^2]^{\frac{1}{2}}$ is the longitudinal wavevector inside the crystal. $\varphi_s$ and $\varphi_i$ are the propagation directions of the generated photons inside the crystal with respect to the pump direction $z$ and $\alpha$ is the azimuthal angle.
+\begin{equation}
+\Delta_k=N_p(\Omega_B+\Omega_A)-N_B\Omega_B cos\phi_B - N_A\Omega_A cos\phi_A -q_B^y sin\Omega_B + q_A^y sin\Omega_A + \rho_p \Delta_0 - \rho_B q_B^x cos\phi_B
+\end{equation}
+The angles $\phi_B$ and $\phi_A$ are the creation angles of the down-
+converted photons inside the crystal with respect to the pump’s
+propagation direction, whereas the angles $\rho_p$ and $\rho_B$ account for
+the walk-off of the pump $p$ and the $B$ down-
+converted photon, respectively. 
+In this study, $\phi_B$ and $\phi_A$ are treated as constants, 
+mainly because the scanned transverse momentum regions represent a small portion around
+the emission angles. $N_n$ denotes the inverse of the group velocity for each photon.
+
+
 
 \subsection{Spatial Correlations}
 
+In order to observe the correlations presented in \ref{eq:mode} we have to take into account some considerations about the descrption of the things we have in optical table.
+First of all we have a pump beam with a Gaussian profile with waist $w_p$ 
+in such way that $\alpha (\Delta_0,\Delta_1 ) \propto \text{exp}[-w_p^2 (\Delta_0^2 + \Delta_1^2 )/4]$, a CW pump laser, mathematically represented by
+$\beta (\Omega_B , \Omega_A) \propto \delta(\Omega_B + \Omega_A)$. Making the aproximations for the sinc function by a Gaussian fuctions with the same width at $1/e^2$ of its maximum,
+i.e., $sinc(x) \approx \text{exp}(-\gamma x^2)$ with $\gamma$ equal $0.193$.
+The mode function reduces to:
+
+\begin{equation}
+\label{eq:modeSim}
+\Phi(q_B,\Omega_B;q_A,\Omega_A) = \mathcal{N} \beta (\Omega_B , \Omega_A)
+\text{ x exp}\left[ -\frac{w_p^2 (\Delta_0^2 + \Delta_1^2 )}{4}-\gamma \left(\frac{\Delta_k L}{2} \right)^2 + i\frac{\Delta_k L}{2} \right]  
+\end{equation}
+
+In order to observe the transverse correlations (spatial correlations), the 
+frequency information has to be traced out, in the optical table this can
+be achieved by placing some interferometer filters before detection. This spectral
+filters are modeled as $f_n (\Omega_n)=\text{exp}[-\Omega_n^2/(4\sigma_n^2)]$, with bandwidth $\sigma_n$ chosen to achive a regimen where the 
+spatial-spectral correlations are completely broken \cite{broke}. 
+To achieve this mathematically we have to integrate \ref{eq:modeSim} around the
+spatial variables:
+\begin{equation}
+\tilde{\Phi}(q_B,q_A) = \int d\Omega_B d\Omega_A f_B(\Omega_B)f_A(\Omega_A) \Phi(q_B,\Omega_B;q_A,\Omega_A)
+\end{equation}
 
 \subsection{Tunable Spatial Correlation SPDC source light}
 
