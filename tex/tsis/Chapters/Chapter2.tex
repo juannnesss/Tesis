@@ -37,6 +37,14 @@ The generated photons via SPDC can be correlated in different degrees of freedom
 in polarisation, in frequency and in the equivalent degrees of freedom: 
 'orbital angular momentum, space and transverse momentum \cite{spatiocorrelations}.\\
 
+\begin{figure}[h!]
+\centering
+\label{fig:spdcSimple}
+ \includegraphics[width=0.65\textwidth]{Figures/spdcSimple.png}
+ \caption{Simple Experimental setup for the SPDC process} 
+\end{figure}
+
+
 SPDC is an optical process in which focus a beam pump, that is 
 propagating in the $z$-direction, to a nonlinear crystal of length $L$. Using first order perturbation 
 and the paraxial approximation, the two-photon state is given by:
@@ -123,18 +131,84 @@ spatial-spectral correlations are completely broken \cite{broke}.
 To achieve this mathematically we have to integrate \ref{eq:modeSim} around the
 spatial variables:
 \begin{equation}
+\label{eq:modeSpa}
 \tilde{\Phi}(q_B,q_A) = \int d\Omega_B d\Omega_A f_B(\Omega_B)f_A(\Omega_A) \Phi(q_B,\Omega_B;q_A,\Omega_A)
 \end{equation}
 
+\begin{figure}[h!]
+\centering
+{  \includegraphics[width=0.48\textwidth]{Figures/xxCorrelation.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/yyCorrelation.png} }
+\caption{Experimental Spatial correlations between a pair of down-converted photons. Right image shows the correlation in the x variable. Left shows the correlation in the y variable, Beam propagating in the z direction}
+ \label{fig:corre}
+\end{figure}
+Figure \ref{fig:corre} show a couple of examples of how these correlations we are talking about look like. These correlations have some king of circular shape,
+and show how strong is the posibility of detecting a photon at a given position, looking at the first graph, there is a great chance
+of detecting simultaneously a photon at $x_B=0$ and at $x_A=0$. Now if we look at the left graph, it is showing the correlation 
+of the pair of photons in the $y$ direction, there is a significant probability of measuring simultaneously a photon at $y_B=0.4$ 
+and at $y_A=-0.4$. It is interesting how in this case there is a "negative" correlation, the expected position at which we will find the other photon, is at the same, but negative position.
+Another interesting fact we have to point out, is that this correlations algo can be sharper, the x correlation have a more circular shape, making wider the posible values for a given $x_B$. In contrast the y correlation is more eliptic, meaning it restring the posible values por a given $y_B$.
+It is easy to think how a strong correlation should look like, a strong correlations in spatial variables would mean that if we have the position of one photon at the position $x_B$ we immediately would know which $x_A$ have the other photon, this king of ideal spatial correlation would look like a straigth line
+really thin, Figure \ref{fig:idealCorre}. 
+
+
+\begin{figure}[h!]
+\centering
+{  \includegraphics[width=0.48\textwidth]{Figures/idealPositiveCorrelation.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/idealNegativeCorrelation.png} }
+\caption{Positive(right) and Negative(left) ideal spatial correlations}
+ \label{fig:idealCorre}
+\end{figure}
+
+
 \subsection{Tunable Spatial Correlation SPDC source light}
+It is clear that both \ref{eq:modeSim} and \ref{eq:modeSpa} depend on $w_p$, the pump waist. If we change this 
+parameter and keep the rest of the parameters constant, the term in the exponential function $[-w_p^2 (\Delta_0^2 + \Delta_1^2 )/4]$ will variate,
+making changes in the shape of the original mode function. As it was mentioned here before and in \cite{omar}, the mode function
+contains all the informations about the correlations of the generated down converted photons. Hence changing the pump waist $w_p$
+will change the correlations of the generated pair of photons.
+
+
+
 
 \section{Imaging}
+
+Assuming we have an object that have its own light or its externally illuminated,
+imaging means collecting that light that is emitted from the object. Each point
+of the surface of the object will emit spherical waves to all possible directions,
+being this said, What is the probability to have a spherical wave collapsing into a point or small spot? 
+Obviously, the chance is practically zero unless an imaging system is applied.
+\\
+The concept of optical imaging was well developed in classical optics and the Figure
+\ref{fig:imaging} schematically illustrates a standar imaging setup. In this setup 
+an object is illuminated by a radiation source, an imaging lens is used 
+to focus the scattered and reflected light from the object onto an image plane 
+which is defined by the “Gaussian thin lens equation”\cite{hecht}:
+\begin{equation}
+\frac{1}{S_0}+\frac{1}{S_i}=\frac{1}{f}
+\end{equation}
+ where $S_0$ is the distance between the object and the imaging lens, $S_i$ the distance 
+between the imaging lens and the image plane, and $f$ the focal lenght of the imaging lens. This equation defines
+a point-to-point relationship between the object plane and the image plane: any radiation starting from a point on the object will colapse at a certain point at the image plane.
+\\
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Figures/imaging.png}
+\caption{Optical imaging: a lens produces an image on an object at $S_i$. This distance is defined
+by the Gaussian thin-lens equation} 
+\label{fig:imaging}
+\end{figure}
+This one-to-one correspondence in the image-forming relationship between the object and the image planes produces a perfect image.
+The observed image can be magnified or demagnified, for example, in the 
+Figure \ref{fig:imaging} the original object is a tree, and it is demagnified at the image plane. This depends on which optical 
+system are we using, what kind on lenses are involved and the distance between object and them.
 
 \subsection{Standar Imaging}
 
 The observed image is a reproduction of the illuminated object, mathematically
-corresponding to a convolution between the object distribution fuction $ |T(\vec{\rho_o})|^2$ (aperture function) and a $\delta$-function, which is present for the perfect
-point-to-point correspondence\cite{introquantumoptics}:
+corresponding to a convolution between the object distribution fuction $ |T(\vec{\rho_o})|^2$ (aperture function) 
+and a $\delta$-function, which is present for the perfect
+point-to-point correspondence \cite{introquantumoptics}:
 \begin{equation}
 I(\vec{\rho_i})=\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 \delta(\vec{\rho_o}+\frac{\vec{\rho_i}}{m})
 \end{equation}
@@ -150,6 +224,17 @@ For further informations about this "real life" situation check the \ref{appendi
 
 
 \subsection{Two-photon Imaging}
+
+Two-photon imaging consist after all, in reconstructing an image of an object. But in this case we use two dectector located in diferents paths of the light. By using the dectections of them separately we get a constant signal, with no information about the object, Figure \ref{fig:twoPhotonSetup}. But if instead we use the signal of them both, counting conincidences, we can reconstruct the double slit in Figure \ref{fig:twoPhotonSetup}. \\
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/twoPhotonSetup.png}
+\caption{Simple schematic for the Two-photon Imaging} 
+\label{fig:twoPhotonSetup}
+\end{figure}
+In order to reconstruct the image of the double slit, we have to introduce some kind of spatial dependence, the object, in this case the double slit, is distributed along a transverse direction of the light propagation. But what we have learnt is that scanning along the x-direction (asuming that light propagates along the z-direction), in the path that have no interaction with the object $D_2$, and colecting all the light that interacts with the object $D_1$, gathering no spatial information. We reconstruct the double slit in the coincidences counts, every time we have a photon detected going througt the double slit, and a photon at a certaint position $x_i$, we graph coincidences vs ${ x_i }$ and we get the image of the double slit, Figure \ref{fig:twoPhotonSetup}. 
 
 
 The optical imaging used the photons at the image plane, to form the image. In other 
@@ -172,57 +257,50 @@ is what changes between type-one and type-two two-photon imaging.
 %----------------------------------------------------------------------------------------
 \subsubsection{Two-photon Imaging using entangled photon}
 
-\textit{Light Source}
+In the previous section we introduced the notion of two-photon imaging , but we didn't care much about the nature of the source light. For this case we will use entangled photon as the source light, we will separate the pair of entangled photons by means of a polarization beamspliter. The first type-one two-photon imaging experiment was demonstrated by Pittman in 1995\cite{pittman}. The schematic setup of the experiment is shown in the Figure \ref{fig:pittman}. \\ 
 
-main source of information \cite{physicsGhost}
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\textit{Biphoton}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/pittman.png}
+\caption{Schematic of the first "two-photon imaging" experimental setup, used by Pittman\cite{pittman}} 
+\label{fig:pittman}
+\end{figure}
+A continuous wave (CW) laser is used to pump a nonlinear 
+crystal to produce pairs of entangled photons. This pairs of orthogonally polarized signal and idler photons are the product
+of the nonlinear optical process of spontaneous parametric down-conversion (SPDC).
+The pair emerges from the crystal collinearly\footnote{The pairs emerge from the crystal nearly 
+collinearly, with $\omega_s \simeq \omega_i \simeq \omega_p / 2$. where the subscript
+letter stands for signal, idler and pump respectively}, it is separated by a dispersion prism, 
+and then the signal and idler are sent in different directions by a polarization
+beam slitting Glan-Thompson prism. 
 
-
-
-
-
-\begin{equation}
-\ket{\Psi}=\int dq_s dq_i d\Omega_s d\Omega_i 
-\text{x} [\Phi(q_s,\Omega_s;q_i,\Omega_i) \hat{a}^{\dagger} (\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i) \\
-+ \Phi(q_i,\Omega_i;q_s,\Omega_s) \hat{a}^{\dagger}(\Omega_s,q_s) \hat{a}^{\dagger}(\Omega_i,q_i)]   \ket{0}  
-\end{equation}
-
-taken like it appears on \cite{spatiocorrelations}
-
- Where $\Phi(q_s,\Omega_s;q_i,\Omega_i)$ are the mode fuctions or Biphotons, a fuctions that contain all the information about the correlations. $ \hat{a}^{\dagger}(\Omega_n,q_n)$ the creation of a photon with tranverse momentum $q_n$ and frequency $\Omega_n$
-
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
-
-\textit{Mode Function}
-
-
-\begin{equation}
-\Phi(q_s,\Omega_s;q_i,\Omega_i) \propto E_p(q_p,\Delta_0) B_p(\Omega_p) \mathcal{C}_{spatial}(q_s) \mathcal{C}_{spatial}(q_i) 
- x \mathcal{F}_{frequency}(\Omega_s) \mathcal{F}_{frequency}(\Omega_i) sinc \left( \frac{\Delta_k \mathcal{L}}{2} \right)
-\end{equation}
-where $B_p(\omega^0_p+\Omega_p)$ and $E_p(q_p)$ are the frequency and transverse momentum distribution of the pump. $\mathcal{C}_{spatial}(q_n)$ spatial filtering. $\mathcal{F}_{frequency}(\Omega_n)$ frequency filter function.
+The reflected signal beam passes through a 
+convex lens with a $400mm$ focal length and illuminates an aperture\footnote{The aperture 
+consisted of the letters UMBC, University of Maryland Baltimore County.}.
+Before the aperture is placed a filter (Figure \ref{fig:signal}), 
+this is a bandwidth spectral filters centered at the
+wavelength $702.2 nm$. 
+Behind the aperture is the detector package $D_1$. \\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.24\textwidth]{Figures/signal.png}
+\caption{The reflected photon, called signal} 
+\label{fig:signal}
+\end{figure}
 
 
+The transmitted idler beam is met by detector 
+package $D_2$. The input tip of the fiber is scanned in the transverse 
+plane. The counts are sent to a coincidence 
+counting circuit with a $1.8ns$ acceptance window.
 
-\textit{Gaussian approximations}
 
-\cite{spatiocorrelations}
+An important fact of this experiment is the use of a lens(collection lens) in the signal beam that establishes 
+an image plane with the definitive point-by-point correspondence object(mask) plane.
 
-Taking into account the Gaussian nature of the pump, that's $E_p(q^x_p , q^y_p ) \approx exp \left[ -\frac{w_p^2}{4}(q^{x^2}_p + q^{y^2}_p )\right]$.
 
-approximating the sinc function by a Gaussian function with the same width at $\frac{1}{e^2}$ of its maximum, i.e., $sinc(x)\approx exp(- \gamma x^2)$  with $\gamma$ equal 0.193. 
 
-\begin{equation}
-\mathcal{F}_{frequency}(\Omega_n) \approx exp \left[-\frac{ \Omega^2_n}{4 \sigma^2_n} \right] 
-\end{equation}
-\begin{equation}
-\tilde{\Phi}(q_s,q_i)=\int d\Omega_s d\Omega_i \mathcal{F}_s (\Omega_s) \mathcal{F}_i (\Omega_i) \Phi(q_s,\Omega_s;q_i,\Omega_i)
-\end{equation}
+
 
 The Biphoton then takes a quadratic form:
 \begin{equation}\label{eq:quadratic}
@@ -294,3 +372,32 @@ $\Sigma=$
 
 --------------------------------------------------
 \subsubsection{Two-photon Imaging Using Chaotic Sources}
+
+In principle the term "thermal radiation" should refer only to radiation coming 
+from a blackbody in thermal equilibrium at some temperature T. But with this realisation of thermal radiation
+we have to face some characteristics of true thermal fields. Thermal radiation is also referred as chaotic light, which
+have extreme short coherence time.  \textit{expand coherence time}
+
+Thermal sources have to be understood as incoherent light, this means that we have many photons at the beam, but the frequencies they have are 
+randonly distributed. In the case of entangled light, we had a light source that generated photons that all are around a given frequency, we used a diode laser at $405nm$.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Figures/thermalSetup.png}
+\caption{Experimental setup for the Two-photon imaging using thermal light, taken from \cite{thermalAlejandra}} 
+\label{fig:thermalSetup}
+\end{figure}
+The source light in Figure \ref{fig:thermalSetup} is the one developed by Martinssen and Spiller\cite{intensity}
+which is the most commonly used among the pseudothermal fields.
+A  coherent laser radiation is focused on a rotating ground glass disk, 
+the scattered radiation is chaotic with a Gaussian spectrum.
+
+
+
+
+It is possible to establish an analogy
+between classical optics and entangled two-photon optics:
+the two-photon probability amplitude plays in entangled
+two-photon processes the same role that the complex amplitude
+of the electric field plays in classical optics  \cite{thermalAlejandra}.
