@@ -41,17 +41,25 @@ in polarisation, in frequency and in the equivalent degrees of freedom:
 \centering
 \label{fig:spdcSimple}
  \includegraphics[width=0.65\textwidth]{Figures/spdcSimple.png}
- \caption{Simple Experimental setup for the SPDC process} 
+ \caption{Simple Experimental setup for the type-II noncollinear SPDC process} 
 \end{figure}
 
 
 SPDC is an optical process in which focus a beam pump, that is 
-propagating in the $z$-direction, to a nonlinear crystal of length $L$. Using first order perturbation 
+propagating in the $z$-direction, to a nonlinear crystal of length $L$. Depending of the polarisation
+direction of the produced photons, the nonlinear crystals can be classified in types. The type-0 crystal will 
+produce pairs that are polarised in the source light direction. The type-I will do the proper, but this time the polarisation will be in the 
+perpendicular direction of the pump. The last type, type-two crystal will produce a pair of photons, 
+one with the polarisation in the sa,e direction as the pump, and the other one perpendicular. 
+The generated pair can emerge from the crystal in a collinearly or noncollinearly.
+
+
+Using first order perturbation 
 and the paraxial approximation, the two-photon state is given by:
 \begin{equation}
 \label{eq:stateFunComplex}
 \ket{\Psi}=\int dq_B dq_A d\Omega_B d\Omega_A 
-\text{x} [\Phi(q_B,\Omega_B;q_A,\Omega_A) \hat{a}^{\dagger} (\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A) \\
+\times [\Phi(q_B,\Omega_B;q_A,\Omega_A) \hat{a}^{\dagger} (\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A) \\
 + \Phi(q_A,\Omega_A;q_B,\Omega_B) \hat{a}^{\dagger}(\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A)]   \ket{0}  
 \end{equation}
 Where this state function depends on the transverse wave vectors $q_n=(q_n^x,q_n^y)$ and frequency detuning, $\Omega_n=\omega_n-\omega_0^n$, 
@@ -67,7 +75,7 @@ it is posible now to write \ref{eq:stateFunComplex} different, dropping one term
 \begin{equation}
 \label{eq:stateFun}
 \ket{\Psi}=\int dq_B dq_A d\Omega_B d\Omega_A 
-\text{x} [\Phi(q_B,\Omega_B;q_A,\Omega_A) \hat{a}^{\dagger} (\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A) 
+\times [\Phi(q_B,\Omega_B;q_A,\Omega_A) \hat{a}^{\dagger} (\Omega_B,q_B) \hat{a}^{\dagger}(\Omega_A,q_A) 
 ] \ket{0}  
 \end{equation}
 
@@ -80,7 +88,7 @@ photon, with tranverse momentum $q_A$ and frequency detuning $\Omega_A$, at the 
 In particular, $\Phi(q_B,\Omega_B;q_A,\Omega_A)$ reads \cite{spatiocorrelations}:
 \begin{equation}
 \label{eq:mode}
-\Phi(q_B,\Omega_B;q_A,\Omega_A) = \mathcal{N} \alpha(\Delta_0,\Delta_1) \beta(\Omega_B,\Omega_A) \text{ x }
+\Phi(q_B,\Omega_B;q_A,\Omega_A) = \mathcal{N} \alpha(\Delta_0,\Delta_1) \beta(\Omega_B,\Omega_A) \times
 sinc \left( \frac{\Delta_k L}{2} \right) e^{i \frac{\Delta_k L}{2}}
 \end{equation}
 Where $\mathcal{N}$ is a normalisation constant, $\alpha(\Delta_0,\Delta_1)$
@@ -120,7 +128,7 @@ The mode function reduces to:
 \begin{equation}
 \label{eq:modeSim}
 \Phi(q_B,\Omega_B;q_A,\Omega_A) = \mathcal{N} \beta (\Omega_B , \Omega_A)
-\text{ x exp}\left[ -\frac{w_p^2 (\Delta_0^2 + \Delta_1^2 )}{4}-\gamma \left(\frac{\Delta_k L}{2} \right)^2 + i\frac{\Delta_k L}{2} \right]  
+\times \textit{exp}\left[ -\frac{w_p^2 (\Delta_0^2 + \Delta_1^2 )}{4}-\gamma \left(\frac{\Delta_k L}{2} \right)^2 + i\frac{\Delta_k L}{2} \right]  
 \end{equation}
 
 In order to observe the transverse correlations (spatial correlations), the 
@@ -160,6 +168,51 @@ really thin, Figure \ref{fig:idealCorre}.
  \label{fig:idealCorre}
 \end{figure}
 
+The Biphoton then takes a quadratic form\cite{spatiocorrelations}:
+\begin{equation}
+\label{eq:quadratic}
+\tilde{\Phi}(q_B,q_A)=N exp\left[ -\frac{1}{2}x^T A x + i b^T x \right]
+\end{equation}
+where N is a normalization constant, that satisfies $\int \int | \tilde{\Phi}(q_B,q_A)|^2 d^2 q_B d^2 q_A = 1$. 
+$x$ is a 4-dimensional vector defined as $x = (q^x_B, q^y_B ,q^x_A,q^y_A )$, $A$ 
+is a 4 x 4 real-valued, symmetric, positive definite matrix and b is a 4- dimensional vector. 
+A and b are defined from the phase-matching conditions of the SPDC process. $x^T$ and $b^T$ denote
+ the transpose of $x$ and $b$. $A$ and $b$ are functions that depend of all the relevant 
+parameters in the experiment such as the length of the crystal L, pump waist $w_p$, creation 
+angles inside the crystal $\varphi_n$ and the width of the spectral filter $\sigma_n$.
+
+
+To have a general numerical approach to $\tilde{\Phi}(\vec{q_B},\vec{q_A})$, it is desired to 
+writte it as generic correlations instead of the experimental parameters. This can be done by 
+noticing that the amplitude of $\tilde{\Phi}(\vec{q_B},\vec{q_A})$ has the form of a 4-dimensional 
+gaussian distribution, given by
+\begin{equation}
+f(x) = \tilde{N}e^{-\frac{1}{2}x^T \Sigma^{-1}x},
+\label{Gaussian}
+\end{equation}
+where  $\tilde{N}$ is a normalization constant satisfying $\int f(x) d^4 x = 1$, $\Sigma^{-1}$ is 
+the inverse of the covariance matrix that contains the correlations between the different elements
+ of $x$. With $x_i$ {$i=0,1,2,3$}, $\Sigma$ can be written as:
+\begin{equation}
+\Sigma_{ij} = \sigma_{x_i} \sigma_{x_j} \rho_{x_i x_j}
+\label{eq:Pearson}
+\end{equation}
+where $\sigma_i$ denotes de square root of the variance of  $x_i$ and $\rho_{x_i x_j}$ denotes the 
+Pearson correlation coefficient between $x_i$ and $x_j$. This coefficient quantifies how strong is 
+the linear correlation between $x_i$ and $x_j$\cite{shafer}.
+By using Eq.(\ref{eq:Pearson}), the correlations between the spatial variables of the photons 
+can be manually modified in Eq.(\ref{eq:quadratic}).
+
+STILL WORK TO DO!!! \\
+
+
+A way to quantify the degree of spatial correlation we shall define 'correlation parameter':
+\begin{equation}
+K^\lambda = \frac{C^\lambda_{si}}{\sqrt{C^\lambda_{ss}C^\lambda_{ii}}}
+\end{equation}
+calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\lambda$ with elements $C^\lambda_{kj} = \langle q^\lambda_k q^\lambda_j \rangle - \langle q^\lambda_k \rangle \langle q^\lambda_j \rangle $.
+
+
 
 \subsection{Tunable Spatial Correlation SPDC source light}
 It is clear that both \ref{eq:modeSim} and \ref{eq:modeSpa} depend on $w_p$, the pump waist. If we change this 
@@ -185,9 +238,9 @@ an object is illuminated by a radiation source, an imaging lens is used
 to focus the scattered and reflected light from the object onto an image plane 
 which is defined by the “Gaussian thin lens equation”\cite{hecht}:
 \begin{equation}
-\frac{1}{S_0}+\frac{1}{S_i}=\frac{1}{f}
+\frac{1}{S_o}+\frac{1}{S_i}=\frac{1}{f}
 \end{equation}
- where $S_0$ is the distance between the object and the imaging lens, $S_i$ the distance 
+ where $S_o$ is the distance between the object and the imaging lens, $S_i$ the distance 
 between the imaging lens and the image plane, and $f$ the focal lenght of the imaging lens. This equation defines
 a point-to-point relationship between the object plane and the image plane: any radiation starting from a point on the object will colapse at a certain point at the image plane.
 \\
@@ -210,62 +263,108 @@ corresponding to a convolution between the object distribution fuction $ |T(\vec
 and a $\delta$-function, which is present for the perfect
 point-to-point correspondence \cite{introquantumoptics}:
 \begin{equation}
-I(\vec{\rho_i})=\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 \delta(\vec{\rho_o}+\frac{\vec{\rho_i}}{m})
+\label{eq:intensity}
+\langle I(\vec{\rho_i}) \rangle =\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 \delta(\vec{\rho_o}+\frac{\vec{\rho_i}}{m})
 \end{equation}
-where $I(\vec{\rho_i})$ is the intensity at the image plane, $\vec{\rho_o}$ and $\vec{\rho_i}$ are 2-D vectors of the
-transverse coordinates in the object and image planes, respectively, and
+where $\langle I(\vec{\rho_i})\rangle $ is the mean intensity at the image plane, $\vec{\rho_o}$ and $\vec{\rho_i}$ are 2-D vectors of the
+transverse coordinates, $\vec{\rho_n}= (x_n,y_n)$, in the object and image planes, respectively, and
 $m=s_i/s_o$ is the image magnification factor.
 
 In reality, we are limited by the finite size of the optical system, we may never obtain a perfect image.
-we have to take into account the constructive-destructive interference present
-in this phenomena, because of the wave nature of light. The point-to-point correspondence turns into a point-to-"spot" relationship.
+The incomplete constructive-destructive interference turns the point-to-point correspondence into 
+ a point-to-"spot" relationship. The $\delta$-function in the convolution of equation \ref{eq:intensity}
+will be replaced by a point-to-"spot" image-forming function, or a point-spread function,
+\begin{equation}
+\label{eq:realIntensity}
+\langle I(\vec{\rho_i}) \rangle =\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 \text{somb}^2[\frac{\pi D}{\lambda S_o} | \vec{\rho_o}+\frac{\vec{\rho_i}}{m}|]
+\end{equation}
+
+where the sombrero-like point-spread function is defined as 
+somb$(x) \equiv  2J_1(x)/x$, with $J_1(x)$ the first-order Bessel function, and $D$ the diameter of the imaging lens.
+It is clear from equation \ref{eq:realIntensity} that the finite size of the spot in the point-to-"spot" 
+correspondence is determined by some parameters, if we want to have a almost-perfect correspondence we 
+would like to not place the lens to far away from the object, $S_o$. A big imaging lens, and with "big" I refer to its diameter, $D$.
+Imaging usually uses a wide variety of photons with deferents 
+frequencies\footnote{Imaging forming, as the procces done by our eyes and brain uses a big range of
+photon frequencies, this range is called the \textit{visible spectrum} ($\sim 390-700 nm$), the images produced by our eyes are formed just from photons 
+that are at this frequencies, the rest of the photons are ignored by our eyes} 
+if we were able to filter the light that illuminates the object, we would like to choose a short
+wavelength $\lambda$. 
+
+This finite size of the spot in the point-to-"spot" relationship we described before, is what is called 
+spatial resolution. A higher spatial resolution of the image is achieved by the conditions described before. 
+Another daily situation in which we are forming images, is when we take a picture. Cameras manufacteres play with this parameters
+to achieve a high spatial resolution, a spot-to-pixel correspondence.
 For further informations about this "real life" situation check the \ref{appendix:intensity}.
 
 
 
-\subsection{Two-photon Imaging}
+\subsection{Two-photon Imaging}\label{twoPhotonImaging}
 
-Two-photon imaging consist after all, in reconstructing an image of an object. But in this case we use two dectector located in diferents paths of the light. By using the dectections of them separately we get a constant signal, with no information about the object, Figure \ref{fig:twoPhotonSetup}. But if instead we use the signal of them both, counting conincidences, we can reconstruct the double slit in Figure \ref{fig:twoPhotonSetup}. \\
+Two-photon imaging consist after all, in reconstructing an image of an object. 
+But in this case we use two dectector located in diferents paths of the light. 
+By using the dectections of them separately we get a constant signal, with no information 
+about the object, Figure \ref{fig:twoPhotonSetup}. But if instead we use the signal of them 
+both, counting conincidences, we can reconstruct the double slit in 
+Figure \ref{fig:twoPhotonSetup}. \\
 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{Figures/twoPhotonSetup.png}
+\includegraphics[width=0.75\textwidth]{Figures/twoPhotonSetup.png}
 \caption{Simple schematic for the Two-photon Imaging} 
 \label{fig:twoPhotonSetup}
 \end{figure}
-In order to reconstruct the image of the double slit, we have to introduce some kind of spatial dependence, the object, in this case the double slit, is distributed along a transverse direction of the light propagation. But what we have learnt is that scanning along the x-direction (asuming that light propagates along the z-direction), in the path that have no interaction with the object $D_2$, and colecting all the light that interacts with the object $D_1$, gathering no spatial information. We reconstruct the double slit in the coincidences counts, every time we have a photon detected going througt the double slit, and a photon at a certaint position $x_i$, we graph coincidences vs ${ x_i }$ and we get the image of the double slit, Figure \ref{fig:twoPhotonSetup}. 
+
+In order to reconstruct the image of the double slit, we have to introduce some kind of spatial 
+dependence, the object, in this case the double slit, is distributed along a transverse direction 
+of the light propagation. But what we have learnt is that scanning along the x-direction 
+(asuming that light propagates along the z-direction), in the path that have no interaction 
+with the object $D_A$, and colecting all the light that interacts with the object $D_B$, 
+gathering no spatial information. We reconstruct the double slit in the coincidences counts, 
+every time we have a photon detected going througt the double slit, and a photon at a certaint 
+position $x_i$, we graph coincidences vs ${ x_i }$ and we get the image of the double slit, Figure \ref{fig:twoPhotonSetup}. 
 
 
-The optical imaging used the photons at the image plane, to form the image. In other 
-words it takes measure one photon per spot at the image plane. For the type-one and type-two
-two-photon imaging, in certain aspects the behaviour is similar as that of the classical.
+The standar imaging used the photons at the image plane, to form the image. In other 
+words it measures one photon per spot at the image plane. For the two-photon imaging, in certain 
+aspects the behaviour is similar as that of the classical.
 They both exhibit a similar point-to-point imaging-forming function, except the 
 two-photon image is only reproducible in the joint-detection between two independent photodetectors,
 and the point-to-point imaging-forming function is in the form of second-order correlation,
-\begin{equation}
-R_{12}(\vec{\rho_i})=\int_{obj} d\vec{\rho_o} |T(\vec{\rho_o})|^2 G^{(2)}(\vec{\rho_o},\vec{\rho_i})
+\begin{equation}\label{eq:coincidences}
+R_{BA}(\vec{\rho_A})=\int_{obj} d\vec{\rho_B} |T(\vec{\rho_B})|^2 G^{(2)}(\vec{\rho_B},\vec{\rho_A})
 \end{equation}
-where $R_{12}(\vec{\rho_i})$ is the joint-detection counting rate between photodetectors $D_1$ and $D_2$.
-$G^{(2)}(\vec{\rho_o},\vec{\rho_i})$ is a nontrivial point-to-point second-order correlation
+where $R_{BA}(\vec{\rho_B})$ is the joint-detection counting rate between photodetectors $D_B$ and $D_A$.
+$G^{(2)}(\vec{\rho_B},\vec{\rho_A})$ is a nontrivial point-to-point second-order correlation
 function, corresponding to the probability of observing a joint photo-detection event
-at the coordinates $\vec{\rho_o}$ and $\vec{\rho_i}$. The physics behing $G^{(2)}(\vec{\rho_o},\vec{\rho_i})$
-is what changes between type-one and type-two two-photon imaging.
+at the coordinates $\vec{\rho_B}$ and $\vec{\rho_A}$. The physics behing $G^{(2)}(\vec{\rho_B},\vec{\rho_A})$
+is what changes between the different kinds of two-photon imaging.
+
+This second-order correlation functions is defined as\cite{introquantumoptics}:
+\begin{equation}
+G^{(2)} (\vec{\rho_B},\vec{\rho_A})= \frac{ \langle E^* (\vec{\rho_B}) E^* (\vec{\rho_A}) E^ (\vec{\rho_B}) E^ (\vec{\rho_A}) \rangle }{\langle |E^ (\vec{\rho_B})|^2 \rangle \langle |E^ (\vec{\rho_A})|^2 \rangle}
+\end{equation}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 \subsubsection{Two-photon Imaging using entangled photon}
 
-In the previous section we introduced the notion of two-photon imaging , but we didn't care much about the nature of the source light. For this case we will use entangled photon as the source light, we will separate the pair of entangled photons by means of a polarization beamspliter. The first type-one two-photon imaging experiment was demonstrated by Pittman in 1995\cite{pittman}. The schematic setup of the experiment is shown in the Figure \ref{fig:pittman}. \\ 
+In the previous section we introduced the notion of two-photon imaging , but we didn't care 
+much about the nature of the source light. For this case we will use entangled photon as the 
+source light, we will separate the pair of entangled photons by means of a polarization 
+beamsplitter. The first two-photon imaging experiment was demonstrated by Pittman in 
+1995\cite{pittman}. The schematic setup of the experiment is shown in the 
+Figure \ref{fig:pittman}. \\ 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{Figures/pittman.png}
+\includegraphics[width=0.75\textwidth]{Figures/pittman.png}
 \caption{Schematic of the first "two-photon imaging" experimental setup, used by Pittman\cite{pittman}} 
 \label{fig:pittman}
 \end{figure}
-A continuous wave (CW) laser is used to pump a nonlinear 
+A continuous wave (CW) laser is used to pump a type-II nonlinear 
 crystal to produce pairs of entangled photons. This pairs of orthogonally polarized signal and idler photons are the product
 of the nonlinear optical process of spontaneous parametric down-conversion (SPDC).
 The pair emerges from the crystal collinearly\footnote{The pairs emerge from the crystal nearly 
@@ -277,109 +376,138 @@ beam slitting Glan-Thompson prism.
 The reflected signal beam passes through a 
 convex lens with a $400mm$ focal length and illuminates an aperture\footnote{The aperture 
 consisted of the letters UMBC, University of Maryland Baltimore County.}.
-Before the aperture is placed a filter (Figure \ref{fig:signal}), 
+Before the aperture is placed a filter, 
 this is a bandwidth spectral filters centered at the
 wavelength $702.2 nm$. 
 Behind the aperture is the detector package $D_1$. \\
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.24\textwidth]{Figures/signal.png}
-\caption{The reflected photon, called signal} 
-\label{fig:signal}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.24\textwidth]{Figures/signal.png}
+%\caption{The reflected photon, called signal} 
+%\label{fig:signal}
+%\end{figure}
 
 
 The transmitted idler beam is met by detector 
 package $D_2$. The input tip of the fiber is scanned in the transverse 
 plane. The counts are sent to a coincidence 
 counting circuit with a $1.8ns$ acceptance window.
-
-
 An important fact of this experiment is the use of a lens(collection lens) in the signal beam that establishes 
-an image plane with the definitive point-by-point correspondence object(mask) plane.
+an image plane with the definitive point-by-point correspondence object(mask) plane.\\
 
+\subsubsection{Propagation of light through 2-f system}
 
-
-
-
-The Biphoton then takes a quadratic form:
-\begin{equation}\label{eq:quadratic}
-\tilde{\Phi}(q_s,q_i)=N exp\left[ -\frac{1}{2}x^T A x + i b^T x \right]
-\end{equation}
-where N is a normalization constant, $x$ is a 4-dimensional vector defined as $x = (q^x_s, q^y_s ,q^x_i,q^y_i )$, $A$ is a 4 x 4 real-valued, symmetric, positive definite matrix and b is a 4- dimensional vector. A and b are defined from the phase-matching conditions of the SPDC process. $x^T$ and $b^T$ denote the transpose of $x$ and $b$. $A$ and $b$ are functions that depend of all the relevant parameters in the experiment such as the length of the crystal L, pump waist $w_p$, creation angles inside the crystal $\varphi_n$ and the width of the spectral filter $\sigma_n$.
-
-A way to quantify the degree of spatial correlation we shall define 'correlation parameter':
+In order to treat this problem in a more general way it, we need to know 
+the state of the biphoton at the output of the crystal:
 \begin{equation}
-K^\lambda = \frac{C^\lambda_{si}}{\sqrt{C^\lambda_{ss}C^\lambda_{ii}}}
+\label{eq:crystal}
+\tilde{\Phi}_c(q_c,q_c)=N e^{\left[ -\frac{1}{2}x^T A x + i b^T x \right]}
 \end{equation}
-calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\lambda$ with elements $C^\lambda_{kj} = \langle q^\lambda_k q^\lambda_j \rangle - \langle q^\lambda_k \rangle \langle q^\lambda_j \rangle $.
+Then from this result we can use the fresnel propagation theory to analytically model the biphoton 
+propagation in any arbitrary Two-photon Imaging/Lensless Two-photon Imaging setup.This propagation is done 
+by determining the Green function of the optical path by which the beams will travel.
 
 
-\textit{Fresnel Propagator}
-
-
-Fresnel Propagator: $h(r,z)=(- \frac{i}{\lambda z})e^{(i \frac{2 \pi z}{\lambda})} \Psi (r,z)$ 
-with $\Psi(r,z) = e^{(i \frac{\pi}{\lambda z })r^2}$. Thin-lens transfer function $L_f (r)=\Psi(r,-f)$
- \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{Figures/simpleTwo.png}
+\caption{Simple schematic for a Two-photon Imaging using entangled photons and a 2-f system} 
+\label{fig:2f}
+\end{figure}
+ 
+Since both path A and B have an identical 2-f system, we are at the called Fourier plane. It is 
+well know that when the light goes through this system suffers a Fourier transform\cite{introquantumoptics}. It means that if 
+we treated the photons as an ensemble of many oscillating in coherent modes, there is a relation beetwen
+the initial $q_c$ initial transverse momentum at the crystal, and the $r_f$ final position of 
+the photons. This relation is:
+\begin{equation}\label{eq:fourier}
+q_{initial}=\frac{2 \pi}{\lambda f} r_{final}
+\end{equation}
+where $q_{initial}$ is the transverse momentum of the light before the 2-f system, $r_{final}$ is the position of photon
+after going through the lens and traveling a 2-f distance. $f$ stands for the focal length of the lenses used and $\lambda$ for the frequency of the coherent mode.\\
+The Green function that propagates light with transverse momentum $q$ from the source, to the
+Fourier plane located at a position $r_f$ is\cite{green}:
 \begin{equation}\label{eq:green}
-G= \int d^2 r_1 \int d^2 r_0 h(r_f - r_1,f) L_f(r_1) h(r_1 - r_0,f)
+G(q,r_f) = \int d^2 r_l \int d^2 r_c h(r_f - r_l,f) L_f(r_l) h(r_l - r_c,f) e^{i q \cdot r_c}
 \end{equation}
-
-The propagation is done by determining the Green function\cite{green} of the optical path
-by which the beam will travel. The biphoton function
-in terms of transverse momenta $\Phi_1 (q_s , q_i )$ after traveling
-through two arbitrary optical paths can be expressed
-in terms of the corresponding Green functions and the
-initial biphoton function $\Phi(q_s , q_i )$ as:
-
+with $r_c$ and $r_l$ denoting the transverse position vectors in the plane of the crystal and the 
+lens respectively. $h(r_f - r_l,f)$ and $h(r_l - r_c,f)$ are the Fresnel propagators\footnote{Fresnel Propagator: $h(r,z)=(- \frac{i}{\lambda z})e^{(i \frac{2 \pi z}{\lambda})} \Psi (r,z)$ 
+with $\Psi(r,z) = e^{(i \frac{\pi}{\lambda z })r^2}$. } that propagates light from $r_l$ to $r_f$ and 
+$L_f (r)=\Psi(r,-f)$ is the thin-lens transfer function associated to a lens\cite{green}.
+ \\
+Taking advantage of the 2-f system as a Fourier transform to reduce the amount of calculations
+, using the relation \ref{eq:fourier}, and after solving the integrals over $r_l$ and $r_c$, equation
+ \ref{eq:green} can be written as:
 \begin{equation}
-\Phi_1 (q_s , q_i )= G_s(q_s,r_1) G_i(q_i,r_2) \Phi (q_s,q_i) 
-\end{equation}
-\begin{equation}
-\Phi_1 (r_1 , r_2 )= \int d^2 q_s d^2 q_i \Phi_1 (q_s , q_i ) 
-\end{equation}
-
-Taking advantage of the 2-F system as a Fourier-Transform to reduce the amount of calculations. Solving \ref{eq:green} over $r_0$ and $r_1$ we have:
-\begin{equation}
+\label{eq:greenSolve}
 G(q,r_f)=C e^{\frac{i \pi}{\lambda f} r_f^2} e^{\frac{i \lambda f}{4 \pi} q^2} \delta ( q - \frac{2 \pi}{\lambda f}r_f)
 \end{equation}
-where C is a complex constant that depends only on $\lambda = 2\pi c$ and $f$. Then we can define the Green Functions for each path:
+where C is a complex constant and $\lambda $ is the wavelenght of the used light.
+Then we can finally propagate  biphoton function
+in terms of transverse momenta. Where $\Phi_1 (q_B , q_A )$ is the biphoton after traveling
+through two arbitrary optical paths, it can be expressed
+in terms of the corresponding Green functions and the
+initial biphoton function, equation \ref{eq:crystal}, $\tilde{\Phi}_c(q_c,q_c)$ as:
 
-\begin{equation}
-G_1(q_s,r_1)=G(q_s,r_1) x T(r_1) 
+\begin{equation}\label{eq:final}
+\Phi_1 (q_B , q_A )= G_B(q_B,r_B) G_A(q_A,r_A) \tilde{\Phi}_c(q_c,q_c)
 \end{equation}
-\begin{equation}
-G_2(q_i,r_2)=G(q_i,r_2)
-\end{equation}
-
-Where $T(r_1)$ is the transfer function of the object.
-
-Gathering all the previous results we can obtain $\Phi_1 (r_1 , r_2 )=C^2 T(r_1) \Phi (\frac{2 \pi}{\lambda f}r_1, \frac{2 \pi}{\lambda f}r_2)$, which describes the biphoton at the planes of the object and the scanning detector. It shows that the biphoton at the 2F plane in terms of
-$r_1$ and $r_2$  has the same form as the biphoton at the
-output face of the crystal with the relationship $q = \frac{2 \pi}{\lambda f} r$.
-This allows to computationally simulate the biphoton at the 2-F plane by using Eq \ref{eq:quadratic} without the need to computationally simulate its propagation through the 2-F system.
-
-We are collecting all the light that interacts with the object by the means of a bucket detector, this from the mathematical point of view leave us with: 
- $\Phi_1 (r_2) = C^2 \int d^2 r_1 T(r_1) \Phi (\frac{2 \pi}{\lambda f}r_1, \frac{2 \pi}{\lambda f}r_2)$ 
-The coincidence counts that will be measured by the Detectors will be proportional to the magnitude square of the resulting biphoton function $\Phi_1 (r_2)$.
-\begin{equation}
-S(r_2) \propto |  \int d^2 r_1 T(r_1) \Phi (\frac{2 \pi}{\lambda f}r_1, \frac{2 \pi}{\lambda f}r_2) |^2
+\begin{equation}\label{eq:finalPosi}
+\Phi_1 (r_B , r_A )= \int d^2 q_B d^2 q_A \Phi_1 (q_B , q_A )
 \end{equation}
 
-For non-ideal forms of $\Phi (q_s,q_i)$ we have the relation between $\Phi (q) \rightarrow \Phi (r)$ for a 2F system, Hence: $\Phi(r)=\frac{1}{\sqrt{det(\Sigma)(2 \pi)^4}} e^{- \frac{1}{2} r^T \Sigma^{-1} r} e^{ibr}$ \\
-$\Sigma=$
+where $r_B$ and $r_A$ denotes the photon position in the transverse plane at a 2-f distance from the 
+crystal, the subscrip stand for the different path followed by light, Figure \ref{fig:2f}. The $G_B(q_B,r_B)$
+and $G_A(q_A,r_A)$ are the green functions for each path, defined as in equation \ref{eq:greenSolve}, they are:
+\begin{equation}\label{eq:B}
+G_B(q_B,r_B)=G(q_B,r_B) \times T(r_B) 
+\end{equation}
+\begin{equation}\label{eq:A}
+G_A(q_A,r_A)=G(q_A,r_A)
+\end{equation}
+Where $T(r_B)$ is the transfer function of the object, which is only present at the $B$ path, Figure \ref{fig:2f}.
+Gathering all the previous results we can obtain $\Phi_1 (r_B , r_A )$. This is done by replacing
+Eq. \ref{eq:B} and \ref{eq:A} into Eq. \ref{eq:final}, then evaluating the integrals over the transverse 
+momentums, Eq. \ref{eq:finalPosi}, we obtain:
+\begin{equation}\label{eq:finalBiphoton}
+\Phi_1 (r_B , r_A )=C^2 T(r_B) \Phi (\frac{2 \pi}{\lambda f}r_B, \frac{2 \pi}{\lambda f}r_A)
+\end{equation}
 
+This function describes the biphoton at the planes of the object and the scanning detector. It shows 
+that the biphoton at the 2F plane as a function of $r_B$ and $r_A$. If we take a closer look, this result
+enable us to compute the biphoton at the 2-F plane by using Eq \ref{eq:quadratic} without the need to actually calculate its propagation, just by 
+evaluating it with the Fourier relationship, \ref{eq:fourier}. This is specially usefull when we try to 
+simulate this on a computer, the amount of calculations is significantly reduced by this fact.
 
---------------------------------------------------
+As described at the beginning of this Section \ref{twoPhotonImaging}, we lose all the spatial information 
+about the photon that interacts with the Object, and this is done by placing a bucket detector that
+gathers all light and send it to a multimode optic fiber, without saving any information about the position
+of the photons in this path $B$. From the mathematical point of view, the bucket detector is modeled
+as: $\Phi_1 (r_A) = C^2 \int d^2 r_B T(r_B) \Phi (\frac{2 \pi}{\lambda f}r_B, \frac{2 \pi}{\lambda f}r_A)$.
+Using the fact that the coincidence counts that will be measured by the Detectors will be 
+proportional to the magnitude square of the resulting biphoton function $\Phi_1 (r_A)$\cite{introquantumoptics}.
+\begin{equation}\label{eq:S}
+S(r_A) \propto |  \int d^2 r_B T(r_B) \Phi (\frac{2 \pi}{\lambda f}r_B, \frac{2 \pi}{\lambda f}r_A) |^2
+\end{equation}
+Where $S(r_A)$ is the function that describes de coincidences counts between de detectors $D_B$ and 
+$D_A$ in Figure \ref{fig:2f}. $S(r_A)$ is a function of the spatial positions, $(x_A,y_A)$
+ of the detection plane at $D_A$. This function $S(r_A)$ have the expected behaviour described
+by $R_{BA}(\vec{\rho_A})$ in Eq. \ref{eq:coincidences}, where the second-order correlation function in this 
+case is $\Phi (\frac{2 \pi}{\lambda f}r_B, \frac{2 \pi}{\lambda f}r_A)$, as we said, the function
+containing all the informations about the correlations between the pair of down-converted photons. 
+Moreover, Equation \ref{eq:S} indicates that the form of $\Phi(q_B,q_A)$ determines if $T(r_B)$ can
+be recovered in the coincidence count. Additionally, the type of spatial correlation in $\Phi(q_B,q_A)$
+defines the orientation of the image obtained.
+
 \subsubsection{Two-photon Imaging Using Chaotic Sources}
 
 In principle the term "thermal radiation" should refer only to radiation coming 
 from a blackbody in thermal equilibrium at some temperature T. But with this realisation of thermal radiation
-we have to face some characteristics of true thermal fields. Thermal radiation is also referred as chaotic light, which
-have extreme short coherence time.  \textit{expand coherence time}
+we have to face some characteristics of true thermal fields. Thermal radiation is also referred as chaotic light, 
+which have extreme short coherence time. This is because a thermal source contains a large number of independent sub-sources,
+such as the trillions of atoms or molecules.These atomic transitions that can be identical or different
+act like sub-sources, that emit light into independently and randomly. 
 
-Thermal sources have to be understood as incoherent light, this means that we have many photons at the beam, but the frequencies they have are 
-randonly distributed. In the case of entangled light, we had a light source that generated photons that all are around a given frequency, we used a diode laser at $405nm$.
 
 
 \begin{figure}[h!]
@@ -389,11 +517,56 @@ randonly distributed. In the case of entangled light, we had a light source that
 \label{fig:thermalSetup}
 \end{figure}
 The source light in Figure \ref{fig:thermalSetup} is the one developed by Martinssen and Spiller\cite{intensity}
-which is the most commonly used among the pseudothermal fields.
-A  coherent laser radiation is focused on a rotating ground glass disk, 
-the scattered radiation is chaotic with a Gaussian spectrum.
+which is the most commonly used among the pseudothermal fields. A  coherent laser radiation is focused on a rotating ground glass disk, 
+the scattered radiation is chaotic with a Gaussian spectrum. After this, a nonpolarizing beam
+splitter (BS) splits the radiation in two distinct optical pths, In the reflected arm an object, with 
+transmission function $T(r_1)$, is placed ar a distance $d_A$ from the BSand a bucket detector ($D_1$)
+is just behind the object. In the transmitted arm an imaging lens, with focal lenght $f$, is placed at a 
+distance $d_B$ from the BS, and a multimode optical fiber ($D_2$) scans the transverse plane
+at a distance $d'_B$ from the lens. The output pulses from the two single photon counters are sent 
+to an electronic coincidence circuit to measure the rate of coincidence counts.
+
+Once again we expect the joint-detection counting rate between photodetectors $D_1$ and $D_2$ to behave
+like the one described in Eq. \ref{eq:coincidences}. But thos rate this coincidence counts is governed
+by the second-order Glauber correlation function \cite{glauber}:
+\begin{equation}
+G^{(2)} (\vec{r}_1; \vec{r}_2) \equiv \langle E^{(-)}_1(\vec{r}_1)E^{(-)}_2(\vec{r}_2) \times E^{(+)}_2(\vec{r}_2)E^{(+)}_1(\vec{r}_1) \rangle
+\end{equation}
+where the $E^{(-)}$ and $E^{(+)}$ are the negative-frequency and the positive-frequency field operators describing the detection events at the
+locations $\vec{r}_1$ and $\vec{r}_2$. The transverse second-order correlation correlation function 
+for a thermal source is given by \cite{thermalAlejandra}:
+\begin{equation}\label{eq:thermal}
+G^{(2)}_{\textit{thermal}}(\vec{r}_1; \vec{r}_2) \propto \sum_{\vec{q}} |g_1(\vec{q},\vec{r}_1)|^2
+\sum_{\vec{q}'} |g_2(\vec{q}',\vec{r}_2)|^2 + |\sum_{\vec{q}} g_1^*(\vec{q},\vec{r}_1) g_2(\vec{q},\vec{r}_2)|^2
+\end{equation}
+where $\vec{r}_i$ is the transverse position of the detector $D_i$, $\vec{q}$ and $\vec{q}'$
+are the transverse components of the momentum vectors, and $g_i(\vec{q},\vec{r}_i)$ is the Green's function 
+associated with the propagations of the field with transverse momentum $\vec{q}$ from the source, 
+to the position $\vec{r}_i$ at the detection plane defined by the detector $D_i$. $g_i(\vec{q},\vec{r}_i)$ is defined in a similar way 
+as in Eq. \ref{eq:green}.
+
+It is important to note that there are two main differences with respect to the SPDC case: 
+First the presence of a background noise (first term of Eq. \ref{eq:thermal}), which does not exist for SPDC. Second,
+the possibility of writing the second term of Eq. \ref{eq:thermal} as a product of the first order correlation
+functions, $G^{(1)}_{12}G^{(1)}_{21}$, while there is no way to write the biphoton produced by the 
+SPDC as a product of other correlations. Also this term $|\sum_{\vec{q}} g_1^*(\vec{q},\vec{r}_1) g_2(\vec{q},\vec{r}_2)|^2$
+Is the interference of intensities of a incoherent statistical assemble of randomly distributed photons.
 
 
+Following the proces done in \cite{thermalAlejandra}, it can be shown that for any values of distances
+$d_A$, $d_B$ and $d_{B}'$ which obey the equation:
+\begin{equation}
+\frac{1}{d_B - d_A} + \frac{1}{d_{B}'} = \frac{1}{f}
+\end{equation}
+which clearly has the form on a thin-lens equation, defining a point-to-point correspondence between imaging and object plane.
+Then Eq. \ref{eq:thermal} can be simplified as:
+\begin{equation}
+G^{(2)}_{\textit{tot}}(\vec{r}_2) \propto N + | T \left( \frac{d_A - d_B}{d_{B}'} \vec{r}_2 \right) |^2
+\end{equation}
+where $T ( \frac{d_A - d_B}{d_{B}'} \vec{r}_2 )$ is the object transmission function ($T(\vec{r}_1)$)
+reproduced on the $D_2$ plane. Thanks to this result we can conclude that a thermal source allows reproducing
+in coincidence measurements the two-photon image of an object, similarly to the SPDC case, except for a 
+constant background noise, where $N$ is proportional to it.
 
 
 It is possible to establish an analogy

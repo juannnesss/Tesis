@@ -23,10 +23,10 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-11pt, % The default document font size, options: 10pt, 11pt, 12pt
+12pt, % The default document font size, options: 10pt, 11pt, 12pt
 oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 english, % ngerman for German
-singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+onehalfspacing, %singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 %liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
@@ -109,33 +109,33 @@ headsepline, % Uncomment to get a line under the header
 {\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
 \textsc{\Large Thesis}\\[0.5cm] % Thesis type
 
-\HRule \\[0.4cm] % Horizontal line
-{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1.5cm] % Horizontal line
+\HRule \\[0.3cm] % Horizontal line
+{\huge \bfseries \ttitle\par}\vspace{0.3cm} % Thesis title
+\HRule \\[1.4cm] % Horizontal line
  
-\begin{minipage}[t]{0.4\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
 {\authorname} % Author name - remove the \href bracket to remove the link
 \end{flushleft}
 \end{minipage}
-\begin{minipage}[t]{0.4\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
 \begin{flushright} \large
 \emph{Supervisor:} \\
 {\supname} % Supervisor name - remove the \href bracket to remove the link  
 \end{flushright}
-\end{minipage}\\[3cm]
+\end{minipage}\\[2cm]
  
-\vfill
+%\vfill
 
 \large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
-\textit{in the}\\[0.4cm]
+\textit{in the}\\[0.3cm]
 \groupname\\\deptname\\[2cm] % Research group name and department name
  
-\vfill
-\includegraphics[width=0.1\textwidth]{Logo.png} % University/department logo - uncomment to place it
+%\vfill
+\includegraphics[width=0.075\textwidth]{Logo.png} % University/department logo - uncomment to place it
  
-{\large \today}\\[4cm] % Date
+{\large \today}\\[2.7cm] % Date
 
 \vfill
 \end{center}
@@ -205,47 +205,47 @@ s
 
 \listoffigures % Prints the list of figures
 
-\listoftables % Prints the list of tables
+%\listoftables % Prints the list of tables
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
 
-\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
-\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
 
-\end{abbreviations}
+%\end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS
 %----------------------------------------------------------------------------------------
 
-\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+%\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
 
 % The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
 
-Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
 %Constant Name & $Symbol$ & $Constant Value$ with units\\
 
-\end{constants}
+%\end{constants}
 
 %----------------------------------------------------------------------------------------
 %	SYMBOLS
 %----------------------------------------------------------------------------------------
 
-\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
 
-$a$ & distance & \si{\meter} \\
-$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
 %Symbol & Name & Unit \\
 
-\addlinespace % Gap to separate the Roman symbols from the Greek
+%\addlinespace % Gap to separate the Roman symbols from the Greek
 
-$\omega$ & angular frequency & \si{\radian} \\
+%$\omega$ & angular frequency & \si{\radian} \\
 
-\end{symbols}
+%\end{symbols}
 
 %----------------------------------------------------------------------------------------
 %	DEDICATION
