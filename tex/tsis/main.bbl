@@ -20,16 +20,27 @@ Thorlabs, inc.
 \newblock \url{https://www.thorlabs.com/index.cfm}.
 \newblock Accessed: 2018-03-09.
 
-\bibitem{broke}
-Jefferson Fl\'orez, Omar Calder\'on, Alejandra Valencia, and Clara~I. Osorio.
-\newblock Correlation control for pure and efficiently generated heralded
-  single photons.
-\newblock {\em Phys. Rev. A}, 91:013819, Jan 2015.
+\bibitem{positiveCorre}
+Giuliano Scarcelli, Alejandra Valencia, and Yanhua Shih.
+\newblock Experimental study of the momentum correlation of a pseudo-thermal
+  field in the photon counting regime.
+\newblock {\em Conference on Lasers and Electro-Optics/Quantum Electronics and
+  Laser Science and Photonic Applications Systems Technologies}, page JTuC122,
+  2005.
 
-\bibitem{simulated}
-M.~{D'Angelo} and Y.~{Shih}.
-\newblock {Can quantum imaging be classically simulated?}
-\newblock {\em eprint arXiv:quant-ph/0302146}, February 2003.
+\bibitem{zhong}
+MaLin Zhong, Ping Xu, LiangLiang Lu, and ShiNing Zhu.
+\newblock Resolution of ghost imaging with entangled photons for different
+  types of momentum correlation.
+\newblock {\em Science China Physics, Mechanics {\&} Astronomy}, 59(7):670311,
+  May 2016.
+
+\bibitem{omar}
+Omar Calder\'{o}n-Losada, Jefferson Fl\'{o}rez, Juan~P. Villabona-Monsalve, and
+  Alejandra Valencia.
+\newblock Measuring different types of transverse momentum correlations in the
+  biphoton's fourier plane.
+\newblock {\em Opt. Lett.}, 41(6):1165--1168, Mar 2016.
 
 \bibitem{einstein}
 A.~Einstein, B.~Podolsky, and N.~Rosen.
@@ -48,17 +59,16 @@ Jeffrey~H. Shapiro and Robert~W. Boyd.
 \newblock The physics of ghost imaging.
 \newblock {\em Quantum Information Processing}, 11(4):949--993, Aug 2012.
 
+\bibitem{broke}
+Jefferson Fl\'orez, Omar Calder\'on, Alejandra Valencia, and Clara~I. Osorio.
+\newblock Correlation control for pure and efficiently generated heralded
+  single photons.
+\newblock {\em Phys. Rev. A}, 91:013819, Jan 2015.
+
 \bibitem{shafer}
 D.S. Shafer and Z.~Zhang.
 \newblock {\em Introductory Statistics}.
 \newblock Saylor.org, 2010.
-
-\bibitem{omar}
-Omar Calder\'{o}n-Losada, Jefferson Fl\'{o}rez, Juan~P. Villabona-Monsalve, and
-  Alejandra Valencia.
-\newblock Measuring different types of transverse momentum correlations in the
-  biphoton's fourier plane.
-\newblock {\em Opt. Lett.}, 41(6):1165--1168, Mar 2016.
 
 \bibitem{hecht}
 E.~Hecht.
