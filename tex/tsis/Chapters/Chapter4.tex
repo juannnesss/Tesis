@@ -7,51 +7,85 @@
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
-In This chapter we present the experimental data recovered through the differents 
+In this chapter, we present the experimental data recovered through the differents 
 steps described in the Chapter before. Most the following results consists in 
 2-D arrays representing a matrix, where in each position a color is painted, depending
 on how many photons were detected in single or coincidences counts.
 As we have seen, before making a Two-photon image, there are some process 
-that have to be made before. The first thing todo is to achieve a Gaussian behavior 
-of the original diode laser. For doing do we have to look at the beam propagation after 
+that have to be made. The first thing to do is to achieve a Gaussian behavior 
+of the original diode laser. For doing so, we have to look at the beam propagation after 
 the Spatial Filter. 
 
 \section{Achiving a Gaussian Beam}
 
-PYTHON PROGRAM STILL ON PROGRESS, TALK ABOUT M FACTOR
+From Eq. \ref{eq:wa} we expect that the pump waist doesn't change too much with the distance
+traveled, for this reason we started by measuring the spatial profile of our pump beam in different 
+distances from the spatial filter. Figure \ref{fig:pro} shows the behaviour of the waist while we move away from the spatial filter.
+From the Figure we can observe that the waist doesn't change significantly, if we take a closer look in the x-axis, the total separation from the 
+spatial filter ($\sim100cm$)  its considerably bigger than the little change in the pump waist($\sim 100 \mu m$). There are 3 diferent lines in 
+both Figures, the blue one corresponds to the pump waist at the 13.5\% of the intensity, the red one to the 50\% and the green one to the 80\%.
 
-\section{Finding The Correlated Photons}
-
-After obtaining a Gaussian propagation, and achieve a pump waist that no varies to much
-while propagates, we focused the laser at the BBO crystal and with the help of the \textit{waist lens}
-we set the $w_p=91 \mu m$. Before observe the spatial correlations of the down converted
-photons, we make sure we are seing them. Figure \ref{fig:correlatedPhotonSpot} shows 
-two different images recovered, where in Fig.\ref{fig:correlatedPhotonSpot}(A) we found
-out that the translational mount of the mask was not well placed, it was cutting some of the light.
 
 \begin{figure}[h!]
 \centering
-{  \includegraphics[width=0.45\textwidth]{Figures/correlatedPhotonSpot1.png} }
-{  \includegraphics[width=0.45\textwidth]{Figures/correlatedPhotonSpot2.png} }
-\caption{(A) and (B) shows the B-photon of the down converted pair. In (B) we moved away the translational mount of the mask}
+{  \includegraphics[width=0.45\textwidth]{Figures/propagationV.png} }
+{  \includegraphics[width=0.45\textwidth]{Figures/propagationW.png} }
+\caption{Propagation of the pump Beam, the graph shows how the $w_p$ changes with distance}
+ \label{fig:pro}
+\end{figure}
+
+Figure \ref{fig:p} shows the waist measured in the V and W direction, this waist correspond to the 13.5\% of intensity. Using \ref{eq:wa}
+we can make a fit to the experimental data. We observe that in the V direction the behaviour is closer 
+to the one expected by theory for a gaussian beam, the blue line shows how the pump waist should change for a gaussian beam with origin point
+at z=0.
+
+
+\begin{figure}[h!]
+\centering
+{  \includegraphics[width=0.48\textwidth]{Figures/proV.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/proW.png} }
+\caption{Fit for the change in the $w_p$ with distance, at 13.5\% intensity}
+ \label{fig:p}
+\end{figure}
+
+\section{Finding The Correlated Photons}
+
+After obtaining a Gaussian propagation, and messuring waist that no varies to much
+while propagates, we focused the laser at the BBO crystal and with the help of the \textit{waist lens}
+we set the $w_p=91 \mu m$. Before observing the spatial correlations of the down converted
+photons, we make sure we are seing them. Figure \ref{fig:correlatedPhotonSpot} shows 
+two different images recovered, where in Fig.\ref{fig:correlatedPhotonSpot}(a) we found
+out that there is some problems with the alignment of the optical elements.
+
+
+
+\begin{figure}[h!]
+\centering
+{  \includegraphics[width=0.48\textwidth]{Figures/correlatedPhotonSpot1.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/correlatedPhotonSpot2.png} }
+\caption{(a) and (b) shows the B-photon of the down converted pair. In (b) we moved away the translational mount of the mask}
  \label{fig:correlatedPhotonSpot}
 \end{figure}
 
-In Figure \ref{fig:correlatedPhotonSpot}(B) we can the B-photon, and now there is
-no interference by the translational mount. As said before we placed a pair of polarisers
+In Figure \ref{fig:correlatedPhotonSpot}(b) we can see the B-photon, and now there is
+no interference caused by the bad alignment. As said before we placed a pair of polarisers
 in order to filter them. In the figure we can see that just one direction of the 
-ring in \ref{fig:bbo}(b) while the other is partially filtered.
+down converted pair of photons,  while the other is partially filtered.
 
 
 \section{Experimental Correlations }
 
-Afterwars we would like to observe the shape of the spatial correlations the pair of down converted
-photons and see the experimental behaviour of $\tilde{\Phi}(\vec{q}_B,\vec{q}_A)$.
+After being sure of observing the correlated photons, we would like to observe the shape of the spatial correlations the pair of down converted
+photons and see the experimental behaviour of $|\tilde{\Phi}(\vec{q}_B,\vec{q}_A)|$.
 When remembering the definition of $\vec{q}_n$, it is a 2-D vector, containing the information
-of the photon in x and y direction. Since we have two photons, each one with two spatial 
-variables. Resulting that we can 4 differents correlations for a pair of photons. There
+of the photon in x and y direction. It is clear that when counting the two photons, we have 
+4 differents correlations for the pair of photons, in this monograh we focus on the correlations on the type XX and YY.There
 is important to point out that this transverse momentum $\vec{q}_n$ is related with
 his equivalent $\vec{r}_n$ the position of the photon, with n making reference to the A and B paths.
+
+
+
+
 
 In Figure \ref{fig:expCorrelations} there are the correlations in the xx and yy  direction.
 The 2-D matrix in Figure \ref{fig:expCorrelations}(\textit{XX Correlation}) is
@@ -73,8 +107,8 @@ time scanning and moving in the y direction.
 The spatial correlations in this case present a negative behaviour in both XX and YY direction, an anticorrelation.
 Meaning that is expected to measure a photon at a negative position at the B 
 path if we measured a photon at a positive position at the A path. They both exhibit a elliptical
-shape, but the YY correlation is a narrower one, meaning there is a stronger relation
-between the pair of photons in the Y direction.
+shape, but the XX correlation is a narrower one, meaning there is a stronger relation
+between the pair of photons in the X direction.
 
 \section{Mask Alignment}
 
@@ -83,10 +117,9 @@ spot. This correct spot is defined by the Figures \ref{fig:mask1} and \ref{fig:m
 localisation was decided in function of where the flux of correlated photon was greater.
 The following images where produced as the standar image is done. It means we show the shadow
 of the aperture in the B path. Every position of the images is the single 
-counts of the $D_B$ in the exposure time. It is like the standar image in the sense 
-that we are using the spatial information of the light that interacted with the mask.
+counts of the $D_B$ in the exposure time. 
 
-\subsection{Mask 1}
+\subsection{Alignment Mask 1}
 The Following Figure \ref{fig:localizationSq} shows the final localisation of the first
 mask used. It was the final position because its position is really similar to the one described
 in Figure \ref{fig:mask1}. For making this image we set the step length to be $0.2mm$ and
@@ -99,7 +132,7 @@ the exposure time was 1 second per position.
 \label{fig:localizationSq}
 \end{figure}
 
-\subsection{Mask 2}
+\subsection{Alignment Mask 2}
 Figure \ref{fig:localizationL} shows the localisation of the second mask. While in Figure \ref{fig:localizationL}(A)
 there is the initial position of the mask, Figure \ref{fig:localizationL}(B) shows
 the new localisation of the aperture after a translation in the y direction. This images
@@ -125,7 +158,7 @@ the exposure time to be 30 seconds per position. This image is the result of mea
 detector in each place for 30 seconds, we also make the steps of the detector smaller, $0.1mm$}
 \label{fig:localizationDef}
 \end{figure}
-\subsection{Mask 3}
+\subsection{Alignment Mask 3}
 
 The definitive localisation of the third mask used is presented in the Figure \ref{fig:localizationInte}, 
 where the step was $0.1mm$ and the exposure time was set to 30 seconds per position.
@@ -143,12 +176,14 @@ where the step was $0.1mm$ and the exposure time was set to 30 seconds per posit
 Finally we get to observe the Two-photon images that are the core of this monograh,
 It is important to remember the way this images are obtained. The image $R(\vec{r}_A)$ is a 
 function of the coincidence counts between $D_C$ and $D_A$. We scan $D_A$, and as a 
-result we obtain a 2-D matrix where each ($i,j$) position is the coincidence count.
-\subsection{mask1}
+result we obtain a 2-D matrix where each ($i,j$) position is the coincidence counts.
+
+\subsection{Two-photon imaging Mask 1}
+
 Figure \ref{fig:twoPhotonSq} is the Two-photon image of the square aperture. The maximun
 coincidence counts changed position in the image, compared to Figure \ref{fig:localizationSq}.
-Nevertheless the shape is identificable, still has a shape of square, but its position
-is reflected in both x and y direction. 
+The shape is not identificable,  and its position
+is reflected in both x and y direction, as an evidence of the anticorrelations we are using Figure \ref{fig:expCorrelations} 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/two-photonImageSq.png} 
@@ -156,28 +191,28 @@ is reflected in both x and y direction.
 \label{fig:twoPhotonSq}
 \end{figure}
 
-\subsection{mask2}
+\subsection{Two-photon imaging Mask 2}
 The Two-photon image of the second mask is presented in Figure \ref{fig:twoPhotonL}. 
 In this opportunity it is clear that the more complex shape of the aperture is hardly
 identifiable. However, there are some other interesting things to note about the image.
 As the original aperture, the image is not symmetrical, and it is not pointing to the
-original direction the L was in Figure \ref{fig:localizationDef}. This make us to think 
+original direction the L was in Figure \ref{fig:mask2}. This make us to think 
 about reflexions in the image respect from the original mask, but in this case is 
-not that easy to detect them.
+not that easy to detect.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\textwidth]{Figures/twoPhoL3.png} 
+\includegraphics[width=0.6\textwidth]{Figures/twoPhoL.png} 
 \caption{Two-photon image recovered for the L aperture.}
 \label{fig:twoPhotonL}
 \end{figure}
 
 
 
-\subsection{mask3}
+\subsection{Two-photon imaging Mask 3}
 The third Two-photon image is in Figure \ref{fig:twoPhotonInte}. Again the complex original
-shape is barely visible in the image obtained, Nevertheless the image have a more rounded
-part at the biger Y position, that hint us about a reflexion of the interrogation symbol,
-now it is oriented like \textit{'?'}, so it may present a reflexion in both x and y direction. 
+shape is barely visible in the image obtained, Nevertheless this result and the other Two-photon image is
+really instructive about what we can expect with different spatial correlations. The step for this Figure was $0.01mm$ and the exposure time 
+was of 30 seconds per position. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/twoPhotonInte.png} 

@@ -4,39 +4,38 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Two-photon imaging techniche setup\relax }}{2}{figure.caption.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Simple Experimental setup for the type-II noncollinear SPDC process\relax }}{5}{figure.caption.13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Experimental Spatial correlations between a pair of down-converted photons. Right image shows the correlation in the x variable. Left shows the correlation in the y variable, Beam propagating in the z direction\relax }}{8}{figure.caption.25}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Theoretical Spatial correlations between a pair of down-converted photons, $w_p=91\mu m$\relax }}{8}{figure.caption.25}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Positive and Negative ideal spatial correlations\relax }}{9}{figure.caption.26}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces simulated correlations \relax }}{10}{figure.caption.28}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Optical imaging: a lens produces an image on an object at $S_i$. This distance is defined by the Gaussian thin-lens equation\relax }}{11}{figure.caption.32}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Simple schematic for the Two-photon Imaging, two slite used OIHASUOIASUD COMPLETE\relax }}{12}{figure.caption.36}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Simple schematic for a Two-photon Imaging using entangled photons and a 2-f system\relax }}{14}{figure.caption.40}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Simulated correlations $w_p=15\mu m$ \relax }}{10}{figure.caption.29}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Optical imaging: a lens produces an image on an object at $S_i$. This distance is defined by the Gaussian thin-lens equation\relax }}{11}{figure.caption.33}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces sombrero-like function behaviour for differents constants \relax }}{12}{figure.caption.36}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Simple schematic for the Two-photon Imaging. Only in the coincidence counts we can reconstruct the image\relax }}{13}{figure.caption.38}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Simple schematic for a Two-photon Imaging using entangled photons and a 2-f system\relax }}{15}{figure.caption.42}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simulated Two-photon images for two different waist, $w_p=15 \mu m$ and $w_p=91 \mu m$, Where $T(\mathaccentV {vec}17E{r}_B)$ is an square in the second quadrant.\relax }}{18}{figure.caption.53}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Experimental Setup for the SPDC light Source\relax }}{17}{figure.caption.54}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Image of the Diode Laser and it's control module, Taken from \cite {crystalLaser}\relax }}{18}{figure.caption.57}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Mirror and the cavity mount\relax }}{19}{figure.caption.59}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The spatial intensity profile before and after the spatial filtering process , Taken from \cite {thorlabs}\relax }}{19}{figure.caption.61}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Basic elements of a Spatial Filter. In our experiment we use a Aspheric Lens of $f=30 mm$(LA1805-A), a pinhole of $50 \mu m$ and a collimating lens of $f=60 mm$(LA1134-A). Taken from \cite {thorlabs}\relax }}{19}{figure.caption.62}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces This helps to form circular apertures of variable radius\relax }}{20}{figure.caption.63}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Effect of lens on a Gaussian beam\relax }}{21}{figure.caption.66}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Composition of lenses to control the Pump Waist at a Fixed distance $F$\relax }}{21}{figure.caption.67}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces (a):Actual BBO crystal used in experiment. (b): the noncolinear configuration presented in this experiment\relax }}{22}{figure.caption.71}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Experimental Setup for Obtaining the spatial correlations of a pair of down-converted photons\relax }}{23}{figure.caption.73}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The plane that is being scanned by the fiber tip, it is a $4x4mm$ square, that can be scanned in N steps, where N is defined by us\relax }}{24}{figure.caption.78}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Single Photon Counting Module\relax }}{25}{figure.caption.80}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Experimental Setup for the Two-photon Imaging\relax }}{26}{figure.caption.84}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Detailed description of the "square" aperture location in the scanned plane\relax }}{27}{figure.caption.86}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces The other two apertures used\relax }}{27}{figure.caption.87}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Foldind Mirror, it is in the position for measuring the correlations\relax }}{28}{figure.caption.89}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Experimental Setup for the SPDC light Source\relax }}{19}{figure.caption.56}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The spatial intensity profile before and after the spatial filtering process , Taken from \cite {thorlabs}\relax }}{20}{figure.caption.58}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The spatial intensity profile measured after the spatial filter\relax }}{21}{figure.caption.60}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Effect of lens on a Gaussian beam\cite {hecht}\relax }}{22}{figure.caption.63}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Composition of lenses to control the Pump Waist at a Fixed distance $F$\relax }}{22}{figure.caption.64}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Experimental Setup for Obtaining the spatial correlations of a pair of down-converted photons\relax }}{24}{figure.caption.69}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The plane that is being scanned by the fiber tip, it is a $4x4mm$ square, that can be scanned in N steps, where N is defined by us\relax }}{25}{figure.caption.71}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Single Photon Counting Module\relax }}{26}{figure.caption.73}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Experimental Setup for the Two-photon Imaging\relax }}{27}{figure.caption.77}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Mask 1: Detailed description of the 'square' aperture location in the scanned plane\relax }}{28}{figure.caption.78}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Mask 2: The letter 'L' pointing down. Mask 3: Opening question mark.\relax }}{28}{figure.caption.79}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces (A) and (B) shows the B-photon of the down converted pair. In (B) we moved away the translational mount of the mask\relax }}{30}{figure.caption.94}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Experimental Spatial correlations between a pair of down-converted photons. \textit {XX Correlation} shows the correlation in the x variables. \textit {YY Correlation} shows the correlation in the y variables, Beam propagating in the z direction. $w_p = 91\mu m$\relax }}{31}{figure.caption.96}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Localization of the mask with an square\relax }}{32}{figure.caption.99}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Moving the L Mask in order to put it in the most central spot\relax }}{32}{figure.caption.101}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Long exposure of the definitive localization of the mask, in this try we leave the detector in each place for 30 seconds, we also make the steps of the detector smaller, $0.1mm$\relax }}{33}{figure.caption.102}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Interrogation definitive position\relax }}{33}{figure.caption.104}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Experimental Two-photon image recovered for the square aperture\relax }}{34}{figure.caption.107}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Two-photon image recovered for the L aperture.\relax }}{35}{figure.caption.109}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Two-Photon Image Interrogation\relax }}{35}{figure.caption.111}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Propagation of the pump Beam, the graph shows how the $w_p$ changes with distance\relax }}{30}{figure.caption.82}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Fit for the change in the $w_p$ with distance, at 13.5\% intensity\relax }}{30}{figure.caption.83}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) and (b) shows the B-photon of the down converted pair. In (b) we moved away the translational mount of the mask\relax }}{31}{figure.caption.85}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Experimental Spatial correlations between a pair of down-converted photons. \textit {XX Correlation} shows the correlation in the x variables. \textit {YY Correlation} shows the correlation in the y variables, Beam propagating in the z direction. $w_p = 91\mu m$\relax }}{32}{figure.caption.87}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Localization of the mask with an square\relax }}{33}{figure.caption.90}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Moving the L Mask in order to put it in the most central spot\relax }}{33}{figure.caption.92}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Long exposure of the definitive localization of the mask, in this try we leave the detector in each place for 30 seconds, we also make the steps of the detector smaller, $0.1mm$\relax }}{34}{figure.caption.93}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Interrogation definitive position\relax }}{34}{figure.caption.95}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Experimental Two-photon image recovered for the square aperture\relax }}{35}{figure.caption.98}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Two-photon image recovered for the L aperture.\relax }}{36}{figure.caption.100}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Two-Photon Image Interrogation\relax }}{36}{figure.caption.102}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Experimental setup for the Two-photon imaging using thermal light, taken from \cite {thermalAlejandra}\relax }}{37}{figure.caption.114}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Experimental setup for the Two-photon imaging using thermal light, taken from \cite {thermalAlejandra}\relax }}{39}{figure.caption.105}

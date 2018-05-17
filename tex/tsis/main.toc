@@ -1,50 +1,42 @@
 \babel@toc {english}{}
 \contentsline {chapter}{Declaration of Authorship}{i}{section*.1}
-\contentsline {chapter}{Abstract}{iii}{section*.2}
-\contentsline {chapter}{Acknowledgements}{iv}{section*.3}
+\contentsline {chapter}{Abstract}{iv}{section*.2}
+\contentsline {chapter}{Acknowledgements}{v}{section*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}
 \contentsline {chapter}{\numberline {2}Theory}{4}{chapter.10}
 \contentsline {section}{\numberline {2.1}Correlations between two photons}{4}{section.11}
 \contentsline {subsection}{\numberline {2.1.1}Spontaneous Parametric Down Conversion}{5}{subsection.12}
 \contentsline {subsubsection}{\numberline {2.1.1.1}Phase matching conditions}{6}{subsubsection.16}
 \contentsline {subsection}{\numberline {2.1.2}Spatial Correlations}{7}{subsection.21}
-\contentsline {subsection}{\numberline {2.1.3}Tunable Spatial Correlation SPDC source light}{9}{subsection.27}
-\contentsline {section}{\numberline {2.2}Imaging}{10}{section.29}
-\contentsline {subsection}{\numberline {2.2.1}Standar Imaging}{10}{subsection.30}
-\contentsline {subsection}{\numberline {2.2.2}Two-photon Imaging}{12}{subsection.35}
-\contentsline {subsubsection}{\numberline {2.2.2.1}LenslessTwo-photon Imaging using entangled photon}{13}{subsubsection.39}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Effect of the different spatial correlations}{16}{subsubsection.51}
-\contentsline {chapter}{\numberline {3}Experimental Setup}{17}{chapter.52}
-\contentsline {section}{\numberline {3.1}SPDC Setup}{17}{section.53}
-\contentsline {subsection}{\numberline {3.1.1}Diode Laser}{17}{subsection.55}
-\contentsline {subsection}{\numberline {3.1.2}Mirror}{18}{subsection.58}
-\contentsline {subsection}{\numberline {3.1.3}Spatial Filter}{18}{subsection.60}
-\contentsline {subsection}{\numberline {3.1.4}Waist Lens}{20}{subsection.64}
-\contentsline {subsection}{\numberline {3.1.5}BBO(Beta Barium Borate) Crystal}{22}{subsection.69}
-\contentsline {section}{\numberline {3.2}Spatial Correlations Measurement Setup}{23}{section.72}
-\contentsline {subsection}{\numberline {3.2.1}Lens (Fourier Plane)}{23}{subsection.74}
-\contentsline {subsection}{\numberline {3.2.2}Polariser}{23}{subsection.75}
-\contentsline {subsection}{\numberline {3.2.3}Interferometer Filter}{24}{subsection.76}
-\contentsline {subsection}{\numberline {3.2.4}Detection Module}{24}{subsection.77}
-\contentsline {subsection}{\numberline {3.2.5}Single Photon Counting Module(SPCM)}{25}{subsection.79}
-\contentsline {subsection}{\numberline {3.2.6}Field-programmable gate array(FPGA)}{25}{subsection.81}
-\contentsline {subsection}{\numberline {3.2.7}Computer(Data Analysis)}{26}{subsection.82}
-\contentsline {section}{\numberline {3.3}Two-Photon Imaging Setup}{26}{section.83}
-\contentsline {subsection}{\numberline {3.3.1}Object-Mask}{26}{subsection.85}
-\contentsline {subsection}{\numberline {3.3.2}Folding Mirror}{28}{subsection.88}
-\contentsline {subsection}{\numberline {3.3.3}Bucket Detector}{28}{subsection.90}
-\contentsline {chapter}{\numberline {4}Results}{29}{chapter.91}
-\contentsline {section}{\numberline {4.1}Achiving a Gaussian Beam}{29}{section.92}
-\contentsline {section}{\numberline {4.2}Finding The Correlated Photons}{29}{section.93}
-\contentsline {section}{\numberline {4.3}Experimental Correlations }{30}{section.95}
-\contentsline {section}{\numberline {4.4}Mask Alignment}{31}{section.97}
-\contentsline {subsection}{\numberline {4.4.1}Mask 1}{31}{subsection.98}
-\contentsline {subsection}{\numberline {4.4.2}Mask 2}{31}{subsection.100}
-\contentsline {subsection}{\numberline {4.4.3}Mask 3}{32}{subsection.103}
-\contentsline {section}{\numberline {4.5}Two-Photon Images}{33}{section.105}
-\contentsline {subsection}{\numberline {4.5.1}mask1}{34}{subsection.106}
-\contentsline {subsection}{\numberline {4.5.2}mask2}{34}{subsection.108}
-\contentsline {subsection}{\numberline {4.5.3}mask3}{34}{subsection.110}
-\contentsline {chapter}{\numberline {5}Discussions and Conclusion}{36}{chapter.112}
-\contentsline {chapter}{\numberline {A}Two-photon Imaging Using Chaotic Sources}{37}{appendix.113}
-\contentsline {chapter}{Bibliography}{40}{appendix*.119}
+\contentsline {subsection}{\numberline {2.1.3}Tunable Spatial Correlation SPDC source light}{10}{subsection.28}
+\contentsline {section}{\numberline {2.2}Imaging}{10}{section.30}
+\contentsline {subsection}{\numberline {2.2.1}Standar Imaging}{11}{subsection.31}
+\contentsline {subsection}{\numberline {2.2.2}Two-photon Imaging}{13}{subsection.37}
+\contentsline {subsubsection}{\numberline {2.2.2.1}LenslessTwo-photon Imaging using entangled photon}{14}{subsubsection.41}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Effect of the different spatial correlations}{17}{subsubsection.52}
+\contentsline {chapter}{\numberline {3}Experimental Setup}{19}{chapter.54}
+\contentsline {section}{\numberline {3.1}Light Source with Tunable Spatial Correlations}{19}{section.55}
+\contentsline {subsection}{\numberline {3.1.1}Spatial Filter to achieve a Gaussian pump beam}{20}{subsection.57}
+\contentsline {subsection}{\numberline {3.1.2}Lenses to Control the pump beam waist}{21}{subsection.61}
+\contentsline {subsection}{\numberline {3.1.3}BBO(Beta Barium Borate) Crystal: The source of pair of photons}{23}{subsection.66}
+\contentsline {section}{\numberline {3.2}Spatial Correlations Measurement Setup}{23}{section.68}
+\contentsline {subsection}{\numberline {3.2.1}Detection Module}{25}{subsection.70}
+\contentsline {subsection}{\numberline {3.2.2}Single Photon Counting Module(SPCM)}{26}{subsection.72}
+\contentsline {subsection}{\numberline {3.2.3}Field-programmable gate array(FPGA)}{26}{subsection.74}
+\contentsline {subsection}{\numberline {3.2.4}Computer(Data Analysis)}{26}{subsection.75}
+\contentsline {section}{\numberline {3.3}Two-Photon Imaging Setup}{27}{section.76}
+\contentsline {chapter}{\numberline {4}Results}{29}{chapter.80}
+\contentsline {section}{\numberline {4.1}Achiving a Gaussian Beam}{29}{section.81}
+\contentsline {section}{\numberline {4.2}Finding The Correlated Photons}{30}{section.84}
+\contentsline {section}{\numberline {4.3}Experimental Correlations }{31}{section.86}
+\contentsline {section}{\numberline {4.4}Mask Alignment}{32}{section.88}
+\contentsline {subsection}{\numberline {4.4.1}Alignment Mask 1}{32}{subsection.89}
+\contentsline {subsection}{\numberline {4.4.2}Alignment Mask 2}{32}{subsection.91}
+\contentsline {subsection}{\numberline {4.4.3}Alignment Mask 3}{33}{subsection.94}
+\contentsline {section}{\numberline {4.5}Two-Photon Images}{34}{section.96}
+\contentsline {subsection}{\numberline {4.5.1}Two-photon imaging Mask 1}{35}{subsection.97}
+\contentsline {subsection}{\numberline {4.5.2}Two-photon imaging Mask 2}{35}{subsection.99}
+\contentsline {subsection}{\numberline {4.5.3}Two-photon imaging Mask 3}{35}{subsection.101}
+\contentsline {chapter}{\numberline {5}Discussions and Conclusion}{37}{chapter.103}
+\contentsline {chapter}{\numberline {A}Two-photon Imaging Using Chaotic Sources}{39}{appendix.104}
+\contentsline {chapter}{Bibliography}{42}{appendix*.110}

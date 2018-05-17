@@ -3,16 +3,20 @@
 \chapter{Experimental Setup} % Main chapter title
 
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-In the following chapter we will look in detail the components of the experimental 
-setup and its stages. This experimental setup located on the optical table of the 
-Quantum Optics Laboratory
+In the following chapter, we will look in detail the components of the experimental 
+setup to observe the effects of different spatial correlations in a lensless quantum image
+experiment. The setup consist of two  main stages. The first one is the light source 
+with tunable spatial correlations, and the second one the two-photon imaging system. 
+This experimental setup located at the optical table of the 
+Quantum Optics Laboratory.
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
-\section{SPDC Setup}
-Following the treatment made in the previous chapter. The first ingredient is the SPDC light, to obtain pair of photons
- the experimental setup shown in Figure \ref{fig:SPDC}. From here we will star describing each of the components
-presented.
+\section{Light Source with Tunable Spatial Correlations}
+
+The experimental setup to obtain pairs of photons is shown in Figure \ref{fig:SPDC}. 
+The source consists of a type-II crystal in  non-collinear configuration. The source is based
+on spontaneous parametric down conversion.
 
 
 \begin{figure}[h!]
@@ -22,52 +26,38 @@ presented.
 \label{fig:SPDC}
 \end{figure}
 
-\subsection{Diode Laser}
-Before having pair of correlated photons, we start by having a coherent light source, 
-for this experiment we use a Diode Laser that delivers a continuous wave(CW) at 
-$\lambda = 406,101 nm$ and $\Delta \lambda = 4 nm$. 
-The laser model No. DL 405-200 delivers light at 200 mW with a beam diameter 
-of 1.5 mm and a beam Divergence\footnote{The beam divergence is an angular measure of the increase in beam diameter with distance from the original optical aperture}
- 1.2 mrad. 
 
-\begin{figure}[h!]
-\centering
-{  \includegraphics[width=0.45\textwidth]{Figures/diodeLaser.jpg} }
-{  \includegraphics[width=0.45\textwidth]{Figures/diodeLaserControl.jpg} }
-\caption{Image of the Diode Laser and it's control module, Taken from \cite{crystalLaser}}
- \label{fig:diodeLaser}
-\end{figure}
+To obtain pairs of photons by means of SPDC, we need to pump a nonlinear crystal.
+For this experiment, we use a diode laser (Crystal Laser model No. DL 405-200),  
+that delivers a continuous wave(CW) at wavelength $\lambda = 406,101 nm$ and $\Delta \lambda = 4 nm$. 
+The laser delivers light at 200 mW with a beam diameter 
+of 1.5 mm and a beam Divergence of 1.2 mrad.
 
 
 
 
-\subsection{Mirror}
-As seen in Figure \ref{fig:SPDC} we redirect the laser beam two times, for doing
+
+
+As seen in Figure \ref{fig:SPDC}, we redirect the laser beam two times, for doing
 so we use a pair of mirrors. For this kind of experiments, when the efficiency 
 of the optical elements is really important, it is important to use the correct type
 of mirror, we want a mirror that reflects most of the light. For this reason, depending
 on the wavelength it is posible to find mirrors and lenses with different types of 
 coating. Mirror and Lenses have a thin layer that is more efective for a range 
-of wave lengths.
+of wave lengths. For our experiment the mirrors have a coating that highly reflects light at
+$405nm$. It is posible to manipulate the direction in which the mirror will reflect the 
+light by using an appropriate mount with screws that allows to move the reflected beam in one
+direction. In the experimental setup we use two mirrors to change the direction two times.
 
-In Figure \ref{fig:mirror} we can see a Mirror and the base used to place it, it is posible
-to manipulate the direction in which the mirror will reflect the light,  we can do this 
-by manipulating the screws, each one moves the reflected laser in one direction. 
-In the experimental setup we use two mirror to change the direction two times, this is because 
-using just one could be more complicated when aligning the rest of optical elements. 
-When two mirror are used, we have more possibilities, 4 in total. The advantage 
-of having more possibilities is that the manipulation can be more precise.
-\begin{figure}[h!]
-\centering
 
- \includegraphics[width=0.3\textwidth]{Figures/mirror.jpg}
-\caption{Mirror and the cavity mount} 
-\label{fig:mirror}
-\end{figure}
 
-\subsection{Spatial Filter}
-A laser beam can be characterized by measuring its spatial intensity profile at points perpendicular to its direction of propagation. 
-The spatial intensity profile is the variation of intensity as a function of distance from the center of the beam, in a plane perpendicular to its direction of propagation.
+\subsection{Spatial Filter to achieve a Gaussian pump beam}
+As seen in theory we need a gaussian beam to pump the crystal. In our experiment we have a 
+diode laser whose spatial profile is not a Gaussian. This ramdom spatial profile is a result of the randomnes in the quantum emissions and 
+absorptions that are happening at the exited atoms at the diode laser\cite{hecht}.
+In order to achieve a Gaussian profile, we use the spatial filter presented in the 
+Figure \ref{fig:SPDC}. The spatial filter is composed by two irises, an Aspheric Lens of $f=30 mm$(LA1805-A), a pinhole of $50 \mu m$ and a 
+collimating lens of $f=60 mm$(LA1134-A).
 \begin{figure}[h!]
 \centering
 {  \includegraphics[width=0.6\textwidth]{Figures/inputBeam.png} }
@@ -75,68 +65,72 @@ The spatial intensity profile is the variation of intensity as a function of dis
 \caption{The spatial intensity profile before and after the spatial filtering process , Taken from \cite{thorlabs}}
  \label{fig:inputOutputBeam}
 \end{figure}
-In Figure \ref{fig:inputOutputBeam} we se see the input gaussian beam 
-and how its intensity fluctuates around the x axis. The output desired beam after going through the spatial filter is then shown.
-The simplest arrangement to achieve this output spatial intensity profile is show in the Figure \ref{fig:spatialFilter}, 
-where at the end we have a beam which intensity strength falls off transversely following a bell shaped curve that's symmetrical around the central axis.
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.55\textwidth]{Figures/spatialFilter.png}
-\caption{Basic elements of a Spatial Filter. In our experiment we use a Aspheric Lens of $f=30 mm$(LA1805-A), a pinhole of $50 \mu m$ and a collimating lens of $f=60 mm$(LA1134-A). Taken from \cite{thorlabs}} 
-\label{fig:spatialFilter}
-\end{figure}
-Taking a closer look at the input Gaussian beam in Figure \ref{fig:inputOutputBeam} we may recognise a diffraction pattern, the well known Airy disks. 
-However, when we measure this spatial profile directly from the diode laser, we find out that it doesn't follow that behaviour, on the contrary 
-it follows a more random spatial profile. This ramdom spatial profile is a result of the randomnes in the
-quantum emissions and absorptions that are happening at the exited atoms at the diode laser\cite{hecht}.
 
-In order to have this spatial intensity profile at the input of the lens arrangement, Figure \ref{fig:spatialFilter},
-we put a circular aperture with the help of a iris, Figure \ref{fig:iris}, before the $f=30.0 mm$ lens. Another optional iris is placed after the $f=60.0mm$ lens.
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.25\textwidth]{Figures/iris.jpg}
-\caption{This helps to form circular apertures of variable radius} 
-\label{fig:iris}
-\end{figure}
+To undestand what a spatial filter does consider a light beam with a spatial profile as the 
+one depicted in Figure \ref{fig:inputOutputBeam}(a). After passing a spatial filter the 
+obtained light beam look like the one in Figure \ref{fig:inputOutputBeam}(b), that is 
+now the Gaussian profile we were looking for.
 
-
-IN HERE I MAY TALK ABOU THE M FACTOR, QUALITY PARAMETER OF GAUSIAN BEAMS $M^2$ 
-Power $200mW$
-
-\subsection{Waist Lens}
-After successfully achieving a Gaussian profile, which is important for the reasons described in Section \ref{sec:spatialCorrelations}.
-After the spatial filter, we need a way to control the pump waist, but we need to do it in a way not too complicated, that 
-doesn't imply too many changes in the experimental setup. Putting a  lens in the propagation direction with certain focal lenght $f$ will define a zone around
-the distance f called \textit{Focus depth}\cite{hecht}, where in the middle we find the narrowest point of the beam.
-The radius of this zone is:
-\begin{equation}
- W_0=\frac{\lambda f}{\pi W_B}
+In Figure \ref{fig:int} we can appreciate the spatial intensity profile of the pump beam just after 
+it goes through the spatial filter, the red line is a fit done computationally. The green dots are the measured waist at 3 given
+percentages of intensity, $13.5\%$, $50\%$ and $80\%$ respectably. The tool we used to measure this is called Beam Master, and it have its own spatial directions, V and W direction . 
+In the optical table we made sure that the V and W direction agreed with our x and y directions. The waist of a gaussian beam propagating in the z direction is given by\cite{waist}:
+\begin{equation}\label{eq:wa}
+w(z)=w_0 \sqrt{1+(z/z_R)^2}.
 \end{equation}
-Where $W_B$ is the initial waist beam. 
-In Figure \ref{fig:waist} we see this behaviour, this zone is produced around the distance $f$ and
-the radius $W_0$ is a function of $f$ and $W_B$. making that if we want to change
-$W_0$ we need to use a different lens with $f'$ and also the \textit{Focus depth}
-will be at a different distance.
+Where $z_R$ is the \textit{Rayleigh length} and it's defined as $z_R=\frac{\pi n w_0^2}{\lambda_0}$. The previous expresion is a function 
+of $n$ the refractive index, $\lambda_0$ the wavelength of the beam and $w_0=w(0)$ the waist at the origin. 
+ 
+
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.35\textwidth]{Figures/waist.png}
-\caption{Effect of lens on a Gaussian beam} 
+{  \includegraphics[width=0.48\textwidth]{Figures/inteV.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/inteW.png} }
+\caption{The spatial intensity profile measured after the spatial filter}
+ \label{fig:int}
+\end{figure}
+
+
+
+\subsection{Lenses to Control the pump beam waist}
+
+After successfully achieving a Gaussian profile, which is important for the reasons 
+described in Section \ref{sec:spatialCorrelations}, we need a way to control the pump waist, 
+but we need to do it 
+in a way not too complicated, that doesn't imply too many changes in the experimental setup.
+ Putting a  lens, in the beam propagation direction, with certain focal lenght $f$ will define
+ a zone around the distance $f$ called \textit{Focus depth}\cite{hecht}, where in the middle 
+we find the narrowest point of the beam. The radius of this zone is:
+\begin{equation}
+ W_0=\frac{\lambda f}{\pi W_B}.
+\end{equation}
+Where $W_B$ is the width of beam at the lens. In Figure \ref{fig:waist} we see this 
+behaviour.  If we want to change $W_0$, we need to use a different lens with $f'$ a different
+focal length. This will produce also a different \textit{Focus depth}. Therefore, 
+if we want to focus the beam at a fixed distance $F$, using this method to control the pump
+ waist is not practical. Every different lens we would use will make this waist $W_0$ at a
+ differents distances $f$. It is necessary to find a combination of lenses, that we will call
+\textit{waist lens} that make us a 
+$W_0$ at a transverse plane located in a fixed position $F$ from the set. 
+In Figure \ref{fig:fixed} we present the combination of lenses, \textit{waist lens}.
+ It consists on an arrangment of two 
+lenses, a positive and a negative one, separated a distance $d_0$ from each other.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/waist.png}
+\caption{Effect of lens on a Gaussian beam\cite{hecht}} 
 \label{fig:waist}
 \end{figure}
 
-If we want to focus the beam at a fixed distance $F$, using this method to control the pump waist is not practical. 
-Every different lens we would use will make this waist $W_0$ at a differents distances $f$. It is necessary to find a \textit{Waist lens}
-that make us a $W_0$ at a transverse plane located in a fixed position $F$ from the \textit{Waist Lens}. 
-In Figure \ref{fig:fixed} we present a special lens, consisting in an arrangment of two lenses, a positive 
-and negative one respectively, separated a distance $d_0$ from each other.
+
 \begin{figure}[h!]
 \centering
  \includegraphics[width=0.65\textwidth]{Figures/fixed.png}
 \caption{Composition of lenses to control the Pump Waist at a Fixed distance $F$} 
 \label{fig:fixed}
 \end{figure}
-Where we can define a \textit{effective focal length} $F$ as a function of  $f_1$ and $f_2$, the focal lengths of the positive and negative lenses 
+We can define a \textit{effective focal length} $F$ as a function of  $f_1$ and $f_2$, the focal lengths of the positive and negative lenses 
 respectively. With the constrain that $d_0 < f_1$, $F$ reads:
 \begin{equation}
 F=\frac{f_1 |f_2|}{|f_2|-f_1+d_0}.
@@ -147,15 +141,17 @@ It is not experimentally practical to be changing the crystal position, it would
 follows. For this reason, it is perfect to be able to achieve the desired pump waist just by changing the relative separation of two lenses. 
 
 
-\subsection{BBO(Beta Barium Borate) Crystal}
+\subsection{BBO(Beta Barium Borate) Crystal: The source of pair of photons}
 The Beta Barium Borate (BBO) is an inorganic compound, with chemical formula $\beta$-BaB$_{2}$O$_4$. This crystal is a
 nonlinear optical media commonly used. It is also a birefringent\footnote{Birefringence is a optical property of some materials of 
 having a refractive index that depends on the polarisation and the propagation of light\cite{hecht}} material and its transmission regions extends
 from $189nm$ to $3500nm$\cite{bbo}.
-The type-II crystal is mounted is such way that the input and output plane are fixed, Figure \ref{fig:bbo}(a). In particular the input plane is at $F$ from 
-the \textit{waist lens} presented in the previous section, the power of the pump at this point is $\sim 60mW$. In Figure \ref{fig:bbo}(b) is a schem of 
-the noncolinear configuration at the output plane of the crystal.
+The type-II crystal is mounted is such way that the input and output plane are fixed. In particular the input plane is at $F$ from 
+the \textit{waist lens} presented in the previous section, the power of the pump at this point is $\sim 60mW$. The generated photons doubles the wavelength 
+of the original pump, it means the generated photon are around $810nm$.
 
+
+\begin{comment}
 \begin{figure}[h!]
 \centering
 {\includegraphics[width=0.35\textwidth]{Figures/bbo.jpg}}
@@ -163,6 +159,7 @@ the noncolinear configuration at the output plane of the crystal.
 \caption{(a):Actual BBO crystal used in experiment. (b): the noncolinear configuration presented in this experiment}
  \label{fig:bbo}
 \end{figure} 
+\end{comment}
 
 At this point we have as a result of the SPDC process a pair of entangled photons, which have an strong correlation. This correlation is 
 the feature in which we are interested on. We need to observe the shape of this correlations functions and the next section will focus 
@@ -174,7 +171,7 @@ on the experimental setup that will allow us to observe this.
 From this point we will talk about a pair of correlated photons, that will come from the output plane of the BBO 
 crystal, for historical reasons this photons are labeled as \textit{signal} and \textit{idler}. Nevertheless, to keep the same notations used through 
 this monograph, this photon are going to be labeled as A-photon and B-photon, depending on which path they follow, in Figure \ref{fig:spatialSetup}
-we can see the experimental setup for measuring the spatial correlations, and the different paths the light follows.
+we can see the experimental setup for measuring the spatial correlations.
 
 \begin{figure}[h!]
 \centering
@@ -183,32 +180,35 @@ we can see the experimental setup for measuring the spatial correlations, and th
 \label{fig:spatialSetup}
 \end{figure}
 
-\subsection{Lens (Fourier Plane)}
-The next optical element that the pair of correlated photons find in their path is a pair of lenses. This pair of lenses are located at a
-distance $f$ from the crystal. They define a $2f$ system and place a Fourier plane at a $2f$ distance from the crystal. As discused before, 
-this plane is important because of the relation between the transverse momentum of the light before the 2-f system, and the photon 
-position after de system, Eq. \ref{eq:fourier}. We use a lens(LA1708) of $f=200.0mm$ in front of each \textit{A} and \textit{B}. 
+Observing the theory developed before there is a relation between the transverse momentum $\vec{q}_n$ of the light before the 2-f system, and the photon 
+position $\vec{r}_n$ after de system, Eq. \ref{eq:fourier}. For this reason we placed two lenses, one in each path of the light.
+Doing this will put our detections in the Fourier plane. We use two lenses(LA1708) of $f=200.0mm$ in front 
+of each \textit{A} and \textit{B}. It is also important to note that from now on, the lenses and mirror used from here, will have a coating that
+transmits light around $810nm$ with high efficiency for the lenses, and highly reflects light at this wavelength. 
 
 
-\subsection{Polariser}
+
 
 We are interested in just a pair photons, $\Phi(\vec{q}_B,\Omega_B;\vec{q}_A,\Omega_A)$, that are polarised in certain direction. In order to filter the others
-photons $\Phi(\vec{q}_A,\Omega_A;\vec{q}_B,\Omega_B)$, we place a pair of polarisers at both paths. A polariser is an optical element that filter light, it filters
-light depending on the direction of the electrical field. We used a pair of Polarisers(WP25M-UB), which consist of an array of parallel metallic
+photons $\Phi(\vec{q}_A,\Omega_A;\vec{q}_B,\Omega_B)$, and obtain the Eq. \ref{eq:stateFun}, we place a pair of polarisers at both paths. A polariser is an optical element that filters light
+depending on the direction of the electrical field. We used a pair of Polarisers(WP25M-UB), which consist of an array of parallel metallic
 wires sandwiched between glass with certain coating for better transmission.
 
-\subsection{Interferometer Filter}
+
+
+
+
 As pointed out in Section \ref{sec:spatialCorrelations}, in order to observe the transverse
 correlations, the frequency information has to be traced out. For doing so, we placed a 
-pair Interferometer filters. This optical elements have the special feature that only transmits 
-light that comes throught in certain range of frequencies. To do this filtering we used a spectral filter(FB810-10) that only transmits the light that comes
-with $\lambda =810 \pm 2nm$.
+pair of Interferometer Filters(IF), Thorlabs FB810-10. They are modeled as $f_n (\Omega_n)=\text{exp}[-\Omega_n^2/(
+4\sigma_n^2)]$, where for this specific case $\Omega_n=810nm$ and $\sigma_n=2nm$. This optical elements 
+have the special feature that only transmits light that comes throught this range of frequencies. 
 
 \subsection{Detection Module}
 To observe the spatial correlations we have to be able to measure light that is propagating
 in the z-direction. Figure \ref{fig:scan} shows the plane that is being scanned, where each 
-square have a $x_i$ and $y_j$ position, ${i,j}$ goes from $0$ to $N$. With the help of a motorised translational stages, we can make this $N$ steps. we can 
-control the movement of a pin hole detector, which consists in a single mode optical fiber tip. The translationas stages are controlled 
+square have a $x_i$ and $y_j$ position, ${i,j}$ goes from $0$ to $N$. With the help of a motorised translational stages, we can make this $NxN$ steps. We can 
+control the movement of a pin hole detector, which consists in a single mode optical fiber tip. The translational stages are controlled 
 by Arduinos, this enable us to do the scan in a complete automated way.
 \begin{figure}[h!]
 \centering
@@ -264,12 +264,12 @@ it has been used the python language and the matplotlib library to generate them
 
 
 \section{Two-Photon Imaging Setup}
-For the Two-photon imaging process we no longer have spatial information about the  B-photon after it interacts
-with the object. Figure \ref{fig:ghostSetup} shows the experimental setup for this stage of the
-experiment. It is important to remember that all the setups shown so far, are in esence the same
-optical elements, It was important to create a Experimental setup that allows us to 
-measure different things without changing to much. In this stage we re-direct the light that 
-goes through the object to a detector $D_C$.
+Figure \ref{fig:ghostSetup} shows the extra parts of the experimental setup 
+for doing Two-photon imaging. In path B we add an object and a bucket detector $D_C$. 
+It may be noted that all the setups shown so far, use in essence the same optical elements.
+ It is important to create an experimental setup that allows us to 
+measure different things without changing it too much. For this we re-direct the light that 
+goes through the object by means of a flip mirror (FM).
 
 \begin{figure}[h!]
 \centering
@@ -278,49 +278,47 @@ goes through the object to a detector $D_C$.
 \label{fig:ghostSetup}
 \end{figure}
 
-\subsection{Object-Mask}
-This is an obstruction that is placed in the \textit{B} path. This is the object
-from which we will make an image. It consist in an aperture on a translational mount,
+
+The object is an obstruction that is placed in the \textit{B} path. This is the object
+from which we will make an image. It consist on an aperture $T(r_B)$ on a translational mount,
 that allow us to move the aperture precisely in the same plane we make our detections.
 This is done by manipulating a pair of screws. 
 We used differents objects and in Figure \ref{fig:mask1}
-there is a detailed schematic of the first one used. It consists in a square aperture placed in the 4th 
-quadrant of the scanned plane.
+there is a detailed schematic of the first one used. It consists on a square aperture placed in the 4th 
+quadrant of the scanned plane. 
 
 \begin{figure}[h!]
 \centering
  \includegraphics[width=0.6\textwidth]{Figures/mask1.pdf}
- \caption{Detailed description of the "square" aperture location in the scanned plane}
+ \caption{Mask 1: Detailed description of the 'square' aperture location in the scanned plane}
 \label{fig:mask1} 
 \end{figure}
 
-In Figure \ref{fig:masks} there are the other two apertures that we used so far in the experiment, 
-this apertures where selected because of the symmetries and antisymmetries they present, 
-the goal of this monograh is to study the effect of the spatial correlations in the image
-recovered, effect such as reflection of the original image, quality and others.  
+In Figure \ref{fig:masks} there are the other two apertures that we used so far in the 
+experiment, 
+these apertures were selected because of the symmetries and antisymmetries they present, 
+and therefore
+they helps us to recognise the effects  of the spatial correlations in the image
+recovered.  
 
 \begin{figure}[h!]
 \centering
 {  \includegraphics[width=0.45\textwidth]{Figures/mask2.png} }
 {  \includegraphics[width=0.45\textwidth]{Figures/mask3.png} }
-\caption{The other two apertures used}
+\caption{Mask 2: The letter 'L' pointing down. Mask 3: Opening question mark.}
  \label{fig:masks}
 \end{figure}
 
-\subsection{Folding Mirror}
-In order to change de path followed by the B-photon, and guide the light to a new detector $D_C$we use a Folding mirror, Figure \ref{fig:foldingMirror}.
+
+In order to change de path followed by the B-photon, and guide the light to a new detector $D_C$, we use a Folding mirror.
 This mirror plays the role of a switch, when is up, we are know dealing with the
 $D_C$ detector, and we are doing a Two-photon Imaging process. In contrast, when the mirror is 
 down, we are recovering spatial information, so it is possible to recognise some sort of
-shadow from the object, or we are measuring the spatial correlations.
-\begin{figure}[h!]
-\centering
- \includegraphics[width=0.25\textwidth]{Figures/foldingMirror.jpg}
- \caption{Foldind Mirror, it is in the position for measuring the correlations}
-\label{fig:foldingMirror} 
-\end{figure}
+shadow from the object, or to measure the spatial correlations.
 
-\subsection{Bucket Detector}
-This detector consist denominated $D_C$ detector. It is a coupling lens that collects all the light that goes through the object.
-The lens position is fixed, and it gathers all light and send it to a multi mode optical fiber connected to a SPCM.
-In contrast to the other detections made before, the Bucket detector loses track of any spatial information of the photons. 
+
+
+The bucket detector $D_C$ consists in a coupling lens, a multimode fiber and a detector. The lens collects all the 
+light that goes 
+through the object couple it to the fiber that is connected to the SPCM. In contrast to the other detections made 
+before with $D_A$ and $D_B$, the Bucket detector loses track of any spatial information of the photons. 

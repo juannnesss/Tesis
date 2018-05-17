@@ -4,7 +4,7 @@
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-In Here, we will discus some important facts to get a complete understanding 
+In here, we will discus some important facts to get a complete understanding 
 of the physical phenomena of correlations and Two-photon imaging. Specifically, we will develop the 
 notions that are crucial in the understanding of the Two-photon imaging using entangled light. We will
  star describing the process of SPDC, that provides us with the light source . Then we'll review the 
@@ -44,9 +44,9 @@ in polarisation, in frequency, in orbital angular momentum and in transverse mom
 
 \begin{figure}[h!]
 \centering
-\label{fig:spdcSimple}
  \includegraphics[width=0.65\textwidth]{Figures/spdcSimple.png}
- \caption{Simple Experimental setup for the type-II noncollinear SPDC process} 
+ \caption{Simple Experimental setup for the type-II noncollinear SPDC process}
+\label{fig:spdcSimple} 
 \end{figure}
 
 
@@ -65,7 +65,7 @@ In Figure \ref{fig:spdcSimple} the non-collinear configuration is shown, where l
 cones, for each polarisation, these light cones intercepts in two places, from where we will use pair the pair A-photon and B-photon.
 
 For the rest of this monography we will be focused in the type-II and non-collinear configuration. Using first order perturbation theory  and the paraxial approximation, the two-photon state
- coming out from the crystal, $\ket{\Psi}$, is given by \cite{omar} type-II:
+ coming out from the crystal, $\ket{\Psi}$, is given by \cite{omar}:
 \begin{equation}
 \begin{split}
 \label{eq:stateFunComplex}
@@ -122,7 +122,9 @@ The angles $\phi_B$ and $\phi_A$ are the creation angles of the down-
 converted photons with respect to the pump’s
 propagation direction, whereas $\rho_p$ and $\rho_B$ are angles, they account for
 the walk-off of the pump $p$ and the $B$ down-
-converted photon, respectively.  $N_n=\frac{\delta k}{\delta \omega}$ denotes the inverse of the group velocity for each photon.
+converted photon, respectively.  $N_n=\frac{\delta k}{\delta \omega}$ denotes the inverse of the group velocity for each photon, tha invserse 
+of the change of the angular frequency $\omega$ against the angular wavenumber $k$.
+
 
 
 
@@ -149,7 +151,7 @@ This spectral filters are modeled as $f_n (\Omega_n)=\text{exp}[-\Omega_n^2/(
 4\sigma_n^2)]$, with bandwidth $\sigma_n$ chosen to achive a regimen where the 
 spatial-spectral correlations are completely broken \cite{broke}. 
 To achieve this mathematically we have to integrate \ref{eq:modeSim} around the
-spatial variables:
+time variables:
 \begin{equation}
 \label{eq:modeSpa}
 \tilde{\Phi}(\vec{q}_B,\vec{q}_A) = \int d\Omega_B d\Omega_A f_B(\Omega_B)f_A(\Omega_A) \Phi(\vec{q}_B,\Omega_B;\vec{q}_A,\Omega_A).
@@ -170,35 +172,32 @@ A and b are defined from the phase-matching conditions of the SPDC process. $x^T
 parameters in the experiment such as the length of the crystal L, pump waist $w_p$, creation 
 angles inside the crystal $\varphi_n$ and the width of the spectral filter $\sigma_n$.
 
-is pearson coeficient realted to correlations parameter ???
-\begin{comment}
-A way to quantify the degree of spatial correlation we shall define 'correlation parameter':
-\begin{equation}
-K^\lambda = \frac{C^\lambda_{si}}{\sqrt{C^\lambda_{ss}C^\lambda_{ii}}}
-\end{equation}
-calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\lambda$ with elements $C^\lambda_{kj} = \langle q^\lambda_k q^\lambda_j \rangle - \langle q^\lambda_k \rangle \langle q^\lambda_j \rangle $.
-
-\end{comment}
-
 
 
 \begin{figure}[h!]
 \centering
 {  \includegraphics[width=0.48\textwidth]{Figures/theoricalxx.png} }
 {  \includegraphics[width=0.48\textwidth]{Figures/theoricalyy.png} }
-\caption{Experimental Spatial correlations between a pair of down-converted photons. Right image shows the correlation in the x variable. Left shows the correlation in the y variable, Beam propagating in the z direction}
- \label{fig:corre}
+\caption{Theoretical Spatial correlations between a pair of down-converted photons, $w_p=91\mu m$}
+ \label{fig:correThe}
 \end{figure}
-Figure \ref{fig:corre} show a couple of examples, of how these correlations we are talking about look like. These correlations have elliptical shape,
-and show how strong is the posibility of detecting a photon at a given momentum, looking 
+Figure \ref{fig:correThe} show a pair of examples of how these correlations we are talking about look like. These correlations have elliptical shape,
+and show how strong is the posibility of detecting a photon at a given momentum. For example, looking 
 at XX Correlation, there is a great chance
-of detecting simultaneously a photon at $q_B=0$ and at $q_A=0$. Now if we look at the left graph, it is showing the correlation 
-of the pair of photons in the $y$ direction, there is a significant probability of measuring simultaneously a photon at $y_B=0.4$ 
-and at $y_A=-0.4$. It is interesting how in this case there is a "negative" correlation, the expected position at which we will find the other photon, is at the same, but negative position.
-Another interesting fact we have to point out, is that this correlations algo can be sharper, the x correlation have a more circular shape, making wider the posible values for a given $x_B$. In contrast the y correlation is more eliptic, meaning it restring the posible values por a given $y_B$.
+of detecting simultaneously a photon at $q^x_B=0$ and at $q^x_A=0$. Now if we keep looking at this XX correlation, we can also 
+observe that detecting a photon at $q^x_B=0.5$, would constrain the posibles values of $q^x_A$ to values close to $-0.5$. This change in the sign
+is an evidence of an anticorrelation between the photons in the XX direction. In Figure \ref{fig:correThe} we can also find the theoretical YY correlation. For this case we have a less narrower elipsis, meaning 
+we have a less strong correlation in the YY direction. If we detect a photon at $q^y_B=0.5$, we would probably get 
+another photon in the path A between $[-0.5,0.5]$ with almost equal probability for this range. It is clear that the more this correlations 
+look like a circle, the correlation is less stronger . In contrast between more narrower the elipsis is, the stronger the correlation is. 
+Another important fact from this analisys is that the direction of the elipsis give us a sense of the sign of the correlation, a negative correlation
+is called an anticorrelation.
+
+
+
 It is easy to think how a strong correlation should look like, a strong correlations in spatial variables would mean that if we have the position of one photon at the position 
 $\vec{q}_B$ we immediately would know which $\vec{q}_A$ have the other photon, this king of ideal spatial correlation would look like a straigth line
-really thin, Figure \ref{fig:idealCorre}, and it would be like having a relation of like $\delta (\vec{q}_b -\vec{q}_a)$. 
+really thin. Figure \ref{fig:idealCorre} shows this ideal correlation that  would be like having a relation of $\delta (\vec{q}_b -\vec{q}_a)$. 
 
 
 \begin{figure}[h!]
@@ -209,8 +208,17 @@ really thin, Figure \ref{fig:idealCorre}, and it would be like having a relation
  \label{fig:idealCorre}
 \end{figure}
 
+In the frame of this discussion, it would be useful to define a way to quantify the degree of spatial correlation.
+We shall define a 'correlation parameter':
+
+\begin{equation}
+K^\lambda = \frac{C^\lambda_{si}}{\sqrt{C^\lambda_{ss}C^\lambda_{ii}}},
+\end{equation}
+calculated for each direction $(\lambda = x, y)$ from the covariance matrix $C^\lambda$ with elements $C^\lambda_{kj} = \langle q^\lambda_k q^\lambda_j \rangle - \langle q^\lambda_k \rangle \langle q^\lambda_j \rangle $.
+This 'correlations parameter' is a measure of the linear correlation between two variables, in this case $q^{\lambda}_A$ and $q^{\lambda}_B$.
 
 \begin{comment}
+
 To have a general numerical approach to $\tilde{\Phi}(\vec{q_B},\vec{q_A})$, it is desired to 
 writte it as generic correlations instead of the experimental parameters. This can be done by 
 noticing that the amplitude of $\tilde{\Phi}(\vec{q_B},\vec{q_A})$ has the form of a 4-dimensional 
@@ -245,24 +253,27 @@ It is clear that both \ref{eq:modeSim} and \ref{eq:modeSpa} depend on $w_p$, the
 parameter and keep the rest of the parameters constant, the term in the exponential function $[-w_p^2 (\Delta_0^2 + \Delta_1^2 )/4]$ will variate,
 making changes in the shape of the original mode function. As it was mentioned here before and in \cite{omar}, the mode function
 contains all the informations about the correlations of the generated down converted photons. Hence changing the pump waist $w_p$
-will change the correlations of the generated pair of photons.
+will change the correlations of the generated pair of photons. In Figure \ref{fig:simCorrelations} is shown a new pair of correlations, but this
+ones correspond to a different pump waist $w_p$. We can see the diferences with the ones presented in Fig. \ref{fig:correThe}, in this case we
+have a positive correlation in the YY direction, meaning that we won't have a change of sing for $q^y$. Also, for this case, we have a stronger
+correlation in the YY direction and we still have a anticorrelation in the XX direction, but this time is a weaker correlation.
 
 \begin{figure}[h!]
 \centering
-{  \includegraphics[width=0.48\textwidth]{Figures/correlationsWaist.png} }
-{  \includegraphics[width=0.48\textwidth]{Figures/correlationsWaist2.png} }
-\caption{simulated correlations }
+{  \includegraphics[width=0.48\textwidth]{Figures/correlationsWaistxx15.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/correlationsWaistyy15.png} }
+\caption{Simulated correlations $w_p=15\mu m$ }
  \label{fig:simCorrelations}
 \end{figure}
 
 
 \section{Imaging}
   
-As said in the Introduction, imaging is a process in which we make a reconstruction 
-of an object using the spatial information of the light that where reflected, or scattered
-from that object. This representation of the object can not be an exact copy, all
-kind of blurry things we can see when forgetting our glases. The diference between 
-having or not our glasses is that they will bost up our spatial resolution of the object.
+As said in the introduction, imaging is a process in which we make a reconstruction 
+of an object using the spatial information of the light that were reflected, or scattered
+from that object. This representation of the object can not be an exact copy. For example, when we forget
+our glases, we see our surroundings blurred. The diference between 
+having or not our glasses is that they will bost up our spatial resolution of the objects.
 
 
 
@@ -291,7 +302,7 @@ by the Gaussian thin-lens equation}
 This one-to-one correspondence in the image-forming relationship between the object and the image planes produces a perfect image.
 The observed image can be magnified or demagnified, for example, in the 
 Figure \ref{fig:imaging} the original object is a tree, and it is demagnified at the image plane. This depends on which optical 
-system are we using, what kind on lenses are involved and the distance between object and them.
+system are we using, what kind of lenses are involved and the distance between object and lenses.
 
 
 
@@ -305,10 +316,10 @@ point-to-point correspondence \cite{introquantumoptics}:
 \end{equation}
 where $\langle I(\vec{r_i})\rangle $ is the mean intensity at the image plane, $\vec{r_o}$ and $\vec{r_i}$ are 2-D vectors of the
 transverse coordinates, $\vec{r_n}= (x_n,y_n)$, in the object and image planes, respectively, and
-$m=s_i/s_o$ is the image magnification factor.
+$m=S_i/S_o$ is the image magnification factor.
 
-In reality, we are limited by the finite size of the optical system, we may never obtain a perfect image.
-The incomplete constructive-destructive interference turns the point-to-point correspondence into 
+In a more real situation, we are limited by the finite size of the optical system, we may never obtain a perfect image.
+The oscillating photons that form the image have constructive-destructive interference, turning the point-to-point correspondence into 
  a point-to-"spot" relationship. The $\delta$-function in the convolution of equation \ref{eq:intensity}
 will be replaced by a point-to-"spot" image-forming function, or a point-spread function,
 \begin{equation}
@@ -319,29 +330,26 @@ will be replaced by a point-to-"spot" image-forming function, or a point-spread 
 where the sombrero-like point-spread function is defined as 
 somb$(x) \equiv  2J_1(x)/x$, with $J_1(x)$ the first-order Bessel function, $D$ the diameter of the imaging lens and $\lambda$ the wavelength of the light used.
 the finite size of the spot is defined by $J_1(x)$ and 
-determined by the ratio $D / \lambda S_o$.
+determined by the ratio $D / \lambda S_o$. In Figure \ref{fig:bessel} we can appreciate the behaviour of the sombrero-like function for different
+constants. The constants are define as $C=\frac{\pi D}{\lambda S_o}$ where we have to note some things in order to understand 
+this function. First of all $\lambda$ is the light that we are using for the imaging process, so in the frame of this discussion 
+about standar imaging, the light that is going to be used, is the light that the human eye can see($\sim 390-700 nm$). Restricting the light that
+is going to be used leave us with two parameters to change. If we asume we will stay at a fixed distance $S_o$, Figure \ref{fig:bessel} shows
+us that a narrower point-spread function is achievable increasing the size of the lens.
+ 
    
 
-\begin{comment}
-
-It is clear from equation \ref{eq:realIntensity} that the finite size of the spot in the point-to-"spot" 
-correspondence is determined by the ratio $D/ $
 
 
-by some parameters, if we want to have a almost-perfect correspondence we 
-would like to not place the lens to far away from the object, $S_o$. A big imaging lens, and with "big" I refer to its diameter, $D$.
-Imaging usually uses a wide variety of photons with deferents 
-frequencies\footnote{Imaging forming, as the procces done by our eyes and brain uses a big range of
-photon frequencies, this range is called the \textit{visible spectrum} ($\sim 390-700 nm$), the images produced by our eyes are formed just from photons 
-that are at this frequencies, the rest of the photons are ignored by our eyes} 
-if we were able to filter the light that illuminates the object, we would like to choose a short
-wavelength $\lambda$. 
-\end{comment}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Figures/bessel.png} 
+\caption{sombrero-like function behaviour for differents constants }
+\label{fig:bessel}
+\end{figure}
 
-This finite size of the spot in the point-to-"spot" relationship we described before, is what is called 
-spatial resolution. A higher spatial resolution of the image is achieved by the conditions described before. \\
 
-Another daily situation in which we are forming images, is when we take a picture. Cameras manufacteres play 
+ A narrower point-spread function turn into a high spatial resolution. Another daily situation in which we are forming images, is when we take a picture. Cameras manufacteres play 
 with this functions to achieve a high spatial resolution, a spot-to-pixel correspondence.
 For further informations about this "real life" situation check\cite{introquantumoptics} chapter 4 for further development.
 
@@ -351,35 +359,34 @@ For further informations about this "real life" situation check\cite{introquantu
 
 Two-photon imaging consist in reconstructing an image of an object. 
 But in this case we use two dectector located in the two differents paths of the light. 
-By looking at the individual signal from each detector
- we get a constant signal, with no information 
-about the object, Figure \ref{fig:twoPhotonSetup}. But 
-if instead we look at the intensities correlations of both 
-detectors we retrive the image of the object.
- \\
+In Figure \ref{fig:twoPhotonSetup} we can appreciate a simple setup of the Two-photon technique.
+We separate the light beam in two different paths, the photons traveling through the A path will reach
+a $D_A$  point like detector, this detector have the ability to scan in the transverse direction.
+
+
+
 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\textwidth]{Figures/twoPhotonSetup.png}
-\caption{Simple schematic for the Two-photon Imaging, two slite used OIHASUOIASUD COMPLETE} 
+\includegraphics[width=0.75\textwidth]{Figures/twoPhotonSetupPC.png}
+\caption{Simple schematic for the Two-photon Imaging. Only in the coincidence counts we can reconstruct the image} 
 \label{fig:twoPhotonSetup}
 \end{figure}
 
-In order to reconstruct the image of the object, we have to introduce some kind of spatial 
-dependence, the object, is distributed along a transverse direction 
-of the light propagation. But what we have learnt is that scanning along the x-direction 
-(asuming that light propagates along the z-direction), in the path that have no interaction 
-with the object $D_A$, and colecting all the light that interacts with the object $D_B$, 
-gathering no spatial information. We reconstruct the double slit in the coincidences counts, 
-every time we have a photon detected going througt the double slit, and a photon at a certaint 
-position $x_i$, we graph coincidences vs ${ x_i }$ and we get
- the image of the double slit, Figure \ref{fig:twoPhotonSetup}. REWRITE !!!!!!!! 
+The light that were reflected in Figure \ref{fig:twoPhotonSetup} is denominated the B path.
+This light goes through a imaging lens and then interacts with an object. After this, all light is collected
+by a $D_B$ bucket detector, this detector loses all the spatial information about the light.
+When we scan the $D_A$ detector in the transverse direction, we get a constant single 
+counts, with no information what so ever about the object. When counting the photons that reached $D_B$
+we also get a constant signal. 
+However, if we go to the coincidence regime between $D_A$ and $D_B$, we are able to reconstruct the image.
+This is done by counting every time we have a photon detected going througt the object $D_B$, and a photon at a certaint 
+position $D_A(x_i)$ simultaneously. 
 
 
 
-
-The standar imaging used the photons at the image plane, to form the image. In other 
+The standar imaging used the photons at the image plane to form the image. In other 
 words it measures one photon per spot at the image plane. For the two-photon imaging, in certain 
 aspects the behaviour is similar as that of the classical.
 They both exhibit a similar point-to-point imaging-forming function, except the 
@@ -392,22 +399,27 @@ where $R_{BA}(\vec{r_B})$ is the joint-detection counting rate between photodete
 $G^{(2)}(\vec{r_B},\vec{r_A})$ is a second-order correlation
 function, corresponding to the probability of observing a joint photo-detection event
 at the coordinates $\vec{r_B}$ and $\vec{r_A}$. The physics behing $G^{(2)}(\vec{r_B},\vec{r_A})$
-is what changes between depending of the light source used.
+is what changes between the light source used.
 
 This second-order correlation functions is defined as\cite{introquantumoptics}:
 \begin{equation}
 G^{(2)} (\vec{r_B},\vec{r_A})= \frac{ \langle E^* (\vec{r_B}) E^* (\vec{r_A}) E^ (\vec{r_B}) E^ (\vec{r_A}) \rangle }{\langle |E^ (\vec{r_B})|^2 \rangle \langle |E^ (\vec{r_A})|^2 \rangle}.
 \end{equation}
-where E is bla bla PUT SOBRERO
+Where $E(\vec{r}_n)$ and $E^*(\vec{r}_n)$ are the electrical field and complex conjugate at the point $r_n$ with $n=A,B$. $E (\vec{r_n})|^2$ is defined by $E^*(\vec{r}_n) E(\vec{r}_n)$,
+and $\langle ... \rangle$ stands for a statistical average.
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 \subsubsection{LenslessTwo-photon Imaging using entangled photon}
 
 In the previous section we introduced the notion of two-photon imaging , but we didn't care 
-much about the nature of the source light. For this monograh we will use entangled photon as the 
-source light. For now on we will focus on decribing the 
-experimental setuo in fig ,, lensless, objectfourier plane, lensless 
+much about the nature of the light source. For this monograh we will use entangled photon as the 
+light source. For now on we will focus on decribing the 
+experimental setup presented in Figure \ref{fig:2f}. A diode laser is used to pump a BBO crystal, as a result of the
+SPDC process, we obtain a pair of entangled photons in a noncollinear configuration. The down converted pairs travels
+through a 2-f system. The A photon is then detected by $D_A$. In the path of the B photon, we place the object and then it is the $D_B$
+bucket detector. It is important to note that in this setup there is no imaging lens, the used lenses are to define a very special plane at 
+2f distance from the crystal, we will discus about it later in this section.
 
 
 \begin{figure}[h]
@@ -472,11 +484,17 @@ an image plane with the definitive point-by-point correspondence object(mask) pl
 
 The main point of the section is to calculate Eq \ref{eq:coincidences} 
 for this situation, we need to know 
-the state of the biphoton at the output of the crystal reference the equation:
+the state of the biphoton at the output of the crystal, $\tilde{\Phi}_c(\vec{q}_c,\vec{q}_c)$ 
+
+
+\begin{comment}
 \begin{equation}
 \label{eq:crystal}
 \tilde{\Phi}_c(\vec{q}_c,\vec{q}_c)=N e^{\left[ -\frac{1}{2}x^T A x + i b^T x \right]}.
 \end{equation}
+\end{comment}
+
+
 Then from this result we can use the fresnel propagation theory to analytically model the biphoton 
 propagation in any arbitrary Two-photon Imaging/Lensless Two-photon Imaging setup.This propagation is done 
 by determining the Green function of the optical path by which the beams will travel\cite{green}.
@@ -485,8 +503,8 @@ by determining the Green function of the optical path by which the beams will tr
 
  
 Since both path A and B have an identical 2-f system, we are at the called Fourier plane. It is 
-well know that when the light goes through this system suffers a Fourier transform\cite{introquantumoptics}. It means that if 
-, there is a relation beetwen
+well know that when the light goes through this system suffers a Fourier transform\cite{introquantumoptics}. It means that 
+there is a relation beetwen
 the initial $q_c$ initial transverse momentum at the crystal, and the $r_f$ final position of 
 the photons. This relation is:
 
@@ -522,7 +540,7 @@ Then we can finally propagate  the biphoton function
 in terms of transverse momenta. Where $\Phi_1 (\vec{q}_B , \vec{q}_A )$ is the biphoton after traveling
 through two arbitrary optical paths, it can be expressed
 in terms of the corresponding Green functions and the
-initial biphoton function, equation \ref{eq:crystal}, $\tilde{\Phi}_c(\vec{q}_c,\vec{q}_c)$ as:
+initial biphoton function, $\tilde{\Phi}_c(\vec{q}_c,\vec{q}_c)$, as:
 
 \begin{equation}\label{eq:final}
 \Phi_1 (\vec{q}_B , \vec{q}_A )= G_B(\vec{q}_B,\vec{r}_B) G_A(\vec{q}_A,\vec{r}_A) \tilde{\Phi}_c(\vec{q}_c,\vec{q}_c),
@@ -556,9 +574,9 @@ evaluating it with the Fourier relationship, \ref{eq:fourier}. This is specially
 simulate this on a computer, the amount of calculations is significantly reduced by this fact.
 
 As described at the beginning of this Section \ref{twoPhotonImaging}, we lose all the spatial information 
-about the photon that interacts with the Object, and this is done by placing a bucket detector that
+about the photon that interacts with the Object, B path, and this is done by placing a bucket detector that
 gathers all light and send it to a multimode optic fiber, without saving any information about the position
-of the photons in this path $B$. From the mathematical point of view, the bucket detector is modeled
+of the photons in this path. From the mathematical point of view, the bucket detector is modeled
 as: $\Phi_1 (\vec{r}_A) = C^2 \int d^2 \vec{r}_B T(\vec{r}_B) \Phi (\frac{2 \pi}{\lambda f}\vec{r}_B, \frac{2 \pi}{\lambda f}\vec{r}_A)$.
 Using the fact that the coincidence counts that will be measured by the Detectors will be 
 proportional to the magnitude square of the resulting biphoton function $\Phi_1 (\vec{r}_A)$\cite{introquantumoptics}.
@@ -571,11 +589,40 @@ $D_A$ in Figure \ref{fig:2f}. $R(\vec{r}_A)$ is a function of the spatial positi
 by $R_{BA}(\vec{r_A})$ in Eq. \ref{eq:coincidences}, where the second-order correlation function in this 
 case is $\Phi (\frac{2 \pi}{\lambda f}\vec{r}_B, \frac{2 \pi}{\lambda f}\vec{r}_A)$, as we said, the function
 containing all the informations about the correlations between the pair of down-converted photons. 
-Moreover, Equation \ref{eq:S} indicates that the form of $\Phi(\vec{q}_B,\vec{q}_A)$ determines if $T(\vec{r}_B)$ can
+Moreover, Equation \ref{eq:R} indicates that the form of $\Phi(\vec{q}_B,\vec{q}_A)$ determines if $T(\vec{r}_B)$ can
 be recovered in the coincidence count. Additionally, the type of spatial correlation in $\Phi(\vec{q}_B,\vec{q}_A)$
 defines the orientation of the image obtained.
 
 \subsubsection{Effect of the different spatial correlations}
+If we want to observe the effect of differents spatial correlations in the obtained image, we need to take a look at Eq. \ref{eq:R}. This equation
+describes me the obtained image as a function of the Biphoton. In here is where the spatial correlations are indicated, changing the spatial
+correlations would mean to change the $\Phi (\frac{2 \pi}{\lambda f}\vec{r}_B, \frac{2 \pi}{\lambda f}\vec{r}_A)$. As said before, this experiment is a big project of the Quantum Optics group that was running way before
+this monograph was started. This Eq \ref{eq:R} can be numerically solved, and this was done by one former group member. We can obtain numerically
+the behaviour of $|\Phi (\frac{2 \pi}{\lambda f}\vec{r}_B, \frac{2 \pi}{\lambda f}\vec{r}_A)|^2$. 
+In Figure \ref{fig:simTwo} there are two Two-photon images, each one of them corresponds to a different pump waist. The correlations for
+$w_p=15 \mu m$ are in Figure \ref{fig:simCorrelations}, these correlations are related with the image we obtained. In the image for $w_p=15 \mu m$
+we observe a wider elipsis for the $x$ values, while having a narrower part for the $y$ values. This is related to what was mentioned before,
+for this waist, the YY correlations was stronger and positive, while for XX correlations we had a weaker anticorrelation. This anticorrelation
+is observed in the change of position in the x direction.
+
+
+
+
+
+\begin{figure}[h!]
+\centering
+{  \includegraphics[width=0.48\textwidth]{Figures/twoPhoSq15.png} }
+{  \includegraphics[width=0.48\textwidth]{Figures/twoPhoSq91.png} }
+\caption{Simulated Two-photon images for two different waist, $w_p=15 \mu m$ and $w_p=91 \mu m$, Where $T(\vec{r}_B)$ is an square in the second quadrant.}
+ \label{fig:simTwo}
+\end{figure}
+
+
+
+
+In the Figure \ref{fig:simTwo} we also find the Two-photon image for $w_p=91 \mu m$. The correlations for this waist are in Figure \ref{fig:correThe},
+where we have a strong correlation in the XX direction and both of them are anticorrelations. The image change completely its original 
+position in both direction, the photons present an anticorrelation. We had a weaker correlation in the YY direction, meaning loose spatial resolution in this direction.
 
 
 
