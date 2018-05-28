@@ -23,6 +23,11 @@ Inc. Thorlabs.
 \newblock \url{https://www.thorlabs.com/index.cfm}.
 \newblock Accessed: 2018-03-09.
 
+\bibitem{hecht}
+E.~Hecht.
+\newblock {\em Optics}.
+\newblock Pearson education. Addison-Wesley, 2016.
+
 \bibitem{thermalAlejandra}
 Alejandra Valencia, Giuliano Scarcelli, Milena D'Angelo, and Yanhua Shih.
 \newblock Two-photon imaging with thermal light.
@@ -66,11 +71,6 @@ Jefferson Fl\'orez, Omar Calder\'on, Alejandra Valencia, and Clara~I. Osorio.
   single photons.
 \newblock {\em Phys. Rev. A}, 91:013819, Jan 2015.
 
-\bibitem{hecht}
-E.~Hecht.
-\newblock {\em Optics}.
-\newblock Pearson education. Addison-Wesley, 2016.
-
 \bibitem{introquantumoptics}
 Y.~Shih.
 \newblock {\em An Introduction to Quantum Optics: Photon and Biphoton Physics}.
@@ -81,6 +81,11 @@ Morton~H. Rubin.
 \newblock Transverse correlation in optical spontaneous parametric
   down-conversion.
 \newblock {\em Phys. Rev. A}, 54:5349--5360, Dec 1996.
+
+\bibitem{waist}
+Miguel~A. Bandres and Julio~C. Guti\'{e}rrez-Vega.
+\newblock Ince--gaussian beams.
+\newblock {\em Opt. Lett.}, 29(2):144--146, Jan 2004.
 
 \bibitem{bbo}
 D.~N. Nikogosyan.

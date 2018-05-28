@@ -9,44 +9,44 @@ A level-1 auxiliary file: Chapters/Chapter5.aux
 A level-1 auxiliary file: Appendices/AppendixThermal.aux
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
-You've used 18 entries,
+You've used 19 entries,
             1791 wiz_defined-function locations,
-            581 strings with 6397 characters,
-and the built_in function-call counts, 4067 in all, are:
-= -- 376
-> -- 152
+            587 strings with 6485 characters,
+and the built_in function-call counts, 4309 in all, are:
+= -- 400
+> -- 160
 < -- 1
-+ -- 59
-- -- 41
-* -- 296
-:= -- 643
-add.period$ -- 57
-call.type$ -- 18
-change.case$ -- 15
++ -- 62
+- -- 43
+* -- 317
+:= -- 680
+add.period$ -- 60
+call.type$ -- 19
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 172
-empty$ -- 405
-format.name$ -- 41
-if$ -- 901
+cite$ -- 19
+duplicate$ -- 181
+empty$ -- 429
+format.name$ -- 43
+if$ -- 953
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 18
-newline$ -- 94
-num.names$ -- 17
-pop$ -- 36
+int.to.str$ -- 19
+missing$ -- 19
+newline$ -- 99
+num.names$ -- 18
+pop$ -- 37
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 72
+skip$ -- 76
 stack$ -- 0
-substring$ -- 326
-swap$ -- 33
+substring$ -- 351
+swap$ -- 34
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 37
-width$ -- 20
-write$ -- 199
+while$ -- 40
+width$ -- 21
+write$ -- 210
