@@ -1,0 +1,368 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.5 (27/8/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+12pt, % The default document font size, options: 10pt, 11pt, 12pt
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+onehalfspacing, %singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{Structural} % The class file specifying the document structure
+\setcounter{secnumdepth}{4} %numbering 
+
+\usepackage[toc,page]{appendix}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{physics} %for physics simbols as kets 
+\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage{float}
+\usepackage{amsmath}
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+%\usepackage{biblatex} 
+%\bibliography{Bibliography}%referencias
+%\addbibresource{Bibliography.bib} % The filename of the bibliography
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage{verbatim} 
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=3.8cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Two-Photon Imaging Using Tunable Spatial Correlations} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Dr. Alejandra \textsc{Valencia}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+%\supervisor{Dr. Mayerlin}
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Physicist} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Juan \textsc{Vargas}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{Physics Sciences} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{https://uniandes.edu.co}{Universidad de Los Andes}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{https://fisica.uniandes.edu.co/en/}{Physics Department}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{https://opticacuantica.uniandes.edu.co/index.php/en/home}{Quantum Optics}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{https://ciencias.uniandes.edu.co}{Science Faculty}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+\vspace*{.06\textheight}
+{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+\textsc{\Large Thesis}\\[0.5cm] % Thesis type
+
+\HRule \\[0.3cm] % Horizontal line
+{\huge \bfseries \ttitle\par}\vspace{0.3cm} % Thesis title
+\HRule \\[1.4cm] % Horizontal line
+ 
+\begin{minipage}[t]{0.3\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+{\authorname} % Author name - remove the \href bracket to remove the link
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\end{flushright}
+\end{minipage}\\[2cm]
+ 
+%\vfill
+
+\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+\textit{in the}\\[0.3cm]
+\groupname\\\deptname\\[2cm] % Research group name and department name
+ 
+%\vfill
+\includegraphics[width=0.075\textwidth]{Logo.png} % University/department logo - uncomment to place it
+ 
+{\large \today}\\[2.7cm] % Date
+
+\vfill
+\end{center}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+
+\begin{itemize} 
+\item This work was done wholly or mainly while in candidature for a research degree at this University.
+\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+\item Where I have consulted the published work of others, this is always clearly attributed.
+\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+\item I have acknowledged all main sources of help.
+\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+\end{itemize}
+ 
+\noindent Signed:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+ 
+\noindent Date:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\end{declaration}
+
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\vspace*{0.2\textheight}
+
+\noindent\enquote{\itshape I think I can safely say that nobody understands quantum mechanics}\bigbreak
+
+\hfill Richard Feynman
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+Two-photon imaging is a technique for obtaining an image of an object by means of the coincidence counts of 
+two spatially separated detectors, the first realization was reported by Pittman et al.\cite{pittman}. Traditionally 
+we need to face a single camera (detector) to the object we would like to take an image from, but with Two-photon imaging technique 
+we obtain the image by measuring the correlations between light beams.  We use a light generated by the Spontaneous 
+Parametric Down Conversion. The popularity of this source of paired
+photons is strongly related to the relative simplicity of its experimental
+realisation, and to the variety of quantum features that down converted photons can exhibit.
+
+
+ We focus a 405nm CW laser to a BBO Cristal, this type-II crystal generates pairs of 
+strongly correlated photons in a noncollinear configuration. As seen in \cite{omar}, it is possible to change the spatial 
+correlations by changing the pump waist that hits the crystal. We are interested in observing the effect on the 
+generated images when changing the spatial correlations, these effects have to be understood as resolution of the image and the 
+flips of the images with respect to the original object. The Two-photon imaging have some peculiar features: it is 
+non-local; its imaging resolution differs from that of classical. These features may turn a local ‘bucket’ 
+sensor into a nonlocal imaging camera with classically unachievable imaging resolution \cite{physicsGhost}.
+
+
+
+\begin{equation}
+\label{eq:intensity}
+\langle I(\vec{r_i})^{(i,j)} \rangle =\int_{obj} d\vec{r_o}^{(i,j)} |T(\vec{r_o}^{(i,j)})|^2 \delta(\vec{r_o}^{(i,j)}+\frac{\vec{r_i}^{(i,j)}}{m}),
+\end{equation}
+
+
+\begin{equation}\label{eq:realIntensity}
+\langle I(\vec{r_i}^{(i,j)}) \rangle =\int_{obj} d\vec{r_o}^{(i,j)} |T(\vec{r_o}^{(i,j)})|^2 \text{somb}^2[\frac{\pi D}{\lambda S_o} | \vec{r_o}^{(i,j)}+\frac{\vec{r_i}^{(i,j)}}{m}|],
+\end{equation}
+
+\begin{equation}\label{eq:coincidences}
+R_{BA}(\vec{r_A}^{(i,j)})=\int_{obj} d\vec{r_B}^{(i,j)} |T(\vec{r_B}^{(i,j)})|^2 G^{(2)}(\vec{r_B}^{(i,j)},\vec{r_A}^{(i,j)}),
+\end{equation}
+
+\begin{equation}
+\label{eq:quadratic}
+\tilde{\Phi}(\vec{q}_B^{(i,j)},\vec{q}_A^{(i,j)})=N \textit{exp}\left[ -\frac{1}{2}x^T A x + i b^T x \right].
+\end{equation}
+
+\begin{equation}\label{eq:R}
+R(\vec{r}_A^{(i,j)}) \propto |  \int d^2 \vec{r}_B^{(i,j)} T(\vec{r}_B^{(i,j)}) \Phi (\frac{2 \pi}{\lambda f}\vec{r}_B^{(i,j)}, \frac{2 \pi}{\lambda f}\vec{r}_A^{(i,j)}) |^2
+\end{equation}
+
+\end{abstract}
+
+\begin{abstract}
+Two-photon imaging es una técnica para obtener una imagen de un objeto mediante el conteo de las coincidencias
+de dos detectores que se encuentran espacialmente separados, la primera realización fue reportada por Pittman et al.\cite{pittman}.
+Tradicionalmente necesitamos enfrentar una sola cámara (detector) a el objeto del cual queremos recuperar una imagen, pero con
+la técnica de Two-photon imaging nosotros obtenemos la imagen midiendo las correlaciones entre rayos de luz. Usamos la luz generada
+por el proceso de Spontaneous Parametric Down Conversion. La popularidad de esta fuente de pares de fotones esta fuertemente ligada
+a la relativa simplicidad de su realización experimental, y a la variedad de características cuánticas que los pares producidos pueden
+exhibir. Nosotros concentramos un laser de onda continua a 405nm a el cristal BBO, este cristal tipo-II genera pares de fotones
+que están fuertemente correlacionados en una configuración nocolineal. Como visto en \cite{omar}, es posible cambiar las correlaciones
+espaciales cambiando la cintura del bombeo que llega a el cristal. Estamos interesados en observar el efecto en las imágenes generadas
+cuando cambiamos la correlación espacial, estos efectos tienes que entenderse como la resolución de la imagen y las rotaciones 
+de las imágenes con respecto a el objeto original. El Two-photon imaging tiene algunas características peculiares: no es local;
+su resolución difiere a la resolución clásica. Estas características convertirían un sensor bucket en una cámara no local con
+resolución clásicamente inalcanzable \cite{physicsGhost}
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+My very first thanks must go to my parents, without them and their unconditional support through 
+this years nothing of this would be possible. I also would like to thank my brothers for being always 
+a good example for myself.
+
+The present monograph is the compilation of the efforts of many people, First of all I would 
+like to thank director Alejandra Valencia, for showing me a different perspective about 
+experimental physics and for the many discussions we had where I’ve learnt a wide set of things. 
+There must be also a special thanks to the Quantum Optics group. 
+To Omar Calderon for sharing the theoretical and experimental skills necessary to have a 
+source light with Tunable spatial correlations. To Daniel Urrego and Johnny Tenorio for instruct me in most 
+of the experimental procedures and to Juan Andrés Urrea for the numerical 
+solutions used in this monograph.
+
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+%\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+
+%\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+
+% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+
+%Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Constant Name & $Symbol$ & $Constant Value$ with units\\
+
+%\end{constants}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+
+%\addlinespace % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & \si{\radian} \\
+
+%\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+%\dedicatory{For/Dedicated to/To my\ldots} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+%\include{Chapters/Chapter1}
+%\include{Chapters/Chapter2} 
+%\include{Chapters/Chapter3}
+%\include{Chapters/Chapter4} 
+%\include{Chapters/Chapter5}
+%\include{Chapters/ChapterInfo} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\include{Appendices/AppendixThermal}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliography{Bibliography}
+\bibliographystyle{unsrt}
+%\bibliographystyle{siam}
+
+%\printbibliography
+%\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  
