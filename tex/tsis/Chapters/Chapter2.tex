@@ -1,24 +1,25 @@
 % Chapter Template
 
-\chapter{Theory} % Main chapter title
+\chapter{Theory background} % Main chapter title
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-In here, we will discus some important facts to get a complete understanding 
+Here we will discus some important facts to get a complete understanding 
 of the physical phenomena of correlations and Two-photon imaging. Specifically, we will develop the 
-notions that are crucial in the understanding of the Two-photon imaging using entangled light. We will
- star describing the process of SPDC, that provides us with the light source . Then we'll review the 
-phenomena of imaging, looking at the standar version and the Two-photon version. 
+notions that are crucial in the understanding of the Two-photon imaging using entangled light. We will begin by
+ describing the process of SPDC, that provides us with the light source . Then we will review the 
+phenomena of imaging, looking at the standard version and the Two-photon version. 
+
 \section{Correlations between two photons}
 
 The term "correlation" is crucial at this point, and it refers to the relation that two or more situations have. For example 
-we can establish a correlations between the US dolar currency exchange rate and the prices of technology in one country. These two things have direct relation, if one blows up, the other one will too.
+we can establish a correlation between the US dolar currency exchange rate and the prices of technology in one country. These two things have direct relation, if one blows up, the other one will too.
 These two situations, or variables, can have a strong correlations or a weak one. \\
 
-Indeed in quantum physics we can have a pair of photons that are so strongly and specially correlated, in their possible degrees of freedom (spatial, temporal and polarization),
-that we say they are entangled. This statment can leads us 
+Indeed, in quantum physics we can have a pair of photons that are so strongly and specially correlated, in their possible degrees of freedom (spatial, temporal and polarization),
+that we say they are entangled. This statment can lead us 
 to a dense discussion about the nature of this entanglement, 
-a discussion that were started between Einstein and Bohr in the first years of quantum physics \cite{einstein}.\\
+a discussion that was started by Einstein and Bohr in the first years of quantum physics \cite{einstein}.\\
 
 For the topic  of this monograh it is relevant to have a pair of spatially correlated  photons. This can be conveniently produced
  by the process of SPDC. This produces photons that are indeed entangled. However, we are not interested in this feature, Since in order to observe 
@@ -33,7 +34,7 @@ For the topic  of this monograh it is relevant to have a pair of spatially corre
 
 \subsection{Spontaneous Parametric Down Conversion}
 
-As the title of this work implies, we need a light source that produces pair of photons, 
+As the title of this work implies, we need a light source that produces pairs of photons, 
 and we would like to exploit the advantages of strong correlations between them.
 The photons generated via spontaneous parametric down conversion (SPDC) are
 widely used in quantum optics experiments. The popularity of this source of paired
@@ -64,7 +65,7 @@ This procces can also be clasified according to the geometry, the relative direc
 In Figure \ref{fig:spdcSimple} the non-collinear configuration is shown, where light is generated in two separated 
 cones, for each polarisation, these light cones intercepts in two places, from where we will use pair the pair A-photon and B-photon.
 
-For the rest of this monography we will be focused in the type-II and non-collinear configuration. Using first order perturbation theory  and the paraxial approximation, the two-photon state
+For the rest of this monograph we will be focused in the type-II and non-collinear configuration. Using first order perturbation theory  and the paraxial approximation, the two-photon state
  coming out from the crystal, $\ket{\Psi}$, is given by \cite{omar}:
 \begin{equation}
 \begin{split}
@@ -81,8 +82,9 @@ are the mode functions or biphotons that contains all the information about the 
 between the pair of down-converted photons. The operator $\hat{a}^{\dagger}$ indicates the creations of an $n$-polarized photon with transverse momentum $\vec{q}_n$, 
 and frequency detuning $\Omega_n$. \\
 
-For the light source that we will usea in this monograph it is enough just one of the biphotons of the Eq. \ref{eq:stateFunComplex}. 
-As it will shown later this later this corresponds to put a pair of polarisers before the detection of the light. The Two-photon state reduces to:
+For the light source that we will use in this monograph it is enough just one of the biphotons of the Eq. \ref{eq:stateFunComplex}. 
+As will be shown later, this corresponds to put a pair of polarisers before the detection of the light (Sec. \ref{sec:pola})
+. The Two-photon state reduces to:
 \begin{equation}
 \label{eq:stateFun}
 \ket{\Psi}=\int d\vec{q}_B d\vec{q}_A d\Omega_B d\Omega_A 
@@ -122,15 +124,15 @@ The angles $\phi_B$ and $\phi_A$ are the creation angles of the down-
 converted photons with respect to the pump’s
 propagation direction, whereas $\rho_p$ and $\rho_B$ are angles, they account for
 the walk-off of the pump $p$ and the $B$ down-
-converted photon, respectively.  $N_n=\frac{\delta k}{\delta \omega}$ denotes the inverse of the group velocity for each photon, tha invserse 
-of the change of the angular frequency $\omega$ against the angular wavenumber $k$.
+converted photon, respectively.  $N_n=\frac{\delta k}{\delta \omega}$ denotes the inverse of the group velocity for each photon,
+the change of the angular frequency $\omega$ against the angular wavenumber $k$.
 
 
 
 
 \subsection{Spatial Correlations}\label{sec:spatialCorrelations}
 
-In order to observe the correlations presented in \ref{eq:mode} we have to take into account some considerations about the descrption of the things we have in optical table.
+In order to observe the correlations presented in \ref{eq:mode} we have to take into account some considerations about the descrption of the elements we have in the optical table.
 First of all we have a pump beam with a Gaussian profile with waist $w_p$ 
 in such way that $\alpha (\Delta_0,\Delta_1 ) \propto \text{exp}[-w_p^2 (\Delta_0^2 + \Delta_1^2 )/4]$, a CW pump laser, mathematically represented by
 $\beta (\Omega_B , \Omega_A) \propto \delta(\Omega_B + \Omega_A)$. Making the aproximations for the sinc function by a Gaussian fuctions with the same width at $1/e^2$ of its maximum,
@@ -181,7 +183,7 @@ angles inside the crystal $\varphi_n$ and the width of the spectral filter $\sig
 \caption{Theoretical Spatial correlations between a pair of down-converted photons, $w_p=91\mu m$}
  \label{fig:correThe}
 \end{figure}
-Figure \ref{fig:correThe} show a pair of examples of how these correlations we are talking about look like. These correlations have elliptical shape,
+Figure \ref{fig:correThe} shows a pair of examples of how these correlations we are discussing about look like. These correlations have elliptical shape,
 and show how strong is the posibility of detecting a photon at a given momentum. For example, looking 
 at XX Correlation, there is a great chance
 of detecting simultaneously a photon at $q^x_B=0$ and at $q^x_A=0$. Now if we keep looking at this XX correlation, we can also 
@@ -277,7 +279,7 @@ having or not our glasses is that they will bost up our spatial resolution of th
 
 
 
-\subsection{Standar Imaging}
+\subsection{Standard Imaging}
 
 
 The concept of optical imaging was well developed in classical optics and the Figure
@@ -581,7 +583,7 @@ as: $\Phi_1 (\vec{r}_A) = C^2 \int d^2 \vec{r}_B T(\vec{r}_B) \Phi (\frac{2 \pi}
 Using the fact that the coincidence counts that will be measured by the Detectors will be 
 proportional to the magnitude square of the resulting biphoton function $\Phi_1 (\vec{r}_A)$\cite{introquantumoptics}.
 \begin{equation}\label{eq:R}
-R(\vec{r}_A) \propto |  \int d^2 \vec{r}_B T(\vec{r}_B) \Phi (\frac{2 \pi}{\lambda f}\vec{r}_B, \frac{2 \pi}{\lambda f}\vec{r}_A) |^2
+R(\vec{r}_A) \propto  \int d^2 \vec{r}_B T(\vec{r}_B)^2 | \Phi (\frac{2 \pi}{\lambda f}\vec{r}_B, \frac{2 \pi}{\lambda f}\vec{r}_A) |^2
 \end{equation}
 Where $R(\vec{r}_A)$ is the function that describes de coincidences counts between de detectors $D_B$ and 
 $D_A$ in Figure \ref{fig:2f}. $R(\vec{r}_A)$ is a function of the spatial positions, $(x_A,y_A)$
